@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "question": "Bagaimana cara melakukan pembelian di Kids Frenzy?",
+      "answer": "Sangat mudah! Pilih produk yang diinginkan, klik 'Beli Sekarang', isi form pemesanan, lakukan pembayaran, dan tunggu link download dikirim ke email Anda maksimal 1x24 jam setelah pembayaran dikonfirmasi.",
+      "category": "pembelian"
+    },
+    {
+      "id": 2,
+      "question": "Metode pembayaran apa saja yang tersedia?",
+      "answer": "Kami menyediakan berbagai metode pembayaran: Transfer Bank (BCA, Mandiri, BRI, BNI), E-wallet (GoPay, OVO, DANA, ShopeePay), Virtual Account, dan QRIS. Semua metode pembayaran aman dan terenkripsi.",
+      "category": "pembelian"
+    },
+    {
+      "id": 3,
+      "question": "Apakah ada diskon untuk pembelian dalam jumlah banyak?",
+      "answer": "Ya! Kami sering memberikan promo bundle dan diskon khusus. Follow media sosial kami atau subscribe newsletter untuk mendapatkan info promo terbaru dan early bird discount hingga 50%!",
+      "category": "pembelian"
+    },
+    {
+      "id": 4,
+      "question": "Bagaimana cara download produk setelah pembelian?",
+      "answer": "Setelah konfirmasi pembayaran, link download akan dikirimkan ke email Anda dalam waktu maksimal 1x24 jam. Link download berlaku selamanya dan bisa diunduh berulang kali. Pastikan cek folder spam jika tidak ada di inbox.",
+      "category": "download",
+      "highlight": true
+    },
+    {
+      "id": 5,
+      "question": "Berapa lama link download berlaku?",
+      "answer": "Link download berlaku SELAMANYA! Anda bisa download kapan saja, bahkan bertahun-tahun kemudian. Kami juga menyimpan riwayat pembelian Anda untuk kemudahan akses di masa mendatang.",
+      "category": "download"
+    },
+    {
+      "id": 6,
+      "question": "Bagaimana jika email dengan link download tidak masuk?",
+      "answer": "Pertama, cek folder spam/junk email Anda. Jika masih tidak ada, langsung hubungi customer service kami via WhatsApp dengan menyertakan bukti pembayaran. Kami akan kirim ulang dalam 1 jam.",
+      "category": "download"
+    },
+    {
+      "id": 7,
+      "question": "Bisakah produk didownload di beberapa device?",
+      "answer": "Tentu saja! Produk yang sudah dibeli bisa didownload dan digunakan di smartphone, tablet, laptop, atau komputer tanpa batasan device. Cocok untuk keluarga dengan multiple gadget.",
+      "category": "download"
+    },
+    {
+      "id": 8,
+      "question": "Format file apa yang akan saya terima?",
+      "answer": "Semua produk dalam format PDF berkualitas tinggi (300 DPI) yang kompatibel dengan semua device. Beberapa produk bonus juga tersedia dalam format JPG atau PNG untuk fleksibilitas maksimal.",
+      "category": "produk"
+    },
+    {
+      "id": 9,
+      "question": "Apakah produk bisa dicetak?",
+      "answer": "Absolutely! Semua produk didesain khusus untuk print quality dengan resolusi tinggi. Anda bisa mencetak di rumah dengan printer biasa atau di percetakan profesional. Hemat biaya, cetak sesuai kebutuhan!",
+      "category": "produk",
+      "highlight": true
+    },
+    {
+      "id": 10,
+      "question": "Berapa ukuran kertas yang digunakan?",
+      "answer": "Mayoritas produk menggunakan ukuran A4 (21 x 29.7 cm) yang mudah dicetak. Beberapa produk khusus tersedia dalam ukuran A3 atau custom size. Informasi detail ukuran selalu tercantum di deskripsi produk.",
+      "category": "produk"
+    },
+    {
+      "id": 12,
+      "question": "Apakah ada garansi atau jaminan kualitas?",
+      "answer": "Kami memberikan 100% jaminan kualitas! Jika ada file yang corrupt, rusak, atau tidak bisa didownload, kami akan segera mengganti dengan file baru atau memberikan solusi alternatif dalam 24 jam.",
+      "category": "kebijakan",
+      "highlight": true
+    },
+    {
+      "id": 14,
+      "question": "Apakah bisa refund atau pengembalian uang?",
+      "answer": "Mengingat ini adalah produk digital yang dapat langsung didownload dan digunakan, kami menerapkan kebijakan NO REFUND. Namun, kami berkomitmen memberikan kualitas terbaik dan support penuh untuk setiap pembelian.",
+      "category": "kebijakan",
+      "highlight": true
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  BookOpen,
   Users,
   HelpCircle,
   MessageCircle,
@@ -11,11 +10,11 @@ import {
   Download,
   CreditCard,
   FileText,
-  Clock,
   Shield,
   RefreshCw,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import faq from "./faq.json";
 
 const containerVariants: any = {
   hidden: { opacity: 0 },
@@ -52,165 +51,19 @@ const FAQPage: React.FC = () => {
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>("semua");
 
-  const faqData: FAQItem[] = [
-    // Pembelian & Pembayaran
-    {
-      id: 1,
-      question: "Bagaimana cara melakukan pembelian di Kids Frenzy?",
-      answer:
-        "Sangat mudah! Pilih produk yang diinginkan, klik 'Beli Sekarang', isi form pemesanan, lakukan pembayaran, dan tunggu link download dikirim ke email Anda maksimal 1x24 jam setelah pembayaran dikonfirmasi.",
-      icon: CreditCard,
-      category: "pembelian",
-    },
-    {
-      id: 2,
-      question: "Metode pembayaran apa saja yang tersedia?",
-      answer:
-        "Kami menyediakan berbagai metode pembayaran: Transfer Bank (BCA, Mandiri, BRI, BNI), E-wallet (GoPay, OVO, DANA, ShopeePay), Virtual Account, dan QRIS. Semua metode pembayaran aman dan terenkripsi.",
-      icon: CreditCard,
-      category: "pembelian",
-    },
-    {
-      id: 3,
-      question: "Apakah ada diskon untuk pembelian dalam jumlah banyak?",
-      answer:
-        "Ya! Kami sering memberikan promo bundle dan diskon khusus. Follow media sosial kami atau subscribe newsletter untuk mendapatkan info promo terbaru dan early bird discount hingga 50%!",
-      icon: CreditCard,
-      category: "pembelian",
-    },
+  const iconMap: Record<string, any> = {
+    pembelian: CreditCard,
+    download: Download,
+    produk: FileText,
+    kebijakan: Shield,
+    bantuan: MessageCircle,
+    default: HelpCircle,
+  };
 
-    // Download & Akses Produk
-    {
-      id: 4,
-      question: "Bagaimana cara download produk setelah pembelian?",
-      answer:
-        "Setelah konfirmasi pembayaran, link download akan dikirimkan ke email Anda dalam waktu maksimal 1x24 jam. Link download berlaku selamanya dan bisa diunduh berulang kali. Pastikan cek folder spam jika tidak ada di inbox.",
-      icon: Download,
-      category: "download",
-      highlight: true,
-    },
-    {
-      id: 5,
-      question: "Berapa lama link download berlaku?",
-      answer:
-        "Link download berlaku SELAMANYA! Anda bisa download kapan saja, bahkan bertahun-tahun kemudian. Kami juga menyimpan riwayat pembelian Anda untuk kemudahan akses di masa mendatang.",
-      icon: Clock,
-      category: "download",
-    },
-    {
-      id: 6,
-      question: "Bagaimana jika email dengan link download tidak masuk?",
-      answer:
-        "Pertama, cek folder spam/junk email Anda. Jika masih tidak ada, langsung hubungi customer service kami via WhatsApp dengan menyertakan bukti pembayaran. Kami akan kirim ulang dalam 1 jam.",
-      icon: MessageCircle,
-      category: "download",
-    },
-    {
-      id: 7,
-      question: "Bisakah produk didownload di beberapa device?",
-      answer:
-        "Tentu saja! Produk yang sudah dibeli bisa didownload dan digunakan di smartphone, tablet, laptop, atau komputer tanpa batasan device. Cocok untuk keluarga dengan multiple gadget.",
-      icon: Download,
-      category: "download",
-    },
-
-    // Format & Kualitas Produk
-    {
-      id: 8,
-      question: "Format file apa yang akan saya terima?",
-      answer:
-        "Semua produk dalam format PDF berkualitas tinggi (300 DPI) yang kompatibel dengan semua device. Beberapa produk bonus juga tersedia dalam format JPG atau PNG untuk fleksibilitas maksimal.",
-      icon: FileText,
-      category: "produk",
-    },
-    {
-      id: 9,
-      question: "Apakah produk bisa dicetak?",
-      answer:
-        "Absolutely! Semua produk didesain khusus untuk print quality dengan resolusi tinggi. Anda bisa mencetak di rumah dengan printer biasa atau di percetakan profesional. Hemat biaya, cetak sesuai kebutuhan!",
-      icon: FileText,
-      category: "produk",
-      highlight: true,
-    },
-    {
-      id: 10,
-      question: "Berapa ukuran kertas yang digunakan?",
-      answer:
-        "Mayoritas produk menggunakan ukuran A4 (21 x 29.7 cm) yang mudah dicetak. Beberapa produk khusus tersedia dalam ukuran A3 atau custom size. Informasi detail ukuran selalu tercantum di deskripsi produk.",
-      icon: FileText,
-      category: "produk",
-    },
-    {
-      id: 11,
-      question: "Apakah produk sudah sesuai kurikulum Indonesia?",
-      answer:
-        "Yes! Semua materi edukatif kami disesuaikan dengan kurikulum terbaru Indonesia dan dikembangkan bersama tim ahli pendidikan anak. Cocok untuk anak usia 2-12 tahun dengan tahapan pembelajaran yang tepat.",
-      icon: BookOpen,
-      category: "produk",
-    },
-
-    // Kebijakan & Garansi
-    {
-      id: 12,
-      question: "Apakah ada garansi atau jaminan kualitas?",
-      answer:
-        "Kami memberikan 100% jaminan kualitas! Jika ada file yang corrupt, rusak, atau tidak bisa didownload, kami akan segera mengganti dengan file baru atau memberikan solusi alternatif dalam 24 jam.",
-      icon: Shield,
-      category: "kebijakan",
-      highlight: true,
-    },
-    {
-      id: 13,
-      question: "Bagaimana jika produk tidak sesuai harapan?",
-      answer:
-        "Kepuasan Anda adalah prioritas utama! Jika produk tidak sesuai deskripsi atau ada masalah teknis, hubungi kami dalam 7 hari untuk mendapatkan bantuan penuh dari tim customer service yang responsif.",
-      icon: HelpCircle,
-      category: "kebijakan",
-    },
-    {
-      id: 14,
-      question: "Apakah bisa refund atau pengembalian uang?",
-      answer:
-        "Mengingat ini adalah produk digital yang dapat langsung didownload dan digunakan, kami menerapkan kebijakan NO REFUND. Namun, kami berkomitmen memberikan kualitas terbaik dan support penuh untuk setiap pembelian.",
-      icon: RefreshCw,
-      category: "kebijakan",
-      highlight: true,
-    },
-    {
-      id: 15,
-      question: "Apakah boleh membagikan atau menjual kembali produk?",
-      answer:
-        "Produk hanya untuk penggunaan personal/keluarga. Dilarang keras membagikan, menjual kembali, atau mendistribusikan produk kami. Hal ini melindungi hak cipta dan memastikan keberlangsungan inovasi produk berkualitas.",
-      icon: Shield,
-      category: "kebijakan",
-    },
-
-    // Dukungan & Bantuan
-    {
-      id: 16,
-      question: "Bagaimana cara menghubungi customer service?",
-      answer:
-        "Tim support kami siap membantu 24/7 melalui WhatsApp di nomor yang tertera. Kami juga tersedia via email dengan response time maksimal 2 jam di hari kerja. Fast response guaranteed!",
-      icon: MessageCircle,
-      category: "bantuan",
-    },
-    {
-      id: 17,
-      question: "Apakah ada panduan penggunaan produk?",
-      answer:
-        "Setiap produk dilengkapi dengan panduan lengkap dan tips optimalisasi. Kami juga menyediakan video tutorial di channel YouTube Kids Frenzy dan artikel blog untuk memaksimalkan manfaat produk.",
-      icon: BookOpen,
-      category: "bantuan",
-    },
-    {
-      id: 18,
-      question: "Apakah ada komunitas pengguna Kids Frenzy?",
-      answer:
-        "Yes! Join grup Facebook 'Kids Frenzy Community' dengan 5000+ parents untuk sharing pengalaman, tips parenting, dan mendapatkan konten eksklusif. Tempat saling support sesama orang tua!",
-      icon: Users,
-      category: "bantuan",
-    },
-  ];
+  const faqData: FAQItem[] = faq.data.map((item: any) => ({
+    ...item,
+    icon: iconMap[item.category] || iconMap.default,
+  }));
 
   const categories = [
     { key: "semua", label: "Semua Pertanyaan", count: faqData.length },
@@ -226,7 +79,6 @@ const FAQPage: React.FC = () => {
       label: "Kebijakan & Garansi",
       count: faqData.filter((faq) => faq.category === "kebijakan").length,
     },
-    { key: "bantuan", label: "Dukungan & Bantuan", count: faqData.filter((faq) => faq.category === "bantuan").length },
   ];
 
   const filteredFAQ =
@@ -268,7 +120,7 @@ const FAQPage: React.FC = () => {
         <motion.div variants={itemVariants} className="mb-12">
           <div className="card-playful">
             <h3 className="text-xl font-bold text-center mb-6 text-gray-800">Pilih Kategori Pertanyaan</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className="flex flex-col md:flex-row justify-center gap-5">
               {categories.map((category) => (
                 <motion.button
                   key={category.key}
@@ -316,7 +168,7 @@ const FAQPage: React.FC = () => {
                       <faq.icon className="text-white w-6 h-6" />
                     </div>
                     <div className="flex-1">
-                      <h3 className={`text-lg font-bold mb-2 ${faq.highlight ? "text-kid-coral" : "text-gray-800"}`}>
+                      <h3 className={`text-lg mb-2 ${faq.highlight ? "text-kid-coral" : "text-gray-800"}`}>
                         {faq.question}
                         {faq.highlight && (
                           <span className="ml-2 text-sm bg-kid-coral text-white px-2 py-1 rounded-full">Popular</span>
