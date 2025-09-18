@@ -38,7 +38,7 @@ const AboutPage: React.FC = () => {
           <div className="w-28 h-28 bg-gradient-to-br from-blue-300/70 to-purple-300/70 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
             <Users className="text-white w-14 h-14" />
           </div>
-          <h1 className="text-5xl md:text-7xl mb-8 text-gradient">Tentang Kids Frenzy</h1>
+          <h1 className="text-5xl md:text-7xl mb-8 text-gradient">Tentang Kami</h1>
           <motion.p
             className="text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed"
             animate={{
@@ -101,7 +101,7 @@ const AboutPage: React.FC = () => {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-3xl text-green-500 mb-6">🌟 Solusi Kids Frenzy</h2>
+              <h2 className="text-3xl text-green-500 mb-6">🌟 Solusi Kami</h2>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <Zap className="text-yellow-400 w-6 h-6 mt-1 flex-shrink-0" />

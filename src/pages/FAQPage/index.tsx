@@ -100,7 +100,7 @@ const FAQPage: React.FC = () => {
           <div className="w-28 h-28 bg-gradient-to-br from-kid-amber to-kid-peach rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
             <HelpCircle className="text-white w-14 h-14" />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-gradient">Pertanyaan Umum</h1>
+          <h1 className="text-5xl md:text-7xl mb-8 text-gradient">Pertanyaan Umum</h1>
           <motion.p
             className="text-2xl text-gray-700 max-w-3xl mx-auto"
             animate={{
@@ -112,14 +112,14 @@ const FAQPage: React.FC = () => {
               ease: "easeInOut",
             }}
           >
-            Semua yang perlu Anda ketahui tentang Kids Frenzy! 🤝✨
+            Semua yang perlu Anda ketahui tentang kami! 🤝✨
           </motion.p>
         </motion.div>
 
         {/* Category Filter */}
         <motion.div variants={itemVariants} className="mb-12">
           <div className="card-playful">
-            <h3 className="text-xl font-bold text-center mb-6 text-gray-800">Pilih Kategori Pertanyaan</h3>
+            <h3 className="text-xl text-center mb-6 text-gray-800">Pilih Kategori Pertanyaan</h3>
             <div className="flex flex-col md:flex-row justify-center gap-5">
               {categories.map((category) => (
                 <motion.button
@@ -133,7 +133,7 @@ const FAQPage: React.FC = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <div className="font-bold">{category.label}</div>
+                  <div className="">{category.label}</div>
                   <div className="text-xs opacity-75">({category.count})</div>
                 </motion.button>
               ))}
@@ -213,7 +213,7 @@ const FAQPage: React.FC = () => {
               whileHover={{ scale: 1.02 }}
             >
               <Download className="w-12 h-12 text-green-500 mx-auto mb-4" />
-              <h3 className="font-bold text-green-600 mb-2">Download Instan</h3>
+              <h3 className="text-green-600 mb-2">Download Instan</h3>
               <p className="text-gray-600 text-sm">
                 Link download dikirim maksimal 1x24 jam setelah pembayaran dikonfirmasi
               </p>
@@ -224,7 +224,7 @@ const FAQPage: React.FC = () => {
               whileHover={{ scale: 1.02 }}
             >
               <RefreshCw className="w-12 h-12 text-red-500 mx-auto mb-4" />
-              <h3 className="font-bold text-red-600 mb-2">No Refund Policy</h3>
+              <h3 className="text-red-600 mb-2">No Refund Policy</h3>
               <p className="text-gray-600 text-sm">
                 Produk digital instant download. Tidak ada pengembalian uang setelah pembelian
               </p>
@@ -235,7 +235,7 @@ const FAQPage: React.FC = () => {
               whileHover={{ scale: 1.02 }}
             >
               <MessageCircle className="w-12 h-12 text-purple-500 mx-auto mb-4" />
-              <h3 className="font-bold text-purple-600 mb-2">Support 24/7</h3>
+              <h3 className="text-purple-600 mb-2">Support 24/7</h3>
               <p className="text-gray-600 text-sm">Tim customer service siap membantu Anda kapan saja via WhatsApp</p>
             </motion.div>
           </div>
@@ -245,7 +245,7 @@ const FAQPage: React.FC = () => {
         <motion.div variants={itemVariants} className="mb-12">
           <div className="card-playful text-center bg-gradient-to-r from-kid-coral/10 to-kid-teal/10">
             <MessageCircle className="w-16 h-16 text-kid-coral mx-auto mb-6" />
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Masih Ada Pertanyaan?</h2>
+            <h2 className="text-3xl text-gray-800 mb-4">Masih Ada Pertanyaan?</h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
               Tim customer service kami siap membantu Anda 24/7! Jangan ragu untuk menghubungi kami via WhatsApp untuk
               mendapatkan jawaban cepat dan akurat.
