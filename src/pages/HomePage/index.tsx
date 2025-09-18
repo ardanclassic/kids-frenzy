@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import {
   BookOpen,
   Star,
-  Download,
-  Users,
   Award,
   Heart,
   Sparkles,

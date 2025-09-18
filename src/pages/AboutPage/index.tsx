@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { BookOpen, Users, HelpCircle, MessageCircle, ArrowLeft, Target, Heart, Zap, Star } from "lucide-react";
+import { BookOpen, Users, ArrowLeft, Target, Heart, Zap, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const containerVariants: any = {
