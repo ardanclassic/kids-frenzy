@@ -104,7 +104,7 @@ const ProductsPage: React.FC = () => {
   };
 
   return (
-    <div className="pt-24 pb-12 px-4">
+    <div className="pt-40 pb-12 px-4">
       <div className="container mx-auto">
         {/* Header Section */}
         <motion.div
@@ -192,7 +192,7 @@ const ProductsPage: React.FC = () => {
                   {/* Preview Button */}
                   <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <button
-                      className="flex items-center space-x-2 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-full text-sm font-medium hover:bg-white transition-colors"
+                      className="flex items-center space-x-2 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-full text-lg font-medium hover:bg-white transition-colors"
                       style={{ color: "var(--color-kid-teal)" }}
                     >
                       <Eye className="w-4 h-4" />
@@ -208,7 +208,7 @@ const ProductsPage: React.FC = () => {
                       {product.title}
                     </h3>
                     <span
-                      className="px-3 py-1 rounded-full text-sm "
+                      className="px-3 py-1 rounded-full text-lg "
                       style={{
                         backgroundColor: "color-mix(in srgb, var(--color-kid-amber) 20%, white)",
                         color: "var(--color-kid-amber)",
@@ -218,7 +218,7 @@ const ProductsPage: React.FC = () => {
                     </span>
                   </div>
 
-                  <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">{product.description}</p>
+                  <p className="text-gray-600 text-lg leading-relaxed line-clamp-2">{product.description}</p>
 
                   {/* Skills Tags */}
                   <div className="flex flex-wrap gap-2">
@@ -350,7 +350,7 @@ const ProductsPage: React.FC = () => {
                 {/* Product Title Overlay */}
                 <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6">
                   <span
-                    className="px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm mb-2 md:mb-4 inline-block"
+                    className="px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-lg mb-2 md:mb-4 inline-block"
                     style={{
                       backgroundColor: "rgba(255, 255, 255, 0.9)",
                       color: "#FF6B6B",
@@ -387,7 +387,7 @@ const ProductsPage: React.FC = () => {
                         <div className="w-6 md:w-8 h-6 md:h-8 rounded-full flex items-center justify-center bg-teal-100">
                           <Target className="w-3 md:w-4 h-3 md:h-4 text-teal-600" />
                         </div>
-                        <span className="font-medium text-gray-800 text-sm md:text-base">{feature}</span>
+                        <span className="font-medium text-gray-800 text-lg md:text-base">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -403,7 +403,7 @@ const ProductsPage: React.FC = () => {
                     {selectedProduct.skills.map((skill, index) => (
                       <span
                         key={index}
-                        className="px-3 md:px-4 py-1 md:py-2 rounded-xl font-medium border text-xs md:text-sm bg-gradient-to-r from-pink-50 to-purple-50 text-pink-600 border-pink-200"
+                        className="px-3 md:px-4 py-1 md:py-2 rounded-xl font-medium border text-xs md:text-lg bg-gradient-to-r from-pink-50 to-purple-50 text-pink-600 border-pink-200"
                       >
                         {skill}
                       </span>
@@ -435,7 +435,7 @@ const ProductsPage: React.FC = () => {
                           className="flex items-center space-x-2 md:space-x-3 p-2 rounded-lg bg-orange-50"
                         >
                           <FileImage className="w-3 md:w-4 h-3 md:h-4 text-orange-500" />
-                          <span className="text-gray-700 text-xs md:text-sm">{item}</span>
+                          <span className="text-gray-700 text-xs md:text-lg">{item}</span>
                         </div>
                       ))}
                     </div>
@@ -446,21 +446,21 @@ const ProductsPage: React.FC = () => {
                 <div className="p-4 md:p-6 rounded-2xl bg-gradient-to-r from-teal-50 to-purple-50 sticky bottom-0 md:static">
                   <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                     <div className="text-center md:text-left">
-                      <p className="text-gray-600 mb-1 md:mb-2 text-sm md:text-base">Harga Produk Digital</p>
+                      <p className="text-gray-600 mb-1 md:mb-2 text-lg md:text-base">Harga Produk Digital</p>
                       <div className="text-2xl md:text-3xl lg:text-4xl text-pink-500">
                         {formatPrice(selectedProduct.price)}
                       </div>
-                      <p className="text-xs md:text-sm text-gray-500 mt-1">💎 Download sekali, gunakan selamanya!</p>
+                      <p className="text-xs md:text-lg text-gray-500 mt-1">💎 Download sekali, gunakan selamanya!</p>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
                       <button className="btn-outline flex items-center justify-center space-x-2 py-3 px-6 rounded-xl border-2 border-teal-500 text-teal-600 hover:bg-teal-500 hover:text-white transition-all duration-200">
                         <Play className="w-4 md:w-5 h-4 md:h-5" />
-                        <span className="text-sm md:text-base font-medium">Preview Gratis</span>
+                        <span className="text-lg md:text-base font-medium">Preview Gratis</span>
                       </button>
                       <button className="btn-primary flex items-center justify-center space-x-2 py-3 px-6 rounded-xl bg-gradient-to-r from-pink-500 to-purple-500 text-white hover:from-pink-600 hover:to-purple-600 transition-all duration-200 shadow-lg">
                         <ShoppingCart className="w-4 md:w-5 h-4 md:h-5" />
-                        <span className="text-sm md:text-base font-medium">Beli Sekarang</span>
+                        <span className="text-lg md:text-base font-medium">Beli Sekarang</span>
                       </button>
                     </div>
                   </div>
@@ -481,7 +481,7 @@ const ProductsPage: React.FC = () => {
                     ].map((item, index) => (
                       <li key={index} className="flex items-center space-x-3">
                         <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                        <span className="text-sm md:text-base">{item}</span>
+                        <span className="text-lg md:text-base">{item}</span>
                       </li>
                     ))}
                   </ul>

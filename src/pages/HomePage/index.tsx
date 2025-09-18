@@ -119,25 +119,11 @@ const HomePage: React.FC = () => {
           </motion.div>
 
           <motion.div variants={itemVariants} className="mb-8">
-            <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium">
+            <p className="text-lg md:text-[28px] text-gray-700 max-w-3xl mx-auto font-medium leading-tight">
               🎯 <span className="text-kid-coral">Produk digital terbaru</span> yang dirancang khusus untuk
-              membuat anak-anak <span className="text-kid-teal">belajar dengan gembira</span>
+              membuat anak-anak <span className="text-kid-teal">belajar dengan gembira </span>
               sambil mengembangkan kreativitas dan kecerdasan mereka.
             </p>
-          </motion.div>
-
-          <motion.div variants={itemVariants} className="mb-12">
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg border border-kid-coral/20">
-                <span className="text-kid-coral text-sm md:text-base">✨ Balita (1-3 tahun)</span>
-              </div>
-              <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg border border-kid-lavender/20">
-                <span className="text-kid-lavender text-sm md:text-base">🎨 PAUD (3-5 tahun)</span>
-              </div>
-              <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg border border-kid-teal/20">
-                <span className="text-kid-teal text-sm md:text-base">📚 SD (6-12 tahun)</span>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div variants={itemVariants} className="mb-16">
@@ -185,7 +171,7 @@ const HomePage: React.FC = () => {
                 <Lightbulb className="text-white w-8 h-8" />
               </motion.div>
               <h3 className="text-2xl md:text-3xl text-kid-coral mb-2">Fresh</h3>
-              <p className="text-gray-600 font-medium">Konsep Baru</p>
+              <p className="text-gray-400 font-medium text-2xl">Konsep Baru</p>
             </div>
 
             <div className="card-playful text-center group hover:bg-kid-teal/10">
@@ -197,7 +183,7 @@ const HomePage: React.FC = () => {
                 <Target className="text-white w-8 h-8" />
               </motion.div>
               <h3 className="text-2xl md:text-3xl text-kid-teal mb-2">100%</h3>
-              <p className="text-gray-600 font-medium">Fokus Anak</p>
+              <p className="text-gray-400 font-medium text-2xl">Fokus Anak</p>
             </div>
 
             <div className="card-playful text-center group hover:bg-kid-amber/10">
@@ -209,7 +195,7 @@ const HomePage: React.FC = () => {
                 <Zap className="text-white w-8 h-8" />
               </motion.div>
               <h3 className="text-2xl md:text-3xl text-kid-amber mb-2">Instant</h3>
-              <p className="text-gray-600 font-medium">Download</p>
+              <p className="text-gray-400 font-medium text-2xl">Download</p>
             </div>
 
             <div className="card-playful text-center group hover:bg-kid-lavender/10">
@@ -221,7 +207,7 @@ const HomePage: React.FC = () => {
                 <Award className="text-white w-8 h-8" />
               </motion.div>
               <h3 className="text-2xl md:text-3xl text-kid-lavender mb-2">Premium</h3>
-              <p className="text-gray-600 font-medium">Kualitas</p>
+              <p className="text-gray-400 font-medium text-2xl">Quality</p>
             </div>
           </motion.div>
         </div>
@@ -267,7 +253,7 @@ const HomePage: React.FC = () => {
                   <Heart className="text-white w-10 h-10" />
                 </motion.div>
                 <h3 className="text-xl text-kid-coral mb-4">Dibuat dengan ❤️</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-lg">
                   Setiap produk dirancang khusus dengan pendekatan terbaru dalam pendidikan anak yang menyenangkan dan
                   efektif
                 </p>
@@ -289,7 +275,7 @@ const HomePage: React.FC = () => {
                   <Sparkles className="text-white w-10 h-10" />
                 </motion.div>
                 <h3 className="text-xl text-kid-teal mb-4">Interaktif & Menarik ✨</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-lg">
                   Bukan sekedar PDF biasa! Produk kami penuh warna, ilustrasi menarik, dan aktivitas yang membuat anak
                   excited belajar
                 </p>
@@ -311,7 +297,7 @@ const HomePage: React.FC = () => {
                   <CheckCircle className="text-white w-10 h-10" />
                 </motion.div>
                 <h3 className="text-xl text-kid-amber mb-4">Praktis & Hemat 👍</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-lg">
                   Download sekali, gunakan selamanya! Bisa dicetak kapan saja, tidak perlu koneksi internet untuk
                   menggunakan
                 </p>
@@ -365,14 +351,14 @@ const HomePage: React.FC = () => {
             <h2 className="text-3xl md:text-5xl text-white mb-6">
               Siap Memberikan yang Terbaik untuk Buah Hati? 🌟
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
               Mulai petualangan belajar yang menyenangkan dengan produk digital edukatif terdepan untuk anak Indonesia!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/products">
                 <motion.button
-                  className="bg-white text-kid-coral py-4 px-8 rounded-full shadow-xl hover:shadow-2xl transition-all duration-200 text-lg group"
+                  className="bg-white text-kid-coral font-semibold py-4 px-8 rounded-full shadow-xl hover:shadow-2xl transition-all duration-200 text-lg group"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -385,7 +371,7 @@ const HomePage: React.FC = () => {
             </div>
 
             <motion.p
-              className="text-white/80 mt-6 text-sm"
+              className="text-white/80 mt-6 text-lg"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}

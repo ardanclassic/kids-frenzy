@@ -27,7 +27,7 @@ const itemVariants: any = {
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="pt-24 pb-20 px-4 min-h-screen bg-gradient-to-br from-white via-blue-50/30 to-pink-50/30">
+    <div className="pt-40 pb-20 px-4 min-h-screen bg-gradient-to-br from-white via-blue-50/30 to-pink-50/30">
       <motion.div
         className="container mx-auto max-w-5xl"
         variants={containerVariants}
@@ -60,33 +60,33 @@ const AboutPage: React.FC = () => {
           className="card-playful mb-12 bg-gradient-to-r from-red-50/60 to-orange-50/60 border-l-4 border-red-300/60"
         >
           <div className="text-center mb-8">
-            <h2 className="text-3xl text-red-400 mb-4">⚠️ Tantangan Pembelajaran Anak Masa Kini</h2>
+            <h2 className="text-[36px] text-red-400 mb-4">⚠️ Tantangan Pembelajaran Anak Masa Kini</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="bg-white/80 p-4 rounded-lg shadow-sm">
-                <h3 className="text-red-400 mb-2">📱 Ketergantungan Gadget</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-red-400 mb-2 text-xl">📱 Ketergantungan Gadget</h3>
+                <p className="text-gray-600 text-lg">
                   Anak-anak menghabiskan berjam-jam di layar, namun hanya sedikit untuk konten edukatif berkualitas
                 </p>
               </div>
               <div className="bg-white/80 p-4 rounded-lg shadow-sm">
-                <h3 className="text-orange-400 mb-2">😴 Metode Pembelajaran Monoton</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-orange-400 mb-2 text-xl">😴 Metode Pembelajaran Monoton</h3>
+                <p className="text-gray-600 text-lg">
                   Banyak anak merasa bosan dengan metode belajar konvensional yang kurang interaktif
                 </p>
               </div>
             </div>
             <div className="space-y-4">
               <div className="bg-white/80 p-4 rounded-lg shadow-sm">
-                <h3 className="text-red-400 mb-2">📚 Kurangnya Konten Lokal</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-red-400 mb-2 text-xl">📚 Kurangnya Konten Lokal</h3>
+                <p className="text-gray-600 text-lg">
                   Sebagian besar materi edukatif anak berbahasa asing, sehingga sulit dipahami anak Indonesia
                 </p>
               </div>
               <div className="bg-white/80 p-4 rounded-lg shadow-sm">
-                <h3 className="text-orange-400 mb-2">💸 Biaya Pendidikan Tinggi</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-orange-400 mb-2 text-xl">💸 Biaya Pendidikan Tinggi</h3>
+                <p className="text-gray-600 text-lg">
                   Orang tua mengeluarkan banyak biaya untuk les privat yang belum tentu efektif
                 </p>
               </div>
@@ -101,13 +101,13 @@ const AboutPage: React.FC = () => {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-3xl text-green-500 mb-6">🌟 Solusi Kami</h2>
+              <h2 className="text-[36px] text-green-500 mb-6">🌟 Solusi Kami</h2>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <Zap className="text-yellow-400 w-6 h-6 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-gray-700">Pembelajaran Interaktif & Gamifikasi</h3>
-                    <p className="text-gray-600 text-sm">
+                    <h3 className="text-gray-700 text-xl">Pembelajaran Interaktif & Komunikatif</h3>
+                    <p className="text-gray-600 text-lg">
                       Mengubah belajar jadi petualangan seru dengan pendekatan yang menyenangkan
                     </p>
                   </div>
@@ -115,8 +115,8 @@ const AboutPage: React.FC = () => {
                 <div className="flex items-start space-x-3">
                   <Heart className="text-pink-400 w-6 h-6 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-gray-700">Konten Berkualitas Bahasa Indonesia</h3>
-                    <p className="text-gray-600 text-sm">
+                    <h3 className="text-gray-700 text-xl">Konten Berkualitas Bahasa Indonesia</h3>
+                    <p className="text-gray-600 text-lg">
                       Materi edukatif yang sesuai dengan budaya dan kebutuhan anak Indonesia
                     </p>
                   </div>
@@ -124,8 +124,8 @@ const AboutPage: React.FC = () => {
                 <div className="flex items-start space-x-3">
                   <Target className="text-blue-400 w-6 h-6 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-gray-700">Terjangkau & Mudah Diakses</h3>
-                    <p className="text-gray-600 text-sm">
+                    <h3 className="text-gray-700 text-xl">Terjangkau & Mudah Diakses</h3>
+                    <p className="text-gray-600 text-lg">
                       Kualitas premium dengan harga yang ramah kantong keluarga Indonesia
                     </p>
                   </div>
@@ -154,7 +154,7 @@ const AboutPage: React.FC = () => {
         {/* Our Vision */}
         <motion.div variants={itemVariants} className="card-playful mb-12">
           <div className="text-center mb-8">
-            <h2 className="text-3xl text-purple-400 mb-4">💫 Visi Kami untuk Masa Depan</h2>
+            <h2 className="text-[36px] text-purple-400 mb-4">💫 Visi Kami untuk Masa Depan</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
@@ -162,8 +162,8 @@ const AboutPage: React.FC = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-300/70 to-purple-300/70 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BookOpen className="text-white w-8 h-8" />
                 </div>
-                <h3 className="text-blue-400 mb-2">Pembelajaran yang Menyenangkan</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-blue-400 mb-2 text-xl">Pembelajaran yang Menyenangkan</h3>
+                <p className="text-gray-600 text-lg">
                   Menciptakan pengalaman belajar yang tidak hanya edukatif tapi juga menghibur untuk anak-anak Indonesia
                 </p>
               </div>
@@ -172,8 +172,8 @@ const AboutPage: React.FC = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-pink-300/70 to-red-300/70 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="text-white w-8 h-8" />
                 </div>
-                <h3 className="text-pink-400 mb-2">Membangun Karakter</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-pink-400 mb-2 text-xl">Membangun Karakter</h3>
+                <p className="text-gray-600 text-lg">
                   Tidak hanya fokus pada akademik, tapi juga pengembangan karakter dan nilai-nilai positif
                 </p>
               </div>
@@ -184,8 +184,8 @@ const AboutPage: React.FC = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-green-300/70 to-blue-300/70 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="text-white w-8 h-8" />
                 </div>
-                <h3 className="text-green-400 mb-2">Akses Merata</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-green-400 mb-2 text-xl">Akses Merata</h3>
+                <p className="text-gray-600 text-lg">
                   Memberikan akses pendidikan berkualitas untuk semua lapisan masyarakat Indonesia
                 </p>
               </div>
@@ -194,8 +194,8 @@ const AboutPage: React.FC = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-yellow-300/70 to-orange-300/70 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Zap className="text-white w-8 h-8" />
                 </div>
-                <h3 className="text-yellow-500 mb-2">Inovasi Berkelanjutan</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-yellow-500 mb-2 text-xl">Inovasi Berkelanjutan</h3>
+                <p className="text-gray-600 text-lg">
                   Terus berinovasi menghadirkan metode pembelajaran terbaru yang sesuai perkembangan zaman
                 </p>
               </div>
@@ -216,8 +216,8 @@ const AboutPage: React.FC = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-blue-200/60 to-purple-200/60 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">🎨</span>
               </div>
-              <h3 className="text-purple-400 mb-2">Desain Menarik</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="text-purple-400 mb-2 text-xl">Desain Menarik</h3>
+              <p className="text-gray-600 text-lg">
                 Setiap produk dirancang dengan visual yang eye-catching dan ramah anak
               </p>
             </div>
@@ -226,8 +226,8 @@ const AboutPage: React.FC = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-green-200/60 to-blue-200/60 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">🧠</span>
               </div>
-              <h3 className="text-green-400 mb-2">Pendekatan Holistik</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="text-green-400 mb-2 text-xl">Pendekatan Holistik</h3>
+              <p className="text-gray-600 text-lg">
                 Mengembangkan kognitif, motorik, dan emosional anak secara seimbang
               </p>
             </div>
@@ -236,8 +236,8 @@ const AboutPage: React.FC = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-pink-200/60 to-red-200/60 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">🏠</span>
               </div>
-              <h3 className="text-pink-400 mb-2">Family Friendly</h3>
-              <p className="text-gray-600 text-sm">Mudah digunakan orang tua dan menciptakan quality time keluarga</p>
+              <h3 className="text-pink-400 mb-2 text-xl">Family Friendly</h3>
+              <p className="text-gray-600 text-lg">Mudah digunakan orang tua dan menciptakan quality time keluarga</p>
             </div>
           </div>
         </motion.div>

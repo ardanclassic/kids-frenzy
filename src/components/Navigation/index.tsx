@@ -39,10 +39,10 @@ const Navigation: React.FC = () => {
               <BookOpen className="text-white w-6 h-6" />
             </motion.div>
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
+              <h1 className="text-2xl text-gradient text-transparent">
                 Kids Frenzy
               </h1>
-              <p className="text-xs font-medium text-gray-600">Digital Learning</p>
+              <p className="font-medium text-gray-400">Digital Learning</p>
             </div>
           </Link>
 
@@ -54,8 +54,8 @@ const Navigation: React.FC = () => {
                 <motion.div key={item.name} className="relative">
                   <Link
                     to={item.path}
-                    className={`relative px-6 py-3 rounded-full transition-all duration-300 font-medium text-sm flex items-center space-x-2 ${
-                      isActive ? "text-white shadow-lg" : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    className={`relative px-6 py-3 rounded-full transition-all duration-300 font-medium flex items-center space-x-2 ${
+                      isActive ? "text-white shadow-lg" : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
                     }`}
                     style={
                       isActive

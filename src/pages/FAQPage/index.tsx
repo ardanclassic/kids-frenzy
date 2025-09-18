@@ -89,7 +89,7 @@ const FAQPage: React.FC = () => {
   };
 
   return (
-    <div className="pt-24 pb-20 px-4 min-h-screen bg-gradient-to-br from-white via-kid-amber/5 to-kid-peach/5">
+    <div className="pt-40 pb-20 px-4 min-h-screen bg-gradient-to-br from-white via-kid-amber/5 to-kid-peach/5">
       <motion.div
         className="container mx-auto max-w-6xl"
         variants={containerVariants}
@@ -133,8 +133,8 @@ const FAQPage: React.FC = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <div className="">{category.label}</div>
-                  <div className="text-xs opacity-75">({category.count})</div>
+                  <div className="text-lg">{category.label}</div>
+                  <div className="text-lg opacity-75">({category.count})</div>
                 </motion.button>
               ))}
             </div>
