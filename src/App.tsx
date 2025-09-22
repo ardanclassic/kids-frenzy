@@ -7,11 +7,13 @@ import FAQPage from "./pages/FAQPage";
 import ContactPage from "./pages/ContactPage";
 import Navigation from "./components/Navigation";
 import PageTransition from "./components/PageTransition";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-kid-yellow/20 via-white to-kid-blue/20">
+        <ScrollToTop />
         <Navigation />
         <AnimatePresence mode="wait">
           <Routes>
