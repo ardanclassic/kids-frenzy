@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "id": "semua",
+      "id": "all-activities",
       "name": "Semua Aktivitas",
       "emoji": "🌟",
       "icon": "Sparkles",
@@ -19,7 +19,7 @@
       "minAge": 1
     },
     {
-      "id": "buku-interaktif",
+      "id": "busy-books",
       "name": "Busy Books",
       "emoji": "📖",
       "icon": "BookOpen",
@@ -28,7 +28,7 @@
       "minAge": 2
     },
     {
-      "id": "bermain-titik",
+      "id": "do-a-dot",
       "name": "Do-a-Dot",
       "emoji": "🔵",
       "icon": "Target",
@@ -37,7 +37,7 @@
       "minAge": 2
     },
     {
-      "id": "mencocokkan",
+      "id": "matching",
       "name": "Matching",
       "emoji": "🧩",
       "icon": "Shuffle",
@@ -46,7 +46,7 @@
       "minAge": 2
     },
     {
-      "id": "mewarnai",
+      "id": "coloring",
       "name": "Coloring",
       "emoji": "🎨",
       "icon": "Palette",
@@ -55,7 +55,7 @@
       "minAge": 2
     },
     {
-      "id": "permainan-puzzle",
+      "id": "puzzle-game",
       "name": "Puzzle Game",
       "emoji": "🧩",
       "icon": "Brain",
@@ -64,7 +64,7 @@
       "minAge": 2
     },
     {
-      "id": "gunting-tempel",
+      "id": "cut-and-paste",
       "name": "Cut and Paste",
       "emoji": "✂️",
       "icon": "Scissors",
@@ -73,7 +73,7 @@
       "minAge": 3
     },
     {
-      "id": "jalur-labirin",
+      "id": "maze-worksheet",
       "name": "Maze Worksheet",
       "emoji": "🌀",
       "icon": "Target",
@@ -82,7 +82,7 @@
       "minAge": 3
     },
     {
-      "id": "jejak-garis",
+      "id": "tracing",
       "name": "Tracing",
       "emoji": "✏️",
       "icon": "PenTool",
@@ -91,7 +91,7 @@
       "minAge": 3
     },
     {
-      "id": "permainan-peran",
+      "id": "pretend-play",
       "name": "Pretend Play",
       "emoji": "🎭",
       "icon": "Users",
@@ -100,7 +100,7 @@
       "minAge": 3
     },
     {
-      "id": "petualangan-cerdas",
+      "id": "activity",
       "name": "Activity",
       "emoji": "🚀",
       "icon": "Sparkles",
@@ -109,7 +109,7 @@
       "minAge": 5
     },
     {
-      "id": "lainnya",
+      "id": "others",
       "name": "Lainnya",
       "emoji": "⚡",
       "icon": "MoreHorizontal",

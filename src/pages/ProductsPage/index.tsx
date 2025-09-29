@@ -58,7 +58,7 @@ const iconMap: Record<string, LucideIcon> = {
 const ProductsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedAgeCategory, setSelectedAgeCategory] = useState("semua");
-  const [selectedSubcategory, setSelectedSubcategory] = useState("semua");
+  const [selectedSubcategory, setSelectedSubcategory] = useState("all-activities");
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
@@ -86,7 +86,7 @@ const ProductsPage: React.FC = () => {
 
     const subcategoriesWithProducts = new Set(productsForAge.map((p) => p.subcategory));
 
-    return allSubcategories.filter((sub) => sub.id === "semua" || subcategoriesWithProducts.has(sub.id));
+    return allSubcategories.filter((sub) => sub.id === "all-activities" || subcategoriesWithProducts.has(sub.id));
   }, [selectedAgeCategory]);
 
   // Filter and search products
@@ -97,7 +97,7 @@ const ProductsPage: React.FC = () => {
       filtered = filtered.filter((product) => product.ageCategory === selectedAgeCategory);
     }
 
-    if (selectedSubcategory !== "semua") {
+    if (selectedSubcategory !== "all-activities") {
       filtered = filtered.filter((product) => product.subcategory === selectedSubcategory);
     }
 
@@ -159,13 +159,13 @@ const ProductsPage: React.FC = () => {
   const resetFilters = () => {
     setSearchTerm("");
     setSelectedAgeCategory("semua");
-    setSelectedSubcategory("semua");
+    setSelectedSubcategory("all-activities");
     setCurrentPage(1);
   };
 
   const handleAgeChange = (ageId: string) => {
     setSelectedAgeCategory(ageId);
-    setSelectedSubcategory("semua");
+    setSelectedSubcategory("all-activities");
     setCurrentPage(1);
   };
 
@@ -377,7 +377,7 @@ const ProductsPage: React.FC = () => {
         </motion.div>
 
         {/* Active Filters Display */}
-        {(selectedAgeCategory !== "semua" || selectedSubcategory !== "semua" || searchTerm) && (
+        {(selectedAgeCategory !== "semua" || selectedSubcategory !== "all-activities" || searchTerm) && (
           <motion.div
             className="mb-6 flex flex-wrap items-center gap-3"
             initial={{ opacity: 0, y: -10 }}
@@ -389,7 +389,7 @@ const ProductsPage: React.FC = () => {
                 Usia: {getAgeCategoryName(selectedAgeCategory)}
               </span>
             )}
-            {selectedSubcategory !== "semua" && (
+            {selectedSubcategory !== "all-activities" && (
               <span className="px-3 py-1 bg-teal-100 text-teal-600 rounded-full text-sm font-medium">
                 {getSubcategoryInfo(selectedSubcategory).name}
               </span>
