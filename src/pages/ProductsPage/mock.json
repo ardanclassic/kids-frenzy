@@ -9,10 +9,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 25000,
+      "priceCategory": 23000,
       "image": "https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=400",
       "features": ["50+ Halaman", "Ilustrasi Besar", "Mudah Dicetak"],
       "skills": ["Motorik Halus", "Kreativitas", "Koordinasi"],
-      "preview": ["Gajah", "Kucing", "Anjing", "Kelinci"]
+      "preview": [
+        "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=300",
+        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300",
+        "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=300",
+        "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=300"
+      ]
     },
     {
       "id": 2,
@@ -23,10 +29,16 @@
       "ageRange": "1+ tahun",
       "minAge": 1,
       "price": 35000,
+      "priceCategory": 38000,
       "image": "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=400",
       "features": ["40 Kartu", "Nama Bilingual", "Cetak Mudah"],
       "skills": ["Kosakata", "Visual", "Memori"],
-      "preview": ["Apel", "Jeruk", "Wortel", "Brokoli"]
+      "preview": [
+        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
+        "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?w=300",
+        "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=300",
+        "https://images.unsplash.com/photo-1628773822503-930a7eaecf80?w=300"
+      ]
     },
     {
       "id": 3,
@@ -37,10 +49,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 20000,
+      "priceCategory": 18000,
       "image": "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400",
       "features": ["8 Bentuk", "Warna Cerah", "Mudah Dipotong"],
       "skills": ["Problem Solving", "Koordinasi", "Bentuk"],
-      "preview": ["Lingkaran", "Persegi", "Segitiga", "Bintang"]
+      "preview": [
+        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b0d0?w=300",
+        "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300",
+        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=300",
+        "https://images.unsplash.com/photo-1604357209793-fca5dca89f97?w=300"
+      ]
     },
     {
       "id": 4,
@@ -51,10 +69,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 45000,
+      "priceCategory": 42000,
       "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400",
       "features": ["26 Halaman", "Garis Bantuan", "Contoh Kata"],
       "skills": ["Menulis", "Motorik Halus", "Alfabet"],
-      "preview": ["A untuk Ayam", "B untuk Bola", "C untuk Cinta", "D untuk Dadu"]
+      "preview": [
+        "https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?w=300",
+        "https://images.unsplash.com/photo-1611003228941-98852ba62227?w=300",
+        "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=300",
+        "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=300"
+      ]
     },
     {
       "id": 5,
@@ -65,10 +89,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 40000,
+      "priceCategory": 44000,
       "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400",
       "features": ["20 Angka", "Latihan Hitung", "Aktivitas Seru"],
       "skills": ["Numerik", "Logika", "Hitung Dasar"],
-      "preview": ["Angka 1", "Hitung Apel", "Soal Cerita", "Quiz Seru"]
+      "preview": [
+        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
+        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
+        "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=300",
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300"
+      ]
     },
     {
       "id": 6,
@@ -79,10 +109,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 30000,
+      "priceCategory": 28000,
       "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?w=400",
       "features": ["25 Pola", "Berbagai Bentuk", "Panduan Aman"],
       "skills": ["Motorik Halus", "Koordinasi", "Ketelitian"],
-      "preview": ["Bunga", "Kupu-kupu", "Mobil", "Rumah"]
+      "preview": [
+        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300",
+        "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=300",
+        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=300",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=300"
+      ]
     },
     {
       "id": 7,
@@ -93,10 +129,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 50000,
+      "priceCategory": 52000,
       "image": "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=400",
       "features": ["10 Cerita", "Ilustrasi Menarik", "Nilai Moral"],
       "skills": ["Membaca", "Imajinasi", "Nilai Moral"],
-      "preview": ["Kelinci Pemberani", "Raja Hutan", "Anak Nelayan", "Bunga Ajaib"]
+      "preview": [
+        "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=300",
+        "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=300",
+        "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=300",
+        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300"
+      ]
     },
     {
       "id": 8,
@@ -107,10 +149,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 28000,
+      "priceCategory": 31000,
       "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400",
       "features": ["30 Halaman", "Berbagai Kendaraan", "Detail Sederhana"],
       "skills": ["Kreativitas", "Motorik Halus", "Konsentrasi"],
-      "preview": ["Mobil", "Pesawat", "Kapal", "Kereta"]
+      "preview": [
+        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=300",
+        "https://images.unsplash.com/photo-1583483425010-c566431a7710?w=300",
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300",
+        "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=300"
+      ]
     },
     {
       "id": 9,
@@ -121,10 +169,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 42000,
+      "priceCategory": 39000,
       "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400",
       "features": ["12 Profesi", "Kostum DIY", "Aktivitas Interaktif"],
       "skills": ["Imajinasi", "Sosial", "Komunikasi"],
-      "preview": ["Dokter", "Guru", "Pemadam", "Koki"]
+      "preview": [
+        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300",
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=300",
+        "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=300",
+        "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300"
+      ]
     },
     {
       "id": 10,
@@ -135,10 +189,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 22000,
+      "priceCategory": 25000,
       "image": "https://images.unsplash.com/photo-1560472355-536de3962603?w=400",
       "features": ["15 Bentuk", "Garis Tebal", "Mudah Diikuti"],
       "skills": ["Motorik Halus", "Bentuk", "Koordinasi"],
-      "preview": ["Lingkaran", "Kotak", "Segitiga", "Oval"]
+      "preview": [
+        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b0d0?w=300",
+        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=300",
+        "https://images.unsplash.com/photo-1604357209793-fca5dca89f97?w=300",
+        "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300"
+      ]
     },
     {
       "id": 11,
@@ -149,10 +209,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 26000,
+      "priceCategory": 29000,
       "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400",
       "features": ["20 Pasangan", "Warna Cerah", "Mudah Dipahami"],
       "skills": ["Visual", "Logika", "Konsentrasi"],
-      "preview": ["Merah-Apel", "Biru-Laut", "Hijau-Daun", "Kuning-Matahari"]
+      "preview": [
+        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
+        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=300",
+        "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=300",
+        "https://images.unsplash.com/photo-1601363772159-b5b53e8a48f5?w=300"
+      ]
     },
     {
       "id": 12,
@@ -163,10 +229,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 32000,
+      "priceCategory": 35000,
       "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400",
       "features": ["18 Pola Hewan", "Tingkat Kesulitan Bertahap", "Panduan Keamanan"],
       "skills": ["Motorik Halus", "Ketelitian", "Kreativitas"],
-      "preview": ["Kucing", "Gajah", "Ikan", "Burung"]
+      "preview": [
+        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300",
+        "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=300",
+        "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=300",
+        "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=300"
+      ]
     },
     {
       "id": 13,
@@ -177,10 +249,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 55000,
+      "priceCategory": 58000,
       "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400",
       "features": ["Peralatan Dokter DIY", "10 Skenario", "Kartu Pasien"],
       "skills": ["Empati", "Komunikasi", "Problem Solving"],
-      "preview": ["Stetoskop Kertas", "Resep Dokter", "Kartu Pasien", "Medical Kit"]
+      "preview": [
+        "https://images.unsplash.com/photo-1551076805-e1869033e561?w=300",
+        "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=300",
+        "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=300",
+        "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=300"
+      ]
     },
     {
       "id": 14,
@@ -191,10 +269,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 48000,
+      "priceCategory": 45000,
       "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
       "features": ["8 Cerita Fabel", "Ilustrasi Cantik", "Pesan Moral"],
       "skills": ["Membaca", "Budaya", "Moral"],
-      "preview": ["Kancil Cerdik", "Burung Gagak", "Semut dan Belalang", "Kelinci Sombong"]
+      "preview": [
+        "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=300",
+        "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=300",
+        "https://images.unsplash.com/photo-1518843875459-f738682238a6?w=300",
+        "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=300"
+      ]
     },
     {
       "id": 15,
@@ -205,10 +289,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 29000,
+      "priceCategory": 27000,
       "image": "https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=400",
       "features": ["25 Halaman", "Nama Indonesia-Inggris", "Fakta Nutrisi"],
       "skills": ["Kreativitas", "Kosakata", "Pengetahuan Makanan"],
-      "preview": ["Mangga", "Bayam", "Tomat", "Pisang"]
+      "preview": [
+        "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=300",
+        "https://images.unsplash.com/photo-1628773822503-930a7eaecf80?w=300",
+        "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=300",
+        "https://images.unsplash.com/photo-1587049352846-4a222e784163?w=300"
+      ]
     },
     {
       "id": 16,
@@ -219,10 +309,16 @@
       "ageRange": "5+ tahun",
       "minAge": 5,
       "price": 45000,
+      "priceCategory": 48000,
       "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400",
       "features": ["Operasi Dasar", "Puzzle Visual", "Progresif"],
       "skills": ["Matematika", "Logika", "Problem Solving"],
-      "preview": ["Penjumlahan", "Pengurangan", "Pola Angka", "Teka-teki"]
+      "preview": [
+        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
+        "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=300",
+        "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300",
+        "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=300"
+      ]
     },
     {
       "id": 17,
@@ -233,10 +329,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 38000,
+      "priceCategory": 41000,
       "image": "https://images.unsplash.com/photo-1544531585-9847b68c8c86?w=400",
       "features": ["28 Huruf", "Cara Penulisan", "Contoh Kata"],
       "skills": ["Menulis", "Agama", "Motorik Halus"],
-      "preview": ["Alif", "Ba", "Ta", "Tsa"]
+      "preview": [
+        "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=300",
+        "https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?w=300",
+        "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=300",
+        "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=300"
+      ]
     },
     {
       "id": 18,
@@ -247,10 +349,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 33000,
+      "priceCategory": 36000,
       "image": "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=400",
       "features": ["Angka 1-10", "Gambar Menarik", "Konsep Bilangan"],
       "skills": ["Matematika", "Visual", "Logika"],
-      "preview": ["3 Apel", "5 Bola", "7 Bintang", "10 Bunga"]
+      "preview": [
+        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
+        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300",
+        "https://images.unsplash.com/photo-1601363772159-b5b53e8a48f5?w=300",
+        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300"
+      ]
     },
     {
       "id": 19,
@@ -261,10 +369,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 35000,
+      "priceCategory": 32000,
       "image": "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400",
       "features": ["Berbagai Peran", "Aktivitas Keluarga", "Bonding Time"],
       "skills": ["Sosial", "Emosi", "Keluarga"],
-      "preview": ["Ayah", "Ibu", "Kakek", "Nenek"]
+      "preview": [
+        "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=300",
+        "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=300",
+        "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=300",
+        "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=300"
+      ]
     },
     {
       "id": 20,
@@ -275,10 +389,16 @@
       "ageRange": "5+ tahun",
       "minAge": 5,
       "price": 60000,
+      "priceCategory": 63000,
       "image": "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400",
       "features": ["15 Eksperimen", "Bahan Rumahan", "Penjelasan Sederhana"],
       "skills": ["Sains", "Observasi", "Curiosity"],
-      "preview": ["Gunung Api", "Pelangi Air", "Magnet", "Balon Ajaib"]
+      "preview": [
+        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=300",
+        "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=300",
+        "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300",
+        "https://images.unsplash.com/photo-1628595351029-c2bf17511435?w=300"
+      ]
     },
     {
       "id": 21,
@@ -289,10 +409,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 27000,
+      "priceCategory": 24000,
       "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400",
       "features": ["12 Kendaraan", "Garis Tebal", "Mudah Digunting"],
       "skills": ["Motorik Halus", "Transportasi", "Koordinasi"],
-      "preview": ["Bus", "Sepeda", "Helikopter", "Perahu"]
+      "preview": [
+        "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=300",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=300",
+        "https://images.unsplash.com/photo-1593642532400-2682810df593?w=300",
+        "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=300"
+      ]
     },
     {
       "id": 22,
@@ -303,10 +429,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 42000,
+      "priceCategory": 46000,
       "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400",
       "features": ["12 Dongeng", "Durasi Pendek", "Ilustrasi Menenangkan"],
       "skills": ["Imajinasi", "Relaksasi", "Bonding"],
-      "preview": ["Bulan dan Bintang", "Awan Putih", "Kupu-kupu Tidur", "Mimpi Indah"]
+      "preview": [
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300",
+        "https://images.unsplash.com/photo-1601363772159-b5b53e8a48f5?w=300",
+        "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=300",
+        "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=300"
+      ]
     },
     {
       "id": 23,
@@ -317,10 +449,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 52000,
+      "priceCategory": 49000,
       "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400",
       "features": ["10 Lagu", "Gerakan Sederhana", "Instrumen DIY"],
       "skills": ["Musik", "Motorik Kasar", "Koordinasi"],
-      "preview": ["Lagu Alphabet", "Gerak Hewan", "Tepuk Tangan", "Tari Sederhana"]
+      "preview": [
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300",
+        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300",
+        "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300",
+        "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=300"
+      ]
     },
     {
       "id": 24,
@@ -331,10 +469,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 34000,
+      "priceCategory": 37000,
       "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
       "features": ["20 Mandala", "Pola Sederhana", "Relaksasi"],
       "skills": ["Konsentrasi", "Ketenangan", "Kreativitas"],
-      "preview": ["Bunga Mandala", "Geometri Sederhana", "Hewan Mandala", "Alam Mandala"]
+      "preview": [
+        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300",
+        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b0d0?w=300",
+        "https://images.unsplash.com/photo-1604357209793-fca5dca89f97?w=300",
+        "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=300"
+      ]
     },
     {
       "id": 25,
@@ -345,10 +489,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 31000,
+      "priceCategory": 34000,
       "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=400",
       "features": ["20 Labirin", "Tingkat Kesulitan Bertahap", "Tema Hewan"],
       "skills": ["Konsentrasi", "Problem Solving", "Koordinasi"],
-      "preview": ["Kelinci ke Wortel", "Lebah ke Bunga", "Ikan ke Rumah", "Kucing ke Susu"]
+      "preview": [
+        "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=300",
+        "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=300",
+        "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=300",
+        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300"
+      ]
     },
     {
       "id": 26,
@@ -359,10 +509,16 @@
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 28000,
+      "priceCategory": 30000,
       "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400",
       "features": ["30 Gambar", "Angka 1-50", "Berbagai Tema"],
       "skills": ["Urutan Angka", "Koordinasi", "Konsentrasi"],
-      "preview": ["Mobil", "Rumah", "Binatang", "Bunga"]
+      "preview": [
+        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=300",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=300",
+        "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=300",
+        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300"
+      ]
     },
     {
       "id": 27,
@@ -373,10 +529,16 @@
       "ageRange": "1+ tahun",
       "minAge": 1,
       "price": 32000,
+      "priceCategory": 35000,
       "image": "https://images.unsplash.com/photo-1560807707-8cc77767d783?w=400",
       "features": ["24 Kartu", "Fakta Hewan", "Bilingual"],
       "skills": ["Kosakata", "Pengetahuan", "Memori"],
-      "preview": ["Sapi", "Kambing", "Ayam", "Bebek"]
+      "preview": [
+        "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=300",
+        "https://images.unsplash.com/photo-1553696590-4b3f68898333?w=300",
+        "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=300",
+        "https://images.unsplash.com/photo-1563281577-a7be47e20db9?w=300"
+      ]
     },
     {
       "id": 28,
@@ -387,10 +549,16 @@
       "ageRange": "3+ tahun",
       "minAge": 3,
       "price": 36000,
+      "priceCategory": 39000,
       "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
       "features": ["25 Labirin", "Alfabet & Angka", "Tingkat Lanjut"],
       "skills": ["Literasi", "Numerasi", "Problem Solving"],
-      "preview": ["Labirin A-Z", "Angka 1-20", "Huruf Vokal", "Angka Genap"]
+      "preview": [
+        "https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?w=300",
+        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
+        "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300",
+        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b0d0?w=300"
+      ]
     }
   ]
 }
