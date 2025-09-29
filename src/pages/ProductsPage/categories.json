@@ -1,0 +1,121 @@
+{
+  "categories": [
+    {
+      "id": "semua",
+      "name": "Semua Aktivitas",
+      "emoji": "🌟",
+      "icon": "Sparkles",
+      "description": "Semua jenis aktivitas edukatif",
+      "color": "blue",
+      "minAge": 0
+    },
+    {
+      "id": "flash-cards",
+      "name": "Flash Cards",
+      "emoji": "🃏",
+      "icon": "BookMarked",
+      "description": "Kartu bergambar untuk belajar kosakata dan konsep dasar",
+      "color": "teal",
+      "minAge": 1
+    },
+    {
+      "id": "buku-interaktif",
+      "name": "Busy Books",
+      "emoji": "📖",
+      "icon": "BookOpen",
+      "description": "Buku dengan aktivitas interaktif yang menarik untuk pembelajaran",
+      "color": "blue",
+      "minAge": 2
+    },
+    {
+      "id": "bermain-titik",
+      "name": "Do-a-Dot",
+      "emoji": "🔵",
+      "icon": "Target",
+      "description": "Aktivitas menghubungkan titik untuk membentuk gambar",
+      "color": "cyan",
+      "minAge": 2
+    },
+    {
+      "id": "mencocokkan",
+      "name": "Matching",
+      "emoji": "🧩",
+      "icon": "Shuffle",
+      "description": "Permainan seru untuk mengasah daya ingat dan kemampuan observasi",
+      "color": "green",
+      "minAge": 2
+    },
+    {
+      "id": "mewarnai",
+      "name": "Coloring",
+      "emoji": "🎨",
+      "icon": "Palette",
+      "description": "Aktivitas menyenangkan dengan warna untuk mengekspresikan kreativitas",
+      "color": "rose",
+      "minAge": 2
+    },
+    {
+      "id": "permainan-puzzle",
+      "name": "Puzzle Game",
+      "emoji": "🧩",
+      "icon": "Brain",
+      "description": "Puzzle edukatif untuk melatih logika dan problem solving",
+      "color": "violet",
+      "minAge": 2
+    },
+    {
+      "id": "gunting-tempel",
+      "name": "Cut and Paste",
+      "emoji": "✂️",
+      "icon": "Scissors",
+      "description": "Aktivitas yang mengasah motorik halus melalui pemotongan dan penempelan",
+      "color": "orange",
+      "minAge": 3
+    },
+    {
+      "id": "jalur-labirin",
+      "name": "Maze Worksheet",
+      "emoji": "🌀",
+      "icon": "Target",
+      "description": "Permainan labirin untuk melatih konsentrasi dan problem solving",
+      "color": "purple",
+      "minAge": 3
+    },
+    {
+      "id": "jejak-garis",
+      "name": "Tracing",
+      "emoji": "✏️",
+      "icon": "PenTool",
+      "description": "Latihan tracing untuk membantu anak mengenali bentuk dan huruf",
+      "color": "pink",
+      "minAge": 3
+    },
+    {
+      "id": "permainan-peran",
+      "name": "Pretend Play",
+      "emoji": "🎭",
+      "icon": "Users",
+      "description": "Aktivitas imajinatif yang memungkinkan anak menjelajahi berbagai karakter",
+      "color": "indigo",
+      "minAge": 3
+    },
+    {
+      "id": "petualangan-cerdas",
+      "name": "Activity",
+      "emoji": "🚀",
+      "icon": "Sparkles",
+      "description": "Aktivitas seru yang menggabungkan pembelajaran dengan petualangan",
+      "color": "amber",
+      "minAge": 5
+    },
+    {
+      "id": "lainnya",
+      "name": "Lainnya",
+      "emoji": "⚡",
+      "icon": "MoreHorizontal",
+      "description": "Kegiatan tambahan yang mendukung berbagai keterampilan dan kreativitas",
+      "color": "gray",
+      "minAge": 2
+    }
+  ]
+}

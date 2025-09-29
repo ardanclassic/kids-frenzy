@@ -39,9 +39,7 @@ const Navigation: React.FC = () => {
               <BookOpen className="text-white w-6 h-6" />
             </motion.div>
             <div>
-              <h1 className="text-2xl text-gradient text-transparent">
-                Kids Frenzy
-              </h1>
+              <h1 className="text-2xl text-gradient text-transparent">Kids Frenzy</h1>
               <p className="font-medium text-gray-400">Digital Learning</p>
             </div>
           </Link>
@@ -111,7 +109,7 @@ const Navigation: React.FC = () => {
         </div>
       </nav>
 
-      {/* Fullscreen Overlay Menu */}
+      {/* Fullscreen Overlay Menu - Mobile Optimized */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
@@ -143,33 +141,33 @@ const Navigation: React.FC = () => {
               />
             </div>
 
-            {/* Close Button */}
+            {/* Close Button - Compact */}
             <motion.button
               onClick={closeMenu}
-              className="absolute top-6 right-6 p-4 rounded-full bg-white/20 text-white hover:bg-white/30 transition-all duration-200 backdrop-blur-sm"
+              className="absolute top-4 right-4 p-3 rounded-full bg-white/20 text-white hover:bg-white/30 transition-all duration-200 backdrop-blur-sm"
               whileHover={{ scale: 1.1, rotate: 90 }}
               whileTap={{ scale: 0.9 }}
             >
-              <X size={28} />
+              <X size={24} />
             </motion.button>
 
-            {/* Logo in Menu */}
-            <div className="absolute top-6 left-6 flex items-center space-x-3">
+            {/* Logo in Menu - Compact */}
+            <div className="absolute top-4 left-4 flex items-center space-x-2">
               <motion.div
-                className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm"
+                className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm"
                 animate={{ rotate: [0, 360] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
               >
-                <BookOpen className="text-white w-8 h-8" />
+                <BookOpen className="text-white w-5 h-5" />
               </motion.div>
               <div>
-                <h1 className="text-2xl font-bold text-white">Kids Frenzy</h1>
-                <p className="text-white/80 text-sm">Digital Learning</p>
+                <h1 className="text-lg font-bold text-white">Kids Frenzy</h1>
+                <p className="text-white/80 text-xs">Digital Learning</p>
               </div>
             </div>
 
-            {/* Menu Items */}
-            <div className="flex flex-col items-center justify-center h-full space-y-6 px-6">
+            {/* Menu Items - Mobile Optimized */}
+            <div className="flex flex-col items-center justify-center h-full space-y-3 px-6 py-20">
               {navigationItems.map((item, index) => {
                 const Icon = item.icon;
                 const isActive = location.pathname === item.path;
@@ -184,25 +182,25 @@ const Navigation: React.FC = () => {
                       delay: index * 0.1,
                       ease: "easeOut",
                     }}
-                    className="w-full max-w-sm"
+                    className="w-full max-w-xs"
                   >
                     <Link
                       to={item.path}
                       onClick={closeMenu}
-                      className={`group flex items-center justify-center space-x-4 w-full py-5 px-8 rounded-2xl backdrop-blur-sm transition-all duration-300 hover:scale-105 ${
+                      className={`group flex items-center space-x-3 w-full py-3 px-5 rounded-xl backdrop-blur-sm transition-all duration-300 hover:scale-105 ${
                         isActive ? "bg-white/30 shadow-lg" : "bg-white/10 hover:bg-white/25"
                       }`}
                     >
                       <motion.div
                         whileHover={{ rotate: 360, scale: 1.1 }}
                         transition={{ duration: 0.5 }}
-                        className={`p-4 rounded-full transition-all duration-300 ${
+                        className={`p-2.5 rounded-lg transition-all duration-300 ${
                           isActive ? "bg-white/40 shadow-lg" : "bg-white/20 group-hover:bg-white/35"
                         }`}
                       >
-                        <Icon className="text-white w-6 h-6" />
+                        <Icon className="text-white w-5 h-5" />
                       </motion.div>
-                      <span className="text-white text-xl font-semibold group-hover:text-yellow-200 transition-colors">
+                      <span className="text-white text-base font-semibold group-hover:text-yellow-200 transition-colors">
                         {item.name}
                       </span>
                     </Link>
@@ -210,28 +208,28 @@ const Navigation: React.FC = () => {
                 );
               })}
 
-              {/* Fun decorative elements */}
+              {/* Fun decorative elements - Smaller */}
               <motion.div
                 animate={{
-                  y: [0, -20, 0],
+                  y: [0, -15, 0],
                   rotate: [0, 10, -10, 0],
-                  scale: [1, 1.1, 1],
+                  scale: [1, 1.05, 1],
                 }}
                 transition={{
                   duration: 4,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute bottom-24 left-12 w-16 h-16 bg-yellow-400/30 rounded-full flex items-center justify-center backdrop-blur-sm"
+                className="absolute bottom-16 left-6 w-10 h-10 bg-yellow-400/30 rounded-full flex items-center justify-center backdrop-blur-sm"
               >
-                <Star className="text-white w-8 h-8" />
+                <Star className="text-white w-5 h-5" />
               </motion.div>
 
               <motion.div
                 animate={{
-                  y: [0, 15, 0],
+                  y: [0, 12, 0],
                   rotate: [0, -15, 15, 0],
-                  scale: [1, 0.9, 1],
+                  scale: [1, 0.95, 1],
                 }}
                 transition={{
                   duration: 5,
@@ -239,23 +237,23 @@ const Navigation: React.FC = () => {
                   ease: "easeInOut",
                   delay: 1,
                 }}
-                className="absolute bottom-36 right-16 w-12 h-12 bg-white/25 rounded-full flex items-center justify-center backdrop-blur-sm"
+                className="absolute bottom-24 right-8 w-8 h-8 bg-white/25 rounded-full flex items-center justify-center backdrop-blur-sm"
               >
-                <BookOpen className="text-white w-6 h-6" />
+                <BookOpen className="text-white w-4 h-4" />
               </motion.div>
             </div>
 
-            {/* Bottom decorative text */}
+            {/* Bottom decorative text - Compact */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
-              className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center"
+              className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center px-4"
             >
               <motion.p
                 animate={{ opacity: [0.6, 1, 0.6] }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="text-white/80 text-sm font-medium"
+                className="text-white/80 text-xs font-medium"
               >
                 Belajar Seru, Masa Depan Cerah! ✨
               </motion.p>
