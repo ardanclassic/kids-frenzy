@@ -463,9 +463,6 @@ const ProductsPage: React.FC = () => {
                       <h3 className="text-xl text-gray-900 group-hover:text-teal-600 transition-colors duration-200">
                         {product.title}
                       </h3>
-                      <span className="px-3 py-1 rounded-full text-sm font-medium bg-amber-100 text-amber-600">
-                        {product.ageRange}
-                      </span>
                     </div>
 
                     <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">{product.description}</p>
@@ -483,7 +480,9 @@ const ProductsPage: React.FC = () => {
 
                     <div className="flex items-center justify-between pt-3 border-t border-gray-100">
                       <div className="text-xl text-pink-500">{formatPrice(product.price)}</div>
-                      <div className="text-sm text-gray-500">{product.ageRange}</div>
+                      <div className="px-3 py-1 rounded-full text-sm font-medium bg-amber-100 text-amber-600">
+                        {product.ageRange}
+                      </div>
                     </div>
                   </div>
                 </motion.div>

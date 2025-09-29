@@ -81,24 +81,31 @@
       ]
     },
     {
-      "id": 5,
-      "title": "Belajar Angka 1-20",
-      "description": "Modul interaktif untuk mengenal angka 1-20 dengan aktivitas hitung dan latihan soal",
+      "id": "G3C2K8T6X1B5Z9Q4",
+      "title": "Pengenalan Warna, Bentuk, dan Berhitung",
+      "description": "Modul edukasi interaktif untuk balita yang berisi aktivitas mencocokkan warna, bentuk, berhitung 1-10, serta pengenalan buah, sayur, dan hewan. Melatih fokus dan motorik halus.",
       "ageCategory": "2+",
       "subcategory": "busy-books",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 40000,
-      "priceCategory": 44000,
+      "totalPage": 21,
+      "price": 3850,
+      "priceCategory": 15900,
       "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400",
-      "features": ["20 Angka", "Latihan Hitung", "Aktivitas Seru"],
-      "skills": ["Numerik", "Logika", "Hitung Dasar"],
+      "features": [
+        "Aktivitas Mencocokkan Warna",
+        "Pengenalan 9 Bentuk Dasar",
+        "Berhitung dan Angka 1-10",
+        "Edukasi Buah, Sayur, & Hewan"
+      ],
+      "skills": ["Kognitif Dasar", "Motorik Halus", "Pengenalan Bentuk", "Numerasi Awal"],
       "preview": [
         "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
         "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
         "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=300",
         "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300"
-      ]
+      ],
+      "slug-file": "busy-book-1-diy-toddler"
     },
     {
       "id": 6,
@@ -121,24 +128,37 @@
       ]
     },
     {
-      "id": 7,
-      "title": "Cerita Bergambar Petualangan",
-      "description": "Koleksi cerita pendek bergambar yang mengajarkan nilai-nilai kehidupan dengan cara menyenangkan",
+      "id": "J8C4B9W6A2D5Y7X3",
+      "title": "Anak Cerdas: Mengenal Huruf, Angka, Bentuk, Hewan & Transportasi",
+      "description": "Modul interaktif yang komprehensif untuk pengenalan dunia sekitar, mencakup kategori Hewan (Laut, Hutan, Ternak), Transportasi (Udara, Darat, Air), Huruf A-Z dan bunyi awalnya, berhitung 1-10, serta berbagai bentuk geometri. Melatih keterampilan kognitif dan motorik halus.",
       "ageCategory": "2+",
       "subcategory": "busy-books",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 50000,
-      "priceCategory": 52000,
-      "image": "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=400",
-      "features": ["10 Cerita", "Ilustrasi Menarik", "Nilai Moral"],
-      "skills": ["Membaca", "Imajinasi", "Nilai Moral"],
+      "totalPage": 50,
+      "price": 7790,
+      "priceCategory": 16500,
+      "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400",
+      "features": [
+        "26 Huruf A-Z & Bunyi Awal",
+        "Transportasi Darat, Laut, Udara",
+        "Koleksi Hewan Lengkap (3 Kategori)",
+        "Angka 1-10 dan Bentuk Dasar",
+        "Pengenalan Tata Surya (Solar System)"
+      ],
+      "skills": [
+        "Literasi Awal (Abjad & Fonik)",
+        "Numerasi Dasar",
+        "Pengetahuan Umum (Alam & Transportasi)",
+        "Keterampilan Mencocokkan"
+      ],
       "preview": [
-        "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=300",
-        "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=300",
-        "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=300",
-        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300"
-      ]
+        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
+        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
+        "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=300",
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300"
+      ],
+      "slug-file": "busy-book-2-kids-binder"
     },
     {
       "id": 8,
@@ -261,24 +281,32 @@
       ]
     },
     {
-      "id": 14,
-      "title": "Buku Cerita Fabel Nusantara",
-      "description": "Kumpulan cerita fabel tradisional Indonesia dengan ilustrasi modern",
+      "id": "A7D2P4R9Z6F1E3G8",
+      "title": "Anatomi Manusia: Kenali Tubuh, Organ, dan Kerangka",
+      "description": "Modul edukasi sains yang fokus pada pengenalan anatomi dasar manusia, mencakup bagian-bagian tubuh, organ utama (Jantung, Otak, Hati), struktur tulang (Kerangka), dan kesehatan gigi (Dental Health). Dilengkapi dengan fakta-fakta menarik (Fun Facts) tentang tubuh.",
       "ageCategory": "2+",
       "subcategory": "busy-books",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 48000,
-      "priceCategory": 45000,
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
-      "features": ["8 Cerita Fabel", "Ilustrasi Cantik", "Pesan Moral"],
-      "skills": ["Membaca", "Budaya", "Moral"],
+      "totalPage": 29,
+      "price": 6950,
+      "priceCategory": 18200,
+      "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400",
+      "features": [
+        "Diagram dan Organ Tubuh Utama",
+        "Pengenalan Kerangka Manusia (Skeleton)",
+        "Belajar Sel Manusia",
+        "Aktivitas Mencocokkan Bagian Tubuh",
+        "Edukasi Kesehatan Gigi"
+      ],
+      "skills": ["Sains Dasar (Biologi)", "Kosa Kata (Bagian Tubuh)", "Keterampilan Mencocokkan", "Pengetahuan Diri"],
       "preview": [
-        "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=300",
-        "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=300",
-        "https://images.unsplash.com/photo-1518843875459-f738682238a6?w=300",
-        "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=300"
-      ]
+        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
+        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
+        "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=300",
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300"
+      ],
+      "slug-file": "busy-book-3-human-anatomy"
     },
     {
       "id": 15,
@@ -421,24 +449,36 @@
       ]
     },
     {
-      "id": 22,
-      "title": "Dongeng Sebelum Tidur",
-      "description": "Koleksi dongeng pendek yang sempurna untuk dibacakan sebelum tidur",
+      "id": "H4Y1S9M2Q7K3T6W5",
+      "title": "Peternakan: Hewan, Hasil Ternak, dan Latihan Literasi Numerasi",
+      "description": "Modul edukasi yang mengenalkan anak pada dunia peternakan, mencakup berbagai jenis hewan ternak (Ayam, Sapi, Babi, Kambing) dan hasil produknya (Susu, Telur, Daging). Dilengkapi aktivitas pencocokan Huruf Kapital A-Z dan pencocokan Angka 1-10 untuk melatih keterampilan dasar sekolah.",
       "ageCategory": "2+",
       "subcategory": "busy-books",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 42000,
-      "priceCategory": 46000,
-      "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400",
-      "features": ["12 Dongeng", "Durasi Pendek", "Ilustrasi Menenangkan"],
-      "skills": ["Imajinasi", "Relaksasi", "Bonding"],
+      "totalPage": 42,
+      "price": 7600,
+      "priceCategory": 12500,
+      "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400",
+      "features": [
+        "Koleksi Hewan Ternak dan Faktanya",
+        "Pengenalan Hasil Produk Peternakan",
+        "Pencocokan Huruf Kapital (A-Z)",
+        "Pencocokan Angka (1-10)"
+      ],
+      "skills": [
+        "Pengetahuan Alam (Hewan & Lingkungan)",
+        "Literasi Awal (Abjad)",
+        "Numerasi Awal (Angka)",
+        "Keterampilan Visual"
+      ],
       "preview": [
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300",
-        "https://images.unsplash.com/photo-1601363772159-b5b53e8a48f5?w=300",
-        "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=300",
-        "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=300"
-      ]
+        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
+        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
+        "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=300",
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300"
+      ],
+      "slug-file": "busy-book-4-farm"
     },
     {
       "id": 23,
