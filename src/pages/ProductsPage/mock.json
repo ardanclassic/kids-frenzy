@@ -175,14 +175,14 @@
       "id": "B9G4C1J7F5L2K8H3",
       "title": "Latihan Fonik Awal (Beginning Sound)",
       "description": "Modul lembar kerja yang berfokus pada pengenalan dan penguasaan bunyi awal (beginning sound) dari setiap huruf abjad (A-Z). Anak diminta untuk mewarnai gambar yang memiliki bunyi awal yang cocok dengan huruf yang diberikan, membantu mereka menghubungkan huruf dengan suara dan meningkatkan keterampilan fonik dasar.",
-      "ageCategory": "5+",
-      "subcategory": "activity",
-      "ageRange": "5+ tahun",
-      "minAge": 5,
+      "ageCategory": "2+",
+      "subcategory": "coloring",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
       "price": 3600,
       "priceCategory": 14500,
       "pageCount": 54,
-      "image": "/products/ACTIVITY/BEGINNING SOUND/1.jpg",
+      "image": "/products/COLORING/BEGINNING SOUND/1.jpg",
       "features": [
         "54 Halaman Latihan",
         "Fokus Pengenalan Bunyi Awal",
@@ -191,12 +191,12 @@
       ],
       "skills": ["Fonik Dasar", "Pengenalan Abjad", "Pemahaman Kosakata", "Motorik Halus"],
       "preview": [
-        "/products/ACTIVITY/BEGINNING SOUND/1.jpg",
-        "/products/ACTIVITY/BEGINNING SOUND/2.jpg",
-        "/products/ACTIVITY/BEGINNING SOUND/3.jpg",
-        "/products/ACTIVITY/BEGINNING SOUND/4.jpg",
-        "/products/ACTIVITY/BEGINNING SOUND/5.jpg",
-        "/products/ACTIVITY/BEGINNING SOUND/6.jpg"
+        "/products/COLORING/BEGINNING SOUND/1.jpg",
+        "/products/COLORING/BEGINNING SOUND/2.jpg",
+        "/products/COLORING/BEGINNING SOUND/3.jpg",
+        "/products/COLORING/BEGINNING SOUND/4.jpg",
+        "/products/COLORING/BEGINNING SOUND/5.jpg",
+        "/products/COLORING/BEGINNING SOUND/6.jpg"
       ],
       "slug-file": "beginning-sound"
     },
@@ -767,14 +767,14 @@
       "id": "E2L6A9K4P7R1S3T5",
       "title": "Latihan Fonik Akhir (Ending Letter)",
       "description": "Lembar kerja yang berfokus pada pengenalan dan penguasaan huruf akhir (ending letter) dari sebuah kata/gambar. Anak harus mencocokkan huruf terakhir yang benar dari pilihan yang tersedia. Dirancang untuk meningkatkan keterampilan fonik dan persiapan membaca tingkat lanjut.",
-      "ageCategory": "5+",
-      "subcategory": "activity",
-      "ageRange": "5+ tahun",
-      "minAge": 5,
+      "ageCategory": "2+",
+      "subcategory": "coloring",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
       "price": 3550,
       "priceCategory": 13900,
       "pageCount": 20,
-      "image": "/products/ACTIVITY/ENDING-LETTER/1.jpg",
+      "image": "/products/COLORING/ENDING LETTER/1.jpg",
       "features": [
         "20 Halaman Latihan Huruf Akhir",
         "Fokus Pengenalan Bunyi Akhir",
@@ -782,7 +782,7 @@
         "Keterampilan Pra-membaca"
       ],
       "skills": ["Fonik Dasar", "Analisis Kata", "Kosakata", "Pengenalan Huruf"],
-      "preview": ["/products/ACTIVITY/ENDING-LETTER/1.jpg", "/products/ACTIVITY/ENDING-LETTER/2.jpg"],
+      "preview": ["/products/COLORING/ENDING LETTER/1.jpg", "/products/COLORING/ENDING LETTER/2.jpg"],
       "slug-file": "ending-letter"
     },
     {
