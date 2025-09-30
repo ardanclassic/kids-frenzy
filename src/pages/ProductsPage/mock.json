@@ -1,24 +1,27 @@
 {
   "mockdata": [
     {
-      "id": 1,
-      "title": "Buku Mewarnai Hewan Lucu",
-      "description": "Koleksi 50+ halaman mewarnai hewan favorit dengan ilustrasi yang menarik dan mudah diwarnai",
+      "id": "L9K3T6A2R4C7B5D8",
+      "title": "Mewarnai dan Mencari Huruf Abjad A-Z",
+      "description": "Modul mewarnai yang fokus pada pengenalan 26 huruf Abjad (A-Z). Setiap huruf memiliki halaman mewarnai tersendiri, dilanjutkan dengan lembar kerja mencari dan mewarnai huruf (Find and Color) untuk memperkuat pengenalan visual. Ideal untuk mengembangkan kreativitas, pengenalan literasi awal, dan motorik halus.",
       "ageCategory": "2+",
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 25000,
-      "priceCategory": 23000,
-      "image": "https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=400",
-      "features": ["50+ Halaman", "Ilustrasi Besar", "Mudah Dicetak"],
-      "skills": ["Motorik Halus", "Kreativitas", "Koordinasi"],
+      "price": 3700,
+      "priceCategory": 15900,
+      "pageCount": 50,
+      "image": "/products/COLORING/ALPHABET/1.jpg",
+      "features": ["26 Halaman Mewarnai Huruf", "Latihan Find and Color", "Fokus Literasi Awal", "50 Halaman Total"],
+      "skills": ["Kreativitas", "Pengenalan Abjad", "Motorik Halus", "Fokus"],
       "preview": [
-        "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=300",
-        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300",
-        "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=300",
-        "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=300"
-      ]
+        "/products/COLORING/ALPHABET/1.jpg",
+        "/products/COLORING/ALPHABET/2.jpg",
+        "/products/COLORING/ALPHABET/3.jpg",
+        "/products/COLORING/ALPHABET/4.jpg",
+        "/products/COLORING/ALPHABET/5.jpg"
+      ],
+      "slug-file": "alphabet"
     },
     {
       "id": 2,
@@ -91,7 +94,7 @@
       "totalPage": 21,
       "price": 3850,
       "priceCategory": 15900,
-      "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400",
+      "image": "/products/BUSY BOOKS/Busy Book - 1 (DIY Toddler)/3.jpg",
       "features": [
         "Aktivitas Mencocokkan Warna",
         "Pengenalan 9 Bentuk Dasar",
@@ -100,32 +103,38 @@
       ],
       "skills": ["Kognitif Dasar", "Motorik Halus", "Pengenalan Bentuk", "Numerasi Awal"],
       "preview": [
-        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
-        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
-        "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=300",
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300"
+        "/products/BUSY BOOKS/Busy Book - 1 (DIY Toddler)/1.jpg",
+        "/products/BUSY BOOKS/Busy Book - 1 (DIY Toddler)/2.jpg",
+        "/products/BUSY BOOKS/Busy Book - 1 (DIY Toddler)/3.jpg",
+        "/products/BUSY BOOKS/Busy Book - 1 (DIY Toddler)/4.jpg"
       ],
       "slug-file": "busy-book-1-diy-toddler"
     },
     {
-      "id": 6,
-      "title": "Aktivitas Menggunting Bentuk",
-      "description": "Kumpulan pola menggunting untuk melatih motorik halus dan koordinasi mata tangan",
-      "ageCategory": "3+",
-      "subcategory": "cut-and-paste",
-      "ageRange": "3+ tahun",
-      "minAge": 3,
-      "price": 30000,
-      "priceCategory": 28000,
-      "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?w=400",
-      "features": ["25 Pola", "Berbagai Bentuk", "Panduan Aman"],
-      "skills": ["Motorik Halus", "Koordinasi", "Ketelitian"],
+      "id": "N1L5F9C3T7R2S6M4",
+      "title": "Mewarnai Sederhana (Objek & Warna)",
+      "description": "Kumpulan lembar kerja mewarnai yang fokus pada **objek sederhana** (seperti bola, pohon, apel) dan **petunjuk warna yang jelas**. Aktivitas ini dirancang untuk memperkenalkan anak pada nama-nama warna dasar dan objek sehari-hari, serta meningkatkan kemampuan mengikuti instruksi visual sederhana.",
+      "ageCategory": "2+",
+      "subcategory": "coloring",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3600,
+      "priceCategory": 14500,
+      "pageCount": 30,
+      "image": "/products/COLORING/FUN COLORING 1/1.jpg",
+      "features": [
+        "30 Halaman Mewarnai",
+        "Petunjuk Warna dalam Teks",
+        "Objek Sehari-hari (Hewan, Benda)",
+        "Fokus pada Keterampilan Mewarnai"
+      ],
+      "skills": ["Pengenalan Warna", "Motorik Halus", "Kreativitas", "Pemahaman Instruksi Dasar"],
       "preview": [
-        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300",
-        "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=300",
-        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=300",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=300"
-      ]
+        "/products/COLORING/FUN COLORING 1/1.jpg",
+        "/products/COLORING/FUN COLORING 1/2.jpg",
+        "/products/COLORING/FUN COLORING 1/3.jpg"
+      ],
+      "slug-file": "fun-coloring-1"
     },
     {
       "id": "J8C4B9W6A2D5Y7X3",
@@ -138,7 +147,7 @@
       "totalPage": 50,
       "price": 7790,
       "priceCategory": 16500,
-      "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400",
+      "image": "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/1.jpg",
       "features": [
         "26 Huruf A-Z & Bunyi Awal",
         "Transportasi Darat, Laut, Udara",
@@ -153,72 +162,125 @@
         "Keterampilan Mencocokkan"
       ],
       "preview": [
-        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
-        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
-        "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=300",
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300"
+        "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/1.jpg",
+        "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/2.jpg",
+        "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/3.jpg",
+        "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/4.jpg",
+        "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/5.jpg",
+        "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/6.jpg"
       ],
       "slug-file": "busy-book-2-kids-binder"
     },
     {
-      "id": 8,
-      "title": "Mewarnai Kendaraan Favorit",
-      "description": "Buku mewarnai dengan berbagai jenis kendaraan untuk anak yang suka otomotif",
+      "id": "B9G4C1J7F5L2K8H3",
+      "title": "Latihan Fonik Awal (Beginning Sound)",
+      "description": "Modul lembar kerja yang berfokus pada pengenalan dan penguasaan bunyi awal (beginning sound) dari setiap huruf abjad (A-Z). Anak diminta untuk mewarnai gambar yang memiliki bunyi awal yang cocok dengan huruf yang diberikan, membantu mereka menghubungkan huruf dengan suara dan meningkatkan keterampilan fonik dasar.",
+      "ageCategory": "5+",
+      "subcategory": "activity",
+      "ageRange": "5+ tahun",
+      "minAge": 5,
+      "price": 3600,
+      "priceCategory": 14500,
+      "pageCount": 54,
+      "image": "/products/ACTIVITY/BEGINNING SOUND/1.jpg",
+      "features": [
+        "54 Halaman Latihan",
+        "Fokus Pengenalan Bunyi Awal",
+        "Aktivitas Mewarnai Selektif",
+        "Melatih Keterampilan Fonik"
+      ],
+      "skills": ["Fonik Dasar", "Pengenalan Abjad", "Pemahaman Kosakata", "Motorik Halus"],
+      "preview": [
+        "/products/ACTIVITY/BEGINNING SOUND/1.jpg",
+        "/products/ACTIVITY/BEGINNING SOUND/2.jpg",
+        "/products/ACTIVITY/BEGINNING SOUND/3.jpg",
+        "/products/ACTIVITY/BEGINNING SOUND/4.jpg",
+        "/products/ACTIVITY/BEGINNING SOUND/5.jpg",
+        "/products/ACTIVITY/BEGINNING SOUND/6.jpg"
+      ],
+      "slug-file": "beginning-sound"
+    },
+    {
+      "id": "A8C1E5G9H3K7M2O6",
+      "title": "Buku Mewarnai Lengkap (Abjad, Buah, Sayur, Hewan)",
+      "description": "Modul mewarnai yang sangat beragam, mencakup pengenalan **Abjad (A-Z)**, **Buah-buahan**, **Sayuran**, dan **Hewan**. Setiap halaman fokus pada satu objek yang disertai dengan namanya, menjadikannya alat yang efektif untuk pengembangan kosakata, kreativitas, dan pengenalan huruf/objek secara umum.",
       "ageCategory": "2+",
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 28000,
-      "priceCategory": 31000,
-      "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400",
-      "features": ["30 Halaman", "Berbagai Kendaraan", "Detail Sederhana"],
-      "skills": ["Kreativitas", "Motorik Halus", "Konsentrasi"],
+      "price": 4100,
+      "priceCategory": 19500,
+      "pageCount": 70,
+      "image": "/products/COLORING/FUN COLORING 3/1.jpg",
+      "features": [
+        "Mencakup 4 Topik Utama",
+        "Pengenalan Kosakata Luas",
+        "70 Halaman Aktivitas Mewarnai",
+        "Latihan Motorik Halus"
+      ],
+      "skills": ["Kosakata", "Pengenalan Abjad", "Kreativitas", "Motorik Halus"],
       "preview": [
-        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=300",
-        "https://images.unsplash.com/photo-1583483425010-c566431a7710?w=300",
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300",
-        "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=300"
-      ]
+        "/products/COLORING/FUN COLORING 3/1.jpg",
+        "/products/COLORING/FUN COLORING 3/2.jpg",
+        "/products/COLORING/FUN COLORING 3/3.jpg",
+        "/products/COLORING/FUN COLORING 3/4.jpg",
+        "/products/COLORING/FUN COLORING 3/5.jpg",
+        "/products/COLORING/FUN COLORING 3/6.jpg"
+      ],
+      "slug-file": "fun-coloring-3"
     },
     {
-      "id": 9,
-      "title": "Permainan Peran Profesi",
-      "description": "Aktivitas roleplay untuk mengenalkan berbagai profesi kepada anak",
-      "ageCategory": "3+",
-      "subcategory": "pretend-play",
-      "ageRange": "3+ tahun",
-      "minAge": 3,
-      "price": 42000,
-      "priceCategory": 39000,
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400",
-      "features": ["12 Profesi", "Kostum DIY", "Aktivitas Interaktif"],
-      "skills": ["Imajinasi", "Sosial", "Komunikasi"],
+      "id": "S6W1R5T9F3C7L2A4",
+      "title": "Buku Mencari dan Mewarnai Sight Words (Color Hunt)",
+      "description": "Modul lembar kerja yang intensif melatih pengenalan visual kata-kata yang sering muncul (Sight Words) melalui aktivitas mencari kata yang spesifik di antara kata-kata lain dan mewarnainya. Fokus utama adalah pada **diskriminasi visual** dan **mempercepat pengenalan kata** tanpa perlu mengeja.",
+      "ageCategory": "2+",
+      "subcategory": "coloring",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3600,
+      "priceCategory": 14500,
+      "pageCount": 49,
+      "image": "/products/COLORING/SIGHT WORD/1.jpg",
+      "features": [
+        "49 Halaman Latihan Sight Word",
+        "Latihan Diskriminasi Visual",
+        "Meningkatkan Fokus & Konsentrasi",
+        "Aktivitas Mewarnai yang Menyenangkan"
+      ],
+      "skills": ["Literasi Awal (Sight Words)", "Fokus & Konsentrasi", "Diskriminasi Visual", "Motorik Halus"],
       "preview": [
-        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300",
-        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=300",
-        "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=300",
-        "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300"
-      ]
+        "/products/COLORING/SIGHT WORD/1.jpg",
+        "/products/COLORING/SIGHT WORD/2.jpg",
+        "/products/COLORING/SIGHT WORD/3.jpg",
+        "/products/COLORING/SIGHT WORD/4.jpg"
+      ],
+      "slug-file": "sight-word"
     },
     {
-      "id": 10,
-      "title": "Tracing Bentuk Geometri",
-      "description": "Latihan menggambar garis dengan berbagai bentuk geometri untuk anak usia dini",
-      "ageCategory": "3+",
-      "subcategory": "tracing",
-      "ageRange": "3+ tahun",
-      "minAge": 3,
-      "price": 22000,
-      "priceCategory": 25000,
-      "image": "https://images.unsplash.com/photo-1560472355-536de3962603?w=400",
-      "features": ["15 Bentuk", "Garis Tebal", "Mudah Diikuti"],
-      "skills": ["Motorik Halus", "Bentuk", "Koordinasi"],
+      "id": "T4R8P2H6V1J5D9S3",
+      "title": "Buku Latihan Simetri & Mewarnai Angka",
+      "description": "Modul unik yang menggabungkan dua jenis latihan: **Simetri** (menciptakan gambar simetris dengan menjiplak dan mewarnai) dan **Color by Number** (mewarnai berdasarkan angka). Ini dirancang untuk melatih kesadaran spasial, kemampuan tracing, sekaligus memperkuat pengenalan angka.",
+      "ageCategory": "2+",
+      "subcategory": "coloring",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3500,
+      "priceCategory": 12500,
+      "pageCount": 23,
+      "image": "/products/COLORING/FUN COLORING 2/1.jpg",
+      "features": [
+        "Latihan Simetri (Tracing & Coloring)",
+        "Aktivitas Color by Number",
+        "Melatih Kesadaran Spasial",
+        "Memperkuat Motorik Halus"
+      ],
+      "skills": ["Geometri Dasar (Simetri)", "Motorik Halus", "Pengenalan Angka", "Kreativitas"],
       "preview": [
-        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b0d0?w=300",
-        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=300",
-        "https://images.unsplash.com/photo-1604357209793-fca5dca89f97?w=300",
-        "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300"
-      ]
+        "/products/COLORING/FUN COLORING 2/1.jpg",
+        "/products/COLORING/FUN COLORING 2/2.jpg",
+        "/products/COLORING/FUN COLORING 2/3.jpg"
+      ],
+      "slug-file": "fun-coloring-2"
     },
     {
       "id": 11,
@@ -291,7 +353,7 @@
       "totalPage": 29,
       "price": 6950,
       "priceCategory": 18200,
-      "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400",
+      "image": "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/1.jpg",
       "features": [
         "Diagram dan Organ Tubuh Utama",
         "Pengenalan Kerangka Manusia (Skeleton)",
@@ -301,72 +363,291 @@
       ],
       "skills": ["Sains Dasar (Biologi)", "Kosa Kata (Bagian Tubuh)", "Keterampilan Mencocokkan", "Pengetahuan Diri"],
       "preview": [
-        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
-        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
-        "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=300",
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300"
+        "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/1.jpg",
+        "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/2.jpg",
+        "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/3.jpg",
+        "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/4.jpg",
+        "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/5.jpg",
+        "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/6.jpg"
       ],
       "slug-file": "busy-book-3-human-anatomy"
     },
     {
-      "id": 15,
-      "title": "Mewarnai Buah dan Sayuran",
-      "description": "Aktivitas mewarnai yang memperkenalkan berbagai jenis buah dan sayuran",
+      "id": "C7N3R9B1D5F8G2H4",
+      "title": "Mewarnai Sesuai Angka (Color by Number)",
+      "description": "Modul lembar kerja mewarnai yang menggunakan metode Color by Number. Anak harus mengenali angka pada setiap bagian gambar dan mewarnainya sesuai dengan kunci warna yang telah ditentukan. Aktivitas ini sangat efektif untuk melatih pengenalan angka, instruksi visual, dan meningkatkan konsentrasi.",
       "ageCategory": "2+",
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 29000,
-      "priceCategory": 27000,
-      "image": "https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=400",
-      "features": ["25 Halaman", "Nama Indonesia-Inggris", "Fakta Nutrisi"],
-      "skills": ["Kreativitas", "Kosakata", "Pengetahuan Makanan"],
+      "price": 3650,
+      "priceCategory": 14900,
+      "pageCount": 47,
+      "image": "/products/COLORING/COLOR by NUMBER/1.jpg",
+      "features": [
+        "45+ Halaman Mewarnai Angka",
+        "Melatih Pengenalan Angka 1-12",
+        "Meningkatkan Fokus & Konsentrasi",
+        "Aktivitas yang Menyenangkan"
+      ],
+      "skills": ["Pengenalan Angka", "Kreativitas", "Motorik Halus", "Pemahaman Instruksi"],
       "preview": [
-        "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=300",
-        "https://images.unsplash.com/photo-1628773822503-930a7eaecf80?w=300",
-        "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=300",
-        "https://images.unsplash.com/photo-1587049352846-4a222e784163?w=300"
-      ]
+        "/products/COLORING/COLOR by NUMBER/1.jpg",
+        "/products/COLORING/COLOR by NUMBER/2.jpg",
+        "/products/COLORING/COLOR by NUMBER/3.jpg",
+        "/products/COLORING/COLOR by NUMBER/4.jpg"
+      ],
+      "slug-file": "color-by-number"
     },
     {
-      "id": 16,
-      "title": "Puzzle Matematika Sederhana",
-      "description": "Aktivitas belajar matematika dasar dengan pendekatan visual dan menyenangkan",
+      "id": "W5L1K9X3P7A4C6D8",
+      "title": "Belajar Bentuk Geometri (Color & Trace)",
+      "description": "Modul aktivitas yang fokus pada pengenalan mendalam bentuk geometri dasar (lingkaran, persegi, segitiga, hati, bintang, persegi panjang). Kegiatan mencakup mewarnai, menjiplak, menghitung jumlah sisi, dan menulis nama-nama bentuk. Ideal untuk melatih motorik halus dan pemahaman spasial.",
       "ageCategory": "5+",
       "subcategory": "activity",
       "ageRange": "5+ tahun",
       "minAge": 5,
-      "price": 45000,
-      "priceCategory": 48000,
-      "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400",
-      "features": ["Operasi Dasar", "Puzzle Visual", "Progresif"],
-      "skills": ["Matematika", "Logika", "Problem Solving"],
+      "price": 3450,
+      "priceCategory": 11900,
+      "pageCount": 28,
+      "image": "/products/ACTIVITY/LEARNING SHAPES/1.jpg",
+      "features": [
+        "6 Bentuk Geometri Utama",
+        "Aktivitas Mewarnai & Tracing",
+        "Latihan Menghitung Sisi",
+        "Fokus Motorik Halus"
+      ],
+      "skills": ["Pengenalan Bentuk & Spasial", "Motorik Halus", "Numerasi Awal", "Keterampilan Pra-menulis"],
       "preview": [
-        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
-        "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=300",
-        "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300",
-        "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=300"
-      ]
+        "/products/ACTIVITY/LEARNING SHAPES/1.jpg",
+        "/products/ACTIVITY/LEARNING SHAPES/2.jpg",
+        "/products/ACTIVITY/LEARNING SHAPES/3.jpg",
+        "/products/ACTIVITY/LEARNING SHAPES/4.jpg",
+        "/products/ACTIVITY/LEARNING SHAPES/5.jpg",
+        "/products/ACTIVITY/LEARNING SHAPES/6.jpg"
+      ],
+      "slug-file": "learning-shapes"
     },
     {
-      "id": 17,
-      "title": "Tracing Huruf Hijaiyah",
-      "description": "Latihan menulis huruf hijaiyah dengan panduan garis putus-putus",
-      "ageCategory": "3+",
-      "subcategory": "tracing",
-      "ageRange": "3+ tahun",
-      "minAge": 3,
-      "price": 38000,
-      "priceCategory": 41000,
-      "image": "https://images.unsplash.com/photo-1544531585-9847b68c8c86?w=400",
-      "features": ["28 Huruf", "Cara Penulisan", "Contoh Kata"],
-      "skills": ["Menulis", "Agama", "Motorik Halus"],
+      "id": "P2R9F5T1K8M4V7G3",
+      "title": "Latihan Membaca & Sight Word (Read & Circle)",
+      "description": "Modul aktivitas yang fokus pada latihan pengenalan kata (Sight Words/High-Frequency Words) dengan mekanisme 'baca dan lingkari' kata yang sama. Dirancang untuk meningkatkan kecepatan pengenalan kata, melatih fokus visual, dan membangun pondasi keterampilan membaca awal.",
+      "ageCategory": "5+",
+      "subcategory": "activity",
+      "ageRange": "5+ tahun",
+      "minAge": 5,
+      "price": 3250,
+      "priceCategory": 11500,
+      "pageCount": 25,
+      "image": "/products/ACTIVITY/READ AND CIRCLE/1.jpg",
+      "features": [
+        "Fokus Sight Words Dasar",
+        "Melatih Kecepatan Pengenalan Kata",
+        "Aktivitas Melingkari (Motorik Halus)",
+        "Peningkatan Fokus Visual"
+      ],
+      "skills": ["Literasi Awal", "Fokus & Konsentrasi", "Pengenalan Kata", "Motorik Halus"],
       "preview": [
-        "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=300",
-        "https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?w=300",
-        "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=300",
-        "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=300"
-      ]
+        "/products/ACTIVITY/READ AND CIRCLE/1.jpg",
+        "/products/ACTIVITY/READ AND CIRCLE/2.jpg",
+        "/products/ACTIVITY/READ AND CIRCLE/3.jpg"
+      ],
+      "slug-file": "read-and-circle"
+    },
+    {
+      "id": "Q4B7J2M5R9Z1V6C3",
+      "title": "Pemahaman Membaca Komprehensif",
+      "description": "Modul lengkap yang berisi lebih dari 100 halaman latihan pemahaman membaca (Reading Comprehension). Setiap halaman menyajikan teks bacaan singkat (tentang salju, musim dingin, buah-buahan, dll.) diikuti dengan pertanyaan esai, benar/salah, dan pilihan ganda untuk menguji daya serap informasi.",
+      "ageCategory": "5+",
+      "subcategory": "activity",
+      "ageRange": "5+ tahun",
+      "minAge": 5,
+      "price": 3950,
+      "priceCategory": 19500,
+      "pageCount": 115,
+      "image": "/products/ACTIVITY/READING COMPREHENSION/1.jpg",
+      "features": [
+        "100+ Latihan Bacaan",
+        "Berbagai Jenis Pertanyaan (Esai, True/False)",
+        "Melatih Daya Serap Informasi",
+        "Peningkatan Kosakata"
+      ],
+      "skills": ["Pemahaman Membaca", "Literasi", "Analisis Teks", "Fokus & Konsentrasi"],
+      "preview": [
+        "/products/ACTIVITY/READING COMPREHENSION/1.jpg",
+        "/products/ACTIVITY/READING COMPREHENSION/2.jpg",
+        "/products/ACTIVITY/READING COMPREHENSION/3.jpg",
+        "/products/ACTIVITY/READING COMPREHENSION/4.jpg",
+        "/products/ACTIVITY/READING COMPREHENSION/5.jpg"
+      ],
+      "slug-file": "reading-comprehension"
+    },
+    {
+      "id": "K5F9H2J6Y1T8G4D7",
+      "title": "Pemahaman & Pengetahuan Umum",
+      "description": "Modul lembar kerja komprehensif (100 halaman) yang berisi teks informatif singkat tentang topik Sains (Apel, Burung, Pelangi) dan Sosial (Profesi: Tentara, Tukang Pipa). Setiap teks diikuti oleh pertanyaan untuk menguji pemahaman, analisis teks, dan meningkatkan pengetahuan umum.",
+      "ageCategory": "5+",
+      "subcategory": "activity",
+      "ageRange": "5+ tahun",
+      "minAge": 5,
+      "price": 3900,
+      "priceCategory": 17500,
+      "pageCount": 100,
+      "image": "/products/ACTIVITY/READING WORKSHEETS 1/1.jpg",
+      "features": [
+        "100 Halaman Latihan",
+        "Bacaan Sains dan Sosial Dasar",
+        "Pertanyaan Pemahaman Teks",
+        "Peningkatan Pengetahuan Umum"
+      ],
+      "skills": ["Pemahaman Membaca", "Literasi", "Analisis Teks", "Kosa Kata"],
+      "preview": [
+        "/products/ACTIVITY/READING WORKSHEETS 1/1.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 1/2.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 1/3.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 1/4.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 1/5.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 1/6.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 1/7.jpg"
+      ],
+      "slug-file": "reading-worksheets-1"
+    },
+    {
+      "id": "Z1C4T9G2P6X8M3S7",
+      "title": "Membaca Dasar (Passage & Pilihan Ganda)",
+      "description": "Modul lembar kerja yang berisi bacaan sangat singkat tentang objek sehari-hari (kipas, meja, sekolah) dan hewan (anjing, semut, singa), diikuti oleh pertanyaan pilihan ganda sederhana. Dirancang untuk pembaca pemula, melatih pemahaman literal teks, dan mengenalkan struktur kalimat dasar.",
+      "ageCategory": "5+",
+      "subcategory": "activity",
+      "ageRange": "5+ tahun",
+      "minAge": 5,
+      "price": 3650,
+      "priceCategory": 14900,
+      "pageCount": 75,
+      "image": "/products/ACTIVITY/READING WORKSHEETS 2/1.jpg",
+      "features": [
+        "75 Halaman Latihan",
+        "Bacaan Pendek tentang Objek & Hewan",
+        "Pertanyaan Pilihan Ganda",
+        "Fokus Pemahaman Literal"
+      ],
+      "skills": ["Literasi Awal", "Pemahaman Kalimat", "Keterampilan Menjawab Pertanyaan", "Kosakata Dasar"],
+      "preview": [
+        "/products/ACTIVITY/READING WORKSHEETS 2/1.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 2/2.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 2/3.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 2/4.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 2/5.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 2/6.jpg",
+        "/products/ACTIVITY/READING WORKSHEETS 2/7.jpg"
+      ],
+      "slug-file": "reading-worksheets-2"
+    },
+    {
+      "id": "M6Q3Z8X1V4P7D9T2",
+      "title": "Menulis Bentuk (Trace & Write)",
+      "description": "Modul latihan pra-menulis yang berfokus pada menjiplak (tracing) dan menulis nama-nama bentuk geometri dasar (lingkaran, segitiga, persegi, oval, dll.). Latihan ini secara spesifik dirancang untuk meningkatkan kontrol pensil, koordinasi mata dan tangan, serta memperkuat motorik halus, sebagai fondasi keterampilan menulis.",
+      "ageCategory": "5+",
+      "subcategory": "activity",
+      "ageRange": "5+ tahun",
+      "minAge": 5,
+      "price": 3500,
+      "priceCategory": 12500,
+      "pageCount": 30,
+      "image": "/products/ACTIVITY/TRACE AND WRITE/1.jpg",
+      "features": [
+        "Tracing dan Menulis Nama Bentuk",
+        "Melatih Kontrol Pensil",
+        "Pengenalan Bentuk Dasar",
+        "Meningkatkan Motorik Halus"
+      ],
+      "skills": ["Motorik Halus", "Keterampilan Pra-menulis", "Pengenalan Kosakata", "Koordinasi Mata-Tangan"],
+      "preview": ["/products/ACTIVITY/TRACE AND WRITE/1.jpg"],
+      "slug-file": "trace-and-write"
+    },
+    {
+      "id": "F8D3A7B1C5E9H2G4",
+      "title": "Menjiplak & Menulis Sight Words",
+      "description": "Modul lengkap yang fokus pada pengenalan dan penguasaan kata-kata yang sering muncul (Sight Words) melalui berbagai aktivitas: membaca, menjiplak (tracing), mewarnai, menulis, dan membuat kalimat. Dirancang untuk meningkatkan kefasihan membaca dan keterampilan motorik halus.",
+      "ageCategory": "5+",
+      "subcategory": "activity",
+      "ageRange": "5+ tahun",
+      "minAge": 5,
+      "price": 3800,
+      "priceCategory": 16500,
+      "pageCount": 68,
+      "image": "/products/ACTIVITY/TRACING SHEETS 1/1.jpg",
+      "features": [
+        "68 Halaman Latihan Sight Word",
+        "Aktivitas Menjiplak dan Menulis",
+        "Melatih Pembentukan Kalimat Sederhana",
+        "Fokus Keterampilan Pra-menulis"
+      ],
+      "skills": ["Literasi Awal (Sight Words)", "Motorik Halus", "Keterampilan Pra-menulis", "Pengenalan Kata"],
+      "preview": [
+        "/products/ACTIVITY/TRACING SHEETS 1/1.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 1/2.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 1/3.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 1/4.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 1/5.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 1/6.jpg"
+      ],
+      "slug-file": "tracing-sheets-1"
+    },
+    {
+      "id": "A3D7G9K2M5Q8S1T4",
+      "title": "Menjiplak Sight Words Dasar (Heavy Trace)",
+      "description": "Modul lembar kerja intensif yang secara khusus dirancang untuk menjiplak (tracing) kata-kata yang sering muncul (Sight Words) seperti 'and', 'the', 'of', 'to', 'in', dll. Fokus utama modul ini adalah membangun memori otot untuk setiap kata dan memperkuat keterampilan motorik halus melalui pengulangan tracing.",
+      "ageCategory": "5+",
+      "subcategory": "activity",
+      "ageRange": "5+ tahun",
+      "minAge": 5,
+      "price": 3750,
+      "priceCategory": 15900,
+      "pageCount": 63,
+      "image": "/products/ACTIVITY/TRACING SHEETS 2/1.jpg",
+      "features": [
+        "60+ Latihan Tracing Sight Word",
+        "Fokus 100% Latihan Menjiplak",
+        "Melatih Kontrol Pensil",
+        "Meningkatkan Kecepatan Pengenalan Kata"
+      ],
+      "skills": ["Motorik Halus", "Keterampilan Pra-menulis", "Literasi Awal", "Koordinasi Mata-Tangan"],
+      "preview": [
+        "/products/ACTIVITY/TRACING SHEETS 2/1.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 2/2.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 2/3.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 2/4.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 2/5.jpg"
+      ],
+      "slug-file": "tracing-sheets-2"
+    },
+    {
+      "id": "H2J5N9P3R6W1Y4T7",
+      "title": "Menulis Sight Words (Trace & Box)",
+      "description": "Modul yang menyediakan latihan komprehensif untuk penguasaan kata-kata yang sering muncul (Sight Words) melalui lima jenis kegiatan pada setiap kata: Membaca & Mewarnai, Menjiplak (Tracing), Menulis, Mencocokkan dalam Kotak (Box Write), dan Mencari & Mewarnai. Dirancang untuk pembelajar tingkat menengah guna memperkuat pengenalan kata, kefasihan membaca, dan motorik halus.",
+      "ageCategory": "5+",
+      "subcategory": "activity",
+      "ageRange": "5+ tahun",
+      "minAge": 5,
+      "price": 3850,
+      "priceCategory": 16900,
+      "pageCount": 78,
+      "image": "/products/ACTIVITY/TRACING SHEETS 3/1.jpg",
+      "features": [
+        "78 Halaman Latihan Sight Word",
+        "5 Aktivitas Per Kata (Trace, Write, Color, Find)",
+        "Melatih Keterampilan Pra-menulis",
+        "Meningkatkan Kefasihan Membaca"
+      ],
+      "skills": ["Literasi Awal (Sight Words)", "Motorik Halus", "Keterampilan Pra-menulis", "Fokus & Konsentrasi"],
+      "preview": [
+        "/products/ACTIVITY/TRACING SHEETS 3/1.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 3/2.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 3/3.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 3/4.jpg",
+        "/products/ACTIVITY/TRACING SHEETS 3/5.jpg"
+      ],
+      "slug-file": "tracing-sheets-3"
     },
     {
       "id": 18,
@@ -409,26 +690,6 @@
       ]
     },
     {
-      "id": 20,
-      "title": "Sains Mini Eksperimen",
-      "description": "Kumpulan eksperimen sains sederhana yang aman dilakukan di rumah",
-      "ageCategory": "5+",
-      "subcategory": "activity",
-      "ageRange": "5+ tahun",
-      "minAge": 5,
-      "price": 60000,
-      "priceCategory": 63000,
-      "image": "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400",
-      "features": ["15 Eksperimen", "Bahan Rumahan", "Penjelasan Sederhana"],
-      "skills": ["Sains", "Observasi", "Curiosity"],
-      "preview": [
-        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=300",
-        "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=300",
-        "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300",
-        "https://images.unsplash.com/photo-1628595351029-c2bf17511435?w=300"
-      ]
-    },
-    {
       "id": 21,
       "title": "Menggunting Bentuk Transportasi",
       "description": "Pola menggunting berbagai alat transportasi untuk melatih motorik halus",
@@ -459,7 +720,7 @@
       "totalPage": 42,
       "price": 7600,
       "priceCategory": 12500,
-      "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400",
+      "image": "/products/BUSY BOOKS/Busy Book - 4 (Farm)/1.jpg",
       "features": [
         "Koleksi Hewan Ternak dan Faktanya",
         "Pengenalan Hasil Produk Peternakan",
@@ -473,10 +734,12 @@
         "Keterampilan Visual"
       ],
       "preview": [
-        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
-        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
-        "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=300",
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300"
+        "/products/BUSY BOOKS/Busy Book - 4 (Farm)/1.jpg",
+        "/products/BUSY BOOKS/Busy Book - 4 (Farm)/2.jpg",
+        "/products/BUSY BOOKS/Busy Book - 4 (Farm)/3.jpg",
+        "/products/BUSY BOOKS/Busy Book - 4 (Farm)/4.jpg",
+        "/products/BUSY BOOKS/Busy Book - 4 (Farm)/5.jpg",
+        "/products/BUSY BOOKS/Busy Book - 4 (Farm)/6.jpg"
       ],
       "slug-file": "busy-book-4-farm"
     },
@@ -501,24 +764,26 @@
       ]
     },
     {
-      "id": 24,
-      "title": "Mewarnai Mandala Anak",
-      "description": "Koleksi mandala sederhana yang dirancang khusus untuk anak-anak",
-      "ageCategory": "2+",
-      "subcategory": "coloring",
-      "ageRange": "2+ tahun",
-      "minAge": 2,
-      "price": 34000,
-      "priceCategory": 37000,
-      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
-      "features": ["20 Mandala", "Pola Sederhana", "Relaksasi"],
-      "skills": ["Konsentrasi", "Ketenangan", "Kreativitas"],
-      "preview": [
-        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300",
-        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b0d0?w=300",
-        "https://images.unsplash.com/photo-1604357209793-fca5dca89f97?w=300",
-        "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=300"
-      ]
+      "id": "E2L6A9K4P7R1S3T5",
+      "title": "Latihan Fonik Akhir (Ending Letter)",
+      "description": "Lembar kerja yang berfokus pada pengenalan dan penguasaan huruf akhir (ending letter) dari sebuah kata/gambar. Anak harus mencocokkan huruf terakhir yang benar dari pilihan yang tersedia. Dirancang untuk meningkatkan keterampilan fonik dan persiapan membaca tingkat lanjut.",
+      "ageCategory": "5+",
+      "subcategory": "activity",
+      "ageRange": "5+ tahun",
+      "minAge": 5,
+      "price": 3550,
+      "priceCategory": 13900,
+      "pageCount": 20,
+      "image": "/products/ACTIVITY/ENDING-LETTER/1.jpg",
+      "features": [
+        "20 Halaman Latihan Huruf Akhir",
+        "Fokus Pengenalan Bunyi Akhir",
+        "Melatih Analisis Kata",
+        "Keterampilan Pra-membaca"
+      ],
+      "skills": ["Fonik Dasar", "Analisis Kata", "Kosakata", "Pengenalan Huruf"],
+      "preview": ["/products/ACTIVITY/ENDING-LETTER/1.jpg", "/products/ACTIVITY/ENDING-LETTER/2.jpg"],
+      "slug-file": "ending-letter"
     },
     {
       "id": 25,
@@ -541,24 +806,30 @@
       ]
     },
     {
-      "id": 26,
-      "title": "Bermain Titik Menghubungkan Angka",
-      "description": "Aktivitas menghubungkan titik berdasarkan urutan angka untuk membentuk gambar",
+      "id": "F5I9C3L7K1T6B4S2",
+      "title": "Mencari dan Mewarnai Sight Words (Color Search)",
+      "description": "Modul latihan yang berfokus pada pengenalan kata-kata yang sering muncul (Sight Words) melalui aktivitas mencari kata yang tersembunyi (Word Search) dan mewarnainya. Anak akan melatih pengenalan visual kata, fokus, dan pembedaan kata-kata yang mirip secara intensif.",
       "ageCategory": "2+",
-      "subcategory": "do-a-dot",
+      "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 28000,
-      "priceCategory": 30000,
-      "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400",
-      "features": ["30 Gambar", "Angka 1-50", "Berbagai Tema"],
-      "skills": ["Urutan Angka", "Koordinasi", "Konsentrasi"],
+      "price": 3400,
+      "priceCategory": 11900,
+      "pageCount": 16,
+      "image": "/products/COLORING/FIND THE COLOR/1.jpg",
+      "features": [
+        "16 Halaman Word Search Sederhana",
+        "Fokus Pengenalan Sight Word",
+        "Melatih Fokus Visual",
+        "Aktivitas Mewarnai"
+      ],
+      "skills": ["Literasi Awal (Sight Words)", "Fokus & Konsentrasi", "Diskriminasi Visual", "Motorik Halus"],
       "preview": [
-        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=300",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=300",
-        "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=300",
-        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300"
-      ]
+        "/products/COLORING/FIND THE COLOR/1.jpg",
+        "/products/COLORING/FIND THE COLOR/2.jpg",
+        "/products/COLORING/FIND THE COLOR/3.jpg"
+      ],
+      "slug-file": "find-the-color"
     },
     {
       "id": 27,
