@@ -11,6 +11,7 @@ interface Product {
   ageRange: string;
   minAge: number;
   price: number;
+  priceCategory: number;
   image: string;
   features: string[];
   skills: string[];

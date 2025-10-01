@@ -119,7 +119,7 @@ const PreviewGallery: React.FC<PreviewGalleryProps> = ({ preview }) => {
                 className={`rounded-full transition-all duration-300 ${
                   currentPreviewIndex === index
                     ? "w-10 h-2 bg-gradient-to-r from-teal-500 to-purple-500"
-                    : "w-2 h-2 bg-gray-300 hover:bg-gray-400"
+                    : "w-2 h-2 bg-gray-400 hover:bg-gray-600"
                 }`}
                 whileHover={{ scale: 1.2 }}
                 aria-label={`Go to image ${index + 1}`}
@@ -127,12 +127,6 @@ const PreviewGallery: React.FC<PreviewGalleryProps> = ({ preview }) => {
             ))}
           </div>
         )}
-
-        {/* Helper Text */}
-        <p className="text-center text-gray-500 text-sm mt-4 flex items-center justify-center gap-2">
-          <Sparkles className="w-4 h-4" />
-          Klik thumbnail atau gunakan tombol navigasi untuk melihat lebih banyak preview
-        </p>
       </div>
     </>
   );
