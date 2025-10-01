@@ -19,7 +19,10 @@ import {
 } from "lucide-react";
 import mock from "./mock.json";
 import { categories } from "./categories.json";
-import ProductDetailModal from "./ProductDetailModal";
+import ProductDetailModal from "@/components/ProductDetailModal/ProductDetailModal";
+import AgeCategoryFilter from "@/components/AgeCategoryFilter/AgeCategoryFilter";
+import SubcategoryFilter from "@/components/SubCategoryFilter/SubCategoryFilter";
+import ProductsGrid from "@/components/ProductsGrid";
 
 interface Product {
   id: number;
@@ -235,140 +238,28 @@ const ProductsPage: React.FC = () => {
             />
           </div>
 
-          {/* Age Category Filters */}
-          <div>
-            <h3 className="text-lg text-gray-800 text-center mb-4">Filter berdasarkan Usia</h3>
-            {/* Desktop: Wrapped buttons */}
-            <div className="hidden md:flex flex-wrap justify-center gap-4 mb-6">
-              {ageCategories.map((category) => (
-                <motion.button
-                  key={category.id}
-                  onClick={() => handleAgeChange(category.id)}
-                  className={`px-6 py-3 rounded-full font-medium transition-all duration-200 cursor-pointer ${
-                    selectedAgeCategory === category.id
-                      ? "bg-teal-500 text-white shadow-lg scale-105"
-                      : "bg-white/80 text-gray-700 hover:bg-gray-50 border-2 border-gray-200"
-                  }`}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <span className="flex items-center space-x-2">
-                    <span className="text-lg">{category.emoji}</span>
-                    <span>{category.name}</span>
-                  </span>
-                </motion.button>
-              ))}
-            </div>
+          {/* Age Category Filter */}
+          <AgeCategoryFilter
+            categories={ageCategories}
+            selectedCategory={selectedAgeCategory}
+            onCategoryChange={handleAgeChange}
+          />
 
-            {/* Mobile: Horizontal scroll */}
-            <div className="md:hidden relative">
-              <style>{`
-                .age-scroll {
-                  scrollbar-width: thin;
-                  scrollbar-color: #14b8a6 #f1f5f9;
-                }
-                .age-scroll::-webkit-scrollbar {
-                  height: 6px;
-                }
-                .age-scroll::-webkit-scrollbar-track {
-                  background: #f1f5f9;
-                  border-radius: 10px;
-                }
-                .age-scroll::-webkit-scrollbar-thumb {
-                  background: #14b8a6;
-                  border-radius: 10px;
-                }
-                .age-scroll::-webkit-scrollbar-thumb:hover {
-                  background: #0d9488;
-                }
-              `}</style>
-              <div className="age-scroll flex gap-3 overflow-x-auto pb-4 px-2">
-                {ageCategories.map((category) => (
-                  <motion.button
-                    key={category.id}
-                    onClick={() => handleAgeChange(category.id)}
-                    className={`flex-shrink-0 px-6 py-3 rounded-full font-medium transition-all duration-200 cursor-pointer ${
-                      selectedAgeCategory === category.id
-                        ? "bg-teal-500 text-white shadow-lg"
-                        : "bg-white/80 text-gray-700 hover:bg-gray-50 border-2 border-gray-200"
-                    }`}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <span className="flex items-center space-x-2 whitespace-nowrap">
-                      <span className="text-lg">{category.emoji}</span>
-                      <span>{category.name}</span>
-                    </span>
-                  </motion.button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Subcategory Filters - Horizontal Scrollable */}
-          <div>
-            <h3 className="text-lg text-gray-800 text-center mb-4">
-              Filter berdasarkan Jenis Aktivitas
-              {selectedAgeCategory !== "semua" && (
-                <span className="text-sm font-normal text-gray-500 ml-2">
-                  (tersedia untuk {getAgeCategoryName(selectedAgeCategory)})
-                </span>
-              )}
-            </h3>
-            <div className="relative">
-              <style>{`
-                .subcategory-scroll {
-                  scrollbar-width: thin;
-                  scrollbar-color: #14b8a6 #f1f5f9;
-                }
-                .subcategory-scroll::-webkit-scrollbar {
-                  height: 6px;
-                }
-                .subcategory-scroll::-webkit-scrollbar-track {
-                  background: #f1f5f9;
-                  border-radius: 10px;
-                }
-                .subcategory-scroll::-webkit-scrollbar-thumb {
-                  background: #14b8a6;
-                  border-radius: 10px;
-                }
-                .subcategory-scroll::-webkit-scrollbar-thumb:hover {
-                  background: #0d9488;
-                }
-              `}</style>
-              <div className="subcategory-scroll flex gap-3 overflow-x-auto pb-4 px-2">
-                {availableSubcategories.map((subcategory: any) => {
-                  const IconComponent = iconMap[subcategory.icon] || Sparkles;
-                  return (
-                    <motion.button
-                      key={subcategory.id}
-                      onClick={() => {
-                        setSelectedSubcategory(subcategory.id);
-                        setCurrentPage(1);
-                      }}
-                      className={`flex-shrink-0 p-4 rounded-xl border-2 transition-all duration-200 text-center group cursor-pointer ${
-                        selectedSubcategory === subcategory.id
-                          ? "bg-teal-500 text-white border-teal-500 shadow-lg"
-                          : "bg-white/80 text-gray-700 border-gray-200 hover:border-teal-500 hover:shadow-md"
-                      }`}
-                      style={{ minWidth: "140px" }}
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      title={subcategory.description}
-                    >
-                      <div className="flex flex-col items-center space-y-2">
-                        <IconComponent
-                          className={`w-6 h-6 ${
-                            selectedSubcategory === subcategory.id ? "text-white" : "text-teal-500"
-                          }`}
-                        />
-                        <span className="text-sm font-medium leading-tight whitespace-nowrap">{subcategory.name}</span>
-                      </div>
-                    </motion.button>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+          {/* Subcategory Filter */}
+          <SubcategoryFilter
+            subcategories={availableSubcategories}
+            selectedSubcategory={selectedSubcategory}
+            onSubcategoryChange={(id) => {
+              setSelectedSubcategory(id);
+              setCurrentPage(1);
+            }}
+            iconMap={iconMap}
+            ageNote={
+              selectedAgeCategory !== "semua"
+                ? `(tersedia untuk ${getAgeCategoryName(selectedAgeCategory)})`
+                : undefined
+            }
+          />
         </motion.div>
 
         {/* Active Filters Display */}
@@ -411,7 +302,7 @@ const ProductsPage: React.FC = () => {
           transition={{ delay: 0.3 }}
         >
           <p className="text-gray-600">
-            Menampilkan <span className="text-teal-600">{filteredProducts.length}</span> produk
+            Menampilkan <span className="text-teal-600">{filteredProducts.length}</span>
             {filteredProducts.length !== (mock.mockdata as Product[]).length && (
               <span> dari {(mock.mockdata as Product[]).length} total produk</span>
             )}
@@ -419,79 +310,17 @@ const ProductsPage: React.FC = () => {
         </motion.div>
 
         {/* Products Grid */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={`${selectedAgeCategory}-${selectedSubcategory}-${searchTerm}`}
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"
-          >
-            {currentProducts.map((product) => {
-              const subcategoryInfo = getSubcategoryInfo(product.subcategory);
-              return (
-                <motion.div
-                  key={product.id}
-                  variants={itemVariants}
-                  className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group cursor-pointer"
-                  onClick={() => setSelectedProduct(product)}
-                >
-                  <div className="relative mb-4 overflow-hidden">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <ProductsGrid
+          products={currentProducts}
+          selectedAgeCategory={selectedAgeCategory}
+          selectedSubcategory={selectedSubcategory}
+          searchTerm={searchTerm}
+          onProductClick={setSelectedProduct}
+          getSubcategoryInfo={getSubcategoryInfo}
+          formatPrice={formatPrice}
+        />
 
-                    <div className="absolute top-3 left-3">
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-white/90 backdrop-blur-sm text-gray-700">
-                        {subcategoryInfo.emoji} {subcategoryInfo.name}
-                      </span>
-                    </div>
-
-                    <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <button className="flex items-center space-x-2 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-full text-sm font-medium text-teal-600 hover:bg-white transition-colors">
-                        <Eye className="w-4 h-4" />
-                        <span>Preview</span>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="p-6 space-y-3">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-xl text-gray-900 group-hover:text-teal-600 transition-colors duration-200">
-                        {product.title}
-                      </h3>
-                    </div>
-
-                    <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">{product.description}</p>
-
-                    <div className="flex flex-wrap gap-2">
-                      {product.skills.slice(0, 3).map((skill, index) => (
-                        <span
-                          key={index}
-                          className="px-2 py-1 rounded-lg text-xs font-medium bg-purple-50 text-purple-600"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                      <div className="text-xl text-pink-500">{formatPrice(product.price)}</div>
-                      <div className="px-3 py-1 rounded-full text-sm font-medium bg-amber-100 text-amber-600">
-                        {product.ageRange}
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-        </AnimatePresence>
-
-        {/* Improved Pagination */}
+        {/* Pagination */}
         {totalPages > 1 && (
           <motion.div
             className="flex justify-center items-center mb-8"
@@ -562,7 +391,7 @@ const ProductsPage: React.FC = () => {
         )}
       </div>
 
-      {/* Product Detail Modal - Using Component */}
+      {/* Product Detail Modal */}
       <ProductDetailModal
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}
