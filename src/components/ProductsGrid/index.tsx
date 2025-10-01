@@ -110,7 +110,12 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                     {/* Bottom Info - Mobile Default */}
                     <div className="absolute bottom-0 left-0 right-0 p-2.5 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
                       <div className="space-y-1.5">
-                        <h3 className="text-white text-xs leading-snug line-clamp-2 drop-shadow">{product.title}</h3>
+                        <h3
+                          className="text-white text-xs leading-snug line-clamp-2"
+                          style={{ textShadow: "0 2px 8px rgba(0,0,0,0.8), 0 0 2px rgba(0,0,0,0.9)" }}
+                        >
+                          {product.title}
+                        </h3>
                         <div className="inline-flex items-center px-2 py-1 bg-emerald-100/90 backdrop-blur-sm rounded-md">
                           <span className="text-emerald-700 text-xs">{formatPrice(product.price)}</span>
                         </div>
@@ -160,58 +165,23 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                     {/* Bottom Info - Desktop Default */}
                     <div className="absolute bottom-0 left-0 right-0 p-4 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
                       <div className="space-y-2">
-                        <h3 className="text-white text-sm leading-snug line-clamp-2 drop-shadow-lg">{product.title}</h3>
+                        <h3
+                          className="text-white text-sm leading-snug line-clamp-2"
+                          style={{ textShadow: "0 2px 10px rgba(0,0,0,0.9), 0 0 3px rgba(0,0,0,1)" }}
+                        >
+                          {product.title}
+                        </h3>
                         <div className="inline-flex items-center px-3 py-1.5 bg-emerald-100/90 backdrop-blur-sm rounded-lg">
-                          <span className="text-emerald-700 text-sm">{formatPrice(product.price)}</span>
+                          <span className="text-emerald-700 font-semibold">{formatPrice(product.price)}</span>
                         </div>
                       </div>
                     </div>
 
                     {/* Hover Content - Desktop Full */}
                     <div className="absolute inset-0 flex flex-col p-5 space-y-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-y-auto">
-                      {/* Header */}
-                      <div className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <span className="px-2.5 py-1 rounded-lg text-xs bg-slate-100/90 backdrop-blur-sm text-slate-700 flex items-center gap-1">
-                            <span>{subcategoryInfo.emoji}</span>
-                            <span>{subcategoryInfo.name}</span>
-                          </span>
-                          <span className="px-2.5 py-1 rounded-lg text-xs bg-amber-100/90 backdrop-blur-sm text-amber-700">
-                            {product.ageRange}
-                          </span>
-                        </div>
-
-                        <h3 className="text-white text-base leading-snug">{product.title}</h3>
-                      </div>
-
                       {/* Content */}
                       <div className="flex-1 space-y-3">
                         <p className="text-white/90 text-sm leading-relaxed line-clamp-4">{product.description}</p>
-
-                        <div className="flex flex-wrap gap-1.5">
-                          {product.skills.slice(0, 4).map((skill, index) => (
-                            <span
-                              key={index}
-                              className="px-2.5 py-1 rounded-lg text-xs bg-purple-100/90 backdrop-blur-sm text-purple-700"
-                            >
-                              {skill}
-                            </span>
-                          ))}
-                          {product.skills.length > 4 && (
-                            <span className="px-2.5 py-1 rounded-lg text-xs bg-slate-100/90 backdrop-blur-sm text-slate-600">
-                              +{product.skills.length - 4}
-                            </span>
-                          )}
-                        </div>
-
-                        <div className="space-y-1.5">
-                          {product.features.slice(0, 3).map((feature, index) => (
-                            <div key={index} className="flex items-start gap-2 text-white/80 text-xs">
-                              <span className="text-teal-400 mt-0.5">✓</span>
-                              <span className="line-clamp-2">{feature}</span>
-                            </div>
-                          ))}
-                        </div>
                       </div>
 
                       {/* Footer */}
