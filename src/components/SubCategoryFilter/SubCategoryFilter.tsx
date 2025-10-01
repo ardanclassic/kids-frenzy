@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Sparkles, type LucideIcon } from "lucide-react";
-import "./SubcategoryFilter.scss";
+import "./SubCategoryFilter.scss";
 
 interface Subcategory {
   id: string;
