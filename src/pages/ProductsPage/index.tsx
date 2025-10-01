@@ -1,8 +1,7 @@
 import React, { useState, useMemo } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   Search,
-  Eye,
   ChevronLeft,
   ChevronRight,
   Sparkles,
@@ -130,28 +129,6 @@ const ProductsPage: React.FC = () => {
   const getAgeCategoryName = (ageCategoryId: string) => {
     const category = ageCategories.find((cat) => cat.id === ageCategoryId);
     return category ? category.name : ageCategoryId;
-  };
-
-  const containerVariants: any = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const itemVariants: any = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
   };
 
   const resetFilters = () => {
