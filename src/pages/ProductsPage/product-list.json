@@ -1,5 +1,5 @@
 {
-  "mockdata": [
+  "product_list": [
     {
       "id": "L9K3T6A2R4C7B5D8",
       "title": "Mewarnai dan Mencari Huruf Abjad A-Z",
@@ -44,23 +44,70 @@
       ]
     },
     {
-      "id": 3,
-      "title": "Puzzle Bentuk Dasar",
-      "description": "Puzzle sederhana dengan bentuk geometri dasar untuk melatih koordinasi mata dan tangan",
+      "id": "M5T9P0K2F7L1B6J8",
+      "title": "Puzzle Potong & Susun: Aneka Objek",
+      "description": "Permainan puzzle potong dan susun yang menampilkan berbagai macam objek sehari-hari dan edukatif seperti buah-buahan (apel, anggur), mahkota, peralatan melukis, papan tulis ABC, dan benda lainnya. Latihan yang sempurna untuk meningkatkan keterampilan motorik halus, pemecahan masalah visual, dan konsentrasi. Produk ini direkomendasikan untuk dicetak, dilaminasi, dan dipotong agar dapat digunakan berulang kali.",
       "ageCategory": "2+",
       "subcategory": "puzzle-game",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 20000,
-      "priceCategory": 18000,
-      "image": "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400",
-      "features": ["8 Bentuk", "Warna Cerah", "Mudah Dipotong"],
-      "skills": ["Problem Solving", "Koordinasi", "Bentuk"],
+      "price": 3900,
+      "priceCategory": 15500,
+      "slug-file": "puzzle-game-1",
+      "image": "/products/PUZZLE GAME/Puzzle Game 1/1.jpg",
+      "features": [
+        "Puluhan desain puzzle objek yang beragam",
+        "Melatih pemecahan masalah visual dan spasial",
+        "Petunjuk: Cetak, Laminasi, Potong, dan Mulai Susun (PRINT, LAMINATE, CUT AND START PUZZLING)",
+        "Cocok untuk aktivitas sentra/kelas atau di rumah"
+      ],
+      "skills": [
+        "Keterampilan Motorik Halus",
+        "Pemecahan Masalah (Problem Solving)",
+        "Pengenalan Objek",
+        "Konsentrasi"
+      ],
       "preview": [
-        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b0d0?w=300",
-        "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300",
-        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=300",
-        "https://images.unsplash.com/photo-1604357209793-fca5dca89f97?w=300"
+        "/products/PUZZLE GAME/Puzzle Game 1/1.jpg",
+        "/products/PUZZLE GAME/Puzzle Game 1/2.jpg",
+        "/products/PUZZLE GAME/Puzzle Game 1/3.jpg",
+        "/products/PUZZLE GAME/Puzzle Game 1/4.jpg",
+        "/products/PUZZLE GAME/Puzzle Game 1/5.jpg",
+        "/products/PUZZLE GAME/Puzzle Game 1/1b.png",
+        "/products/PUZZLE GAME/Puzzle Game 1/2b.png",
+        "/products/PUZZLE GAME/Puzzle Game 1/3b.png",
+        "/products/PUZZLE GAME/Puzzle Game 1/4b.png",
+        "/products/PUZZLE GAME/Puzzle Game 1/5b.png"
+      ]
+    },
+    {
+      "id": "L3X8Q1V4Z7T9Y2H6",
+      "title": "Puzzle Mencocokkan Huruf Kapital A-G",
+      "description": "Latihan pengenalan abjad (literasi dini) melalui puzzle potong dan susun. Produk ini menampilkan huruf-huruf kapital A-G dengan desain kartun yang lucu dan berwarna cerah, yang dibagi menjadi 6 keping. Kegiatan ini sangat efektif untuk melatih keterampilan motorik halus, fokus, dan pemecahan masalah visual pada anak pra-sekolah.",
+      "ageCategory": "2+",
+      "subcategory": "puzzle-game",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3750,
+      "priceCategory": 16900,
+      "slug-file": "puzzle-game-2",
+      "image": "/products/PUZZLE GAME/Puzzle Game 2/5.jpg",
+      "features": ["Puzzle Abjad A-G", "Desain Huruf Kartun", "Asah Motorik & Logika", "Siap Cetak & Potong"],
+      "skills": [
+        "Pengenalan Abjad/Huruf (Pre-Literasi)",
+        "Keterampilan Motorik Halus",
+        "Fokus dan Konsentrasi",
+        "Pemecahan Masalah Visual"
+      ],
+      "preview": [
+        "/products/PUZZLE GAME/Puzzle Game 2/5.jpg",
+        "/products/PUZZLE GAME/Puzzle Game 2/6.jpg",
+        "/products/PUZZLE GAME/Puzzle Game 2/7.jpg",
+        "/products/PUZZLE GAME/Puzzle Game 2/8.jpg",
+        "/products/PUZZLE GAME/Puzzle Game 2/1.png",
+        "/products/PUZZLE GAME/Puzzle Game 2/2.png",
+        "/products/PUZZLE GAME/Puzzle Game 2/3.png",
+        "/products/PUZZLE GAME/Puzzle Game 2/4.png"
       ]
     },
     {
@@ -283,44 +330,471 @@
       "slug-file": "fun-coloring-2"
     },
     {
-      "id": 11,
-      "title": "Mencocokkan Warna dan Bentuk",
-      "description": "Permainan mencocokkan untuk mengasah kemampuan visual dan logika anak",
+      "id": "L1M2N3P4Q5R6S7T8",
+      "title": "Mencocokkan Huruf Alfabet",
+      "description": "Latihan dasar untuk mengenal dan mencocokkan huruf **kapital (uppercase)** dengan huruf **kecil (lowercase)**, serta mencocokkan huruf dengan **gambar yang relevan**. Meliputi berbagai aktivitas seperti **menarik garis** dan **menggunting-menempel (cut and paste)**. Sangat baik untuk **pengenalan alfabet** dan melatih **keterampilan visual**.",
       "ageCategory": "2+",
       "subcategory": "matching",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 26000,
-      "priceCategory": 29000,
-      "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400",
-      "features": ["20 Pasangan", "Warna Cerah", "Mudah Dipahami"],
-      "skills": ["Visual", "Logika", "Konsentrasi"],
+      "price": 3600,
+      "priceCategory": 14900,
+      "slug-file": "alphabet-matching",
+      "image": "/products/MATCHING/Alphabet Matching/1.jpg",
+      "features": [
+        "Mencocokkan Huruf Kapital dengan Huruf Kecil",
+        "Mencocokkan Huruf dengan Gambar Benda",
+        "Aktivitas Menggunting, Menempel, dan Melingkari",
+        "Mencakup Seluruh Huruf Alfabet (A-Z)"
+      ],
+      "skills": [
+        "Pengenalan Huruf dan Alfabet",
+        "Keterampilan Mencocokkan",
+        "Keterampilan Motorik Halus",
+        "Kognitif/Visual"
+      ],
       "preview": [
-        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
-        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=300",
-        "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=300",
-        "https://images.unsplash.com/photo-1601363772159-b5b53e8a48f5?w=300"
+        "/products/MATCHING/Alphabet Matching/1.jpg",
+        "/products/MATCHING/Alphabet Matching/2.jpg",
+        "/products/MATCHING/Alphabet Matching/3.jpg",
+        "/products/MATCHING/Alphabet Matching/4.jpg"
       ]
     },
     {
-      "id": 12,
-      "title": "Menggunting Pola Hewan",
-      "description": "Aktivitas menggunting dengan pola hewan lucu untuk melatih ketrampilan motorik halus",
+      "id": "T9U0V1W2X3Y4Z5A6",
+      "title": "Mencocokkan Warna dan Nama Warna",
+      "description": "Latihan mengenal dan mencocokkan berbagai warna primer dan sekunder, serta mencocokkan objek/gambar (seperti buah-buahan) berdasarkan warnanya. Melatih pengenalan nama warna, diskriminasi visual, dan mencakup aktivitas menarik garis.",
+      "ageCategory": "2+",
+      "subcategory": "matching",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3850,
+      "priceCategory": 12500,
+      "slug-file": "color-matching",
+      "image": "/products/MATCHING/Color Matching/3.jpg",
+      "features": [
+        "Permainan Mencocokkan Warna",
+        "Mencocokkan Warna dengan Nama",
+        "Mencocokkan Gambar Buah berdasarkan Warna",
+        "Meliputi Warna Primer dan Sekunder"
+      ],
+      "skills": ["Pengenalan Warna", "Kognitif", "Keterampilan Visual", "Kosakata Nama Warna"],
+      "preview": [
+        "/products/MATCHING/Color Matching/1.jpg",
+        "/products/MATCHING/Color Matching/2.jpg",
+        "/products/MATCHING/Color Matching/3.jpg"
+      ]
+    },
+    {
+      "id": "B7C8D9E0F1G2H3I4",
+      "title": "Mencocokkan Objek dengan Bayangan",
+      "description": "Latihan mencocokkan objek dengan bayangannya. Aktivitas ini sangat efektif untuk melatih kemampuan diskriminasi visual, persepsi bentuk (figure-ground perception), serta meningkatkan fokus dan ketelitian pada detail gambar.",
+      "ageCategory": "2+",
+      "subcategory": "matching",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3650,
+      "priceCategory": 18900,
+      "slug-file": "shadow-matching",
+      "image": "/products/MATCHING/Shadow Matching/2.jpg",
+      "features": [
+        "Permainan Mencocokkan Bayangan",
+        "Melatih Diskriminasi Visual",
+        "Banyak Variasi Gambar Objek",
+        "Melatih Fokus dan Ketelitian"
+      ],
+      "skills": [
+        "Keterampilan Visual (Persepsi Bentuk)",
+        "Fokus dan Konsentrasi",
+        "Kognitif",
+        "Motorik Halus (Menarik Garis)"
+      ],
+      "preview": [
+        "/products/MATCHING/Shadow Matching/1.jpg",
+        "/products/MATCHING/Shadow Matching/2.jpg",
+        "/products/MATCHING/Shadow Matching/3.jpg",
+        "/products/MATCHING/Shadow Matching/4.jpg"
+      ]
+    },
+    {
+      "id": "J5K6L7M8N9O0P1Q2",
+      "title": "Mencocokkan Bentuk Geometri",
+      "description": "Latihan pengenalan dan pencocokan bentuk dasar (lingkaran, segitiga, kotak) hingga bentuk lanjutan (oval, diamond, heksagon, pentagon). Membantu membangun dasar pengetahuan geometri dan melatih keterampilan visual-spasial.",
+      "ageCategory": "2+",
+      "subcategory": "matching",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3700,
+      "priceCategory": 15500,
+      "slug-file": "shape-matching",
+      "image": "/products/MATCHING/Shape Matching/1.jpg",
+      "features": [
+        "Permainan Mencocokkan Bentuk Geometri",
+        "Mencakup Bentuk Dasar dan Lanjutan",
+        "Melatih Keterampilan Visual-Spasial",
+        "Aktivitas Menarik Garis"
+      ],
+      "skills": ["Pengenalan Bentuk Geometri", "Keterampilan Visual-Spasial", "Kognitif", "Motorik Halus"],
+      "preview": [
+        "/products/MATCHING/Shape Matching/1.jpg",
+        "/products/MATCHING/Shape Matching/2.jpg",
+        "/products/MATCHING/Shape Matching/3.jpg"
+      ]
+    },
+    {
+      "id": "R3S4T5U6V7W8X9Y0",
+      "title": "Mencocokkan Kata (Sight Words)",
+      "description": "Latihan mencocokkan kata-kata yang sama (Sight Words atau Kata Kunci) untuk membangun dasar literasi awal. Aktivitas ini membantu pengenalan kata secara visual, meningkatkan memori kerja, dan memperkaya kosakata dasar.",
+      "ageCategory": "2+",
+      "subcategory": "matching",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3550,
+      "priceCategory": 14500,
+      "slug-file": "word-matching",
+      "image": "/products/MATCHING/Word Matching/1.jpg",
+      "features": [
+        "Permainan Mencocokkan Kata-Kata",
+        "Menggunakan Sight Words (Kata Kunci)",
+        "Meningkatkan Pengenalan Kata Visual",
+        "Latihan Literasi Awal"
+      ],
+      "skills": ["Literasi Awal", "Pengenalan Kata", "Keterampilan Visual", "Memori Kerja"],
+      "preview": [
+        "/products/MATCHING/Word Matching/1.jpg",
+        "/products/MATCHING/Word Matching/2.jpg",
+        "/products/MATCHING/Word Matching/3.jpg"
+      ]
+    },
+    {
+      "id": "A1B2C3D4E5F6G7H8",
+      "title": "Mencocokkan Warna",
+      "description": "Latihan mengenal dan mencocokkan berbagai warna melalui gambar-gambar yang menarik: mobil, balon hati, es krim, toples, lebah, dan buah-buahan. Melatih kemampuan kognitif dan visual.",
       "ageCategory": "3+",
       "subcategory": "cut-and-paste",
       "ageRange": "3+ tahun",
       "minAge": 3,
-      "price": 32000,
-      "priceCategory": 35000,
-      "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400",
-      "features": ["18 Pola Hewan", "Tingkat Kesulitan Bertahap", "Panduan Keamanan"],
-      "skills": ["Motorik Halus", "Ketelitian", "Kreativitas"],
+      "price": 3500,
+      "priceCategory": 14500,
+      "slug-file": "mencocokan-warna",
+      "image": "/products/CUT AND PASTE/Color Matching/1.jpg",
+      "features": [
+        "Permainan Mencocokkan Warna",
+        "Bermacam Objek (Mobil, Balon, Es Krim, dll.)",
+        "Warna Primer dan Sekunder"
+      ],
+      "skills": ["Pengenalan Warna", "Kognitif", "Keterampilan Visual"],
       "preview": [
-        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300",
-        "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=300",
-        "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=300",
-        "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=300"
+        "/products/CUT AND PASTE/Color Matching/1.jpg",
+        "/products/CUT AND PASTE/Color Matching/2.jpg",
+        "/products/CUT AND PASTE/Color Matching/3.jpg",
+        "/products/CUT AND PASTE/Color Matching/4.jpg",
+        "/products/CUT AND PASTE/Color Matching/5.jpg",
+        "/products/CUT AND PASTE/Color Matching/6.jpg"
       ]
+    },
+    {
+      "id": "9R7S3E5T1Y8U2I4O",
+      "title": "Labirin Huruf & Bentuk",
+      "description": "Koleksi permainan labirin yang seru dan menantang. Bantu pahlawan super (superhero) menemukan jalan menuju 52 huruf Alfabet (kapital dan kecil) serta 7 bentuk dasar (segitiga, persegi, hati, dan lainnya). Melatih kemampuan kognitif, fokus, dan keterampilan motorik halus.",
+      "ageCategory": "3+",
+      "subcategory": "maze-worksheet",
+      "ageRange": "3+ tahun",
+      "minAge": 3,
+      "price": 3750,
+      "priceCategory": 16900,
+      "slug-file": "maze-game",
+      "image": "/products/MAZE WORKSHEET/Maze Game/1.jpg",
+      "features": [
+        "52 Labirin Huruf Kapital (A-Z) dan Kecil (a-z)",
+        "7 Labirin Bentuk (Segitiga, Kotak, Hati, dll.)",
+        "Tingkat Kesulitan Bervariasi"
+      ],
+      "skills": ["Pengenalan Huruf", "Pengenalan Bentuk", "Pemecahan Masalah", "Keterampilan Motorik Halus"],
+      "preview": [
+        "/products/MAZE WORKSHEET/Maze Game/1.jpg",
+        "/products/MAZE WORKSHEET/Maze Game/2.jpg",
+        "/products/MAZE WORKSHEET/Maze Game/3.jpg",
+        "/products/MAZE WORKSHEET/Maze Game/4.jpg",
+        "/products/MAZE WORKSHEET/Maze Game/5.jpg",
+        "/products/MAZE WORKSHEET/Maze Game/6.jpg"
+      ]
+    },
+    {
+      "id": "G2H7K0L4Q9W1X5Z8",
+      "title": "Memilah Warna Dasar",
+      "description": "Latihan mengenal dan memilah 9 warna (Merah, Biru, Oranye, Hijau, Kuning, Ungu, Pink, Hitam, Coklat) dengan mencocokkan benda-benda pada kategori warna yang tepat. Melatih kemampuan kognitif, fokus visual, dan pemahaman kategori.",
+      "ageCategory": "3+",
+      "subcategory": "cut-and-paste",
+      "ageRange": "3+ tahun",
+      "minAge": 3,
+      "price": 3700,
+      "priceCategory": 18500,
+      "slug-file": "color-sorting",
+      "image": "/products/CUT AND PASTE/Color Sorting/1.jpg",
+      "features": [
+        "Permainan Memilah/Menyortir Warna",
+        "Mencakup 9 Jenis Warna",
+        "Latihan Keterampilan Visual dan Pemecahan Masalah"
+      ],
+      "skills": ["Pengenalan Warna", "Kognitif", "Keterampilan Visual", "Pemilahan Kategori"],
+      "preview": [
+        "/products/CUT AND PASTE/Color Sorting/1.jpg",
+        "/products/CUT AND PASTE/Color Sorting/2.jpg",
+        "/products/CUT AND PASTE/Color Sorting/3.jpg"
+      ]
+    },
+    {
+      "id": "P1T2R3M4W5F6X7Y8",
+      "title": "Mencocokkan Ekspresi Emosi (Laki-laki)",
+      "description": "Latihan mengenal dan mencocokkan 10 ekspresi emosi (senang, sedih, marah, gembira, dll.) menggunakan gambar karakter anak laki-laki. Melatih kecerdasan emosional (EQ) dan keterampilan memotong/menempel.",
+      "ageCategory": "3+",
+      "subcategory": "cut-and-paste",
+      "ageRange": "3+ tahun",
+      "minAge": 3,
+      "price": 3850,
+      "priceCategory": 12400,
+      "slug-file": "emotions-activity-for-boy",
+      "image": "/products/CUT AND PASTE/Emotions Activity for BOY/2.jpg",
+      "features": [
+        "10 Ekspresi Emosi Dasar",
+        "Karakter Anak Laki-laki",
+        "Latihan Cut & Paste",
+        "Flashcards Pengenalan Perasaan"
+      ],
+      "skills": ["Kecerdasan Emosional", "Kognitif", "Motorik Halus", "Pengenalan Diri"],
+      "preview": [
+        "/products/CUT AND PASTE/Emotions Activity for BOY/2.jpg",
+        "/products/CUT AND PASTE/Emotions Activity for BOY/3.jpg",
+        "/products/CUT AND PASTE/Emotions Activity for BOY/1.png"
+      ]
+    },
+    {
+      "id": "Z9L8K7J6H5G4F3E2",
+      "title": "Mencocokkan Ekspresi Emosi (Perempuan)",
+      "description": "Latihan mengenal dan mencocokkan 10 ekspresi emosi (senang, sedih, marah, gembira, dll.) menggunakan gambar karakter anak perempuan. Melatih kecerdasan emosional (EQ) dan keterampilan memotong/menempel.",
+      "ageCategory": "3+",
+      "subcategory": "cut-and-paste",
+      "ageRange": "3+ tahun",
+      "minAge": 3,
+      "price": 3450,
+      "priceCategory": 17800,
+      "slug-file": "emotions-activity-for-girl",
+      "image": "/products/CUT AND PASTE/Emotions Activity for GIRL/2.jpg",
+      "features": [
+        "10 Ekspresi Emosi Dasar",
+        "Karakter Anak Perempuan",
+        "Latihan Cut & Paste",
+        "Flashcards Pengenalan Perasaan"
+      ],
+      "skills": ["Kecerdasan Emosional", "Kognitif", "Motorik Halus", "Pengenalan Diri"],
+      "preview": [
+        "/products/CUT AND PASTE/Emotions Activity for GIRL/2.jpg",
+        "/products/CUT AND PASTE/Emotions Activity for GIRL/3.jpg",
+        "/products/CUT AND PASTE/Emotions Activity for GIRL/1.png"
+      ]
+    },
+    {
+      "id": "B4D6F8H0J2L4N6P8",
+      "title": "Mencari dan Mencocokkan Bentuk yang Hilang",
+      "description": "Latihan memecahkan masalah visual dengan menemukan dan menempelkan bentuk geometris yang hilang pada gambar objek (hewan, kendaraan, benda). Meningkatkan keterampilan visual, pengenalan bentuk, dan motorik halus.",
+      "ageCategory": "3+",
+      "subcategory": "cut-and-paste",
+      "ageRange": "3+ tahun",
+      "minAge": 3,
+      "price": 3950,
+      "priceCategory": 10500,
+      "slug-file": "missing-shape",
+      "image": "/products/CUT AND PASTE/Missing Shape/2.jpg",
+      "features": [
+        "Permainan Mencari Bentuk yang Hilang",
+        "Pengenalan Bentuk Geometris",
+        "Aktivitas Potong dan Tempel",
+        "Latihan Kognitif Visual"
+      ],
+      "skills": ["Pengenalan Bentuk", "Keterampilan Visual", "Pemecahan Masalah", "Motorik Halus"],
+      "preview": [
+        "/products/CUT AND PASTE/Missing Shape/1.png",
+        "/products/CUT AND PASTE/Missing Shape/2.jpg",
+        "/products/CUT AND PASTE/Missing Shape/3.jpg"
+      ]
+    },
+    {
+      "id": "V0W1X2Y3Z4A5B6C7",
+      "title": "Melanjutkan Pola Gambar (Cut & Paste)",
+      "description": "Kumpulan lembar kerja untuk melatih kemampuan mengenali dan melanjutkan pola urutan gambar (misalnya pola A-B-A-B). Menggunakan metode potong dan tempel untuk menemukan gambar yang tepat dan mengasah kemampuan berpikir logis.",
+      "ageCategory": "3+",
+      "subcategory": "cut-and-paste",
+      "ageRange": "3+ tahun",
+      "minAge": 3,
+      "price": 3600,
+      "priceCategory": 15900,
+      "slug-file": "pattern-sheets",
+      "image": "/products/CUT AND PASTE/Pattern Sheets/6.jpg",
+      "features": [
+        "Latihan Melanjutkan Pola Visual",
+        "Metode Cut & Paste",
+        "Berbagai Jenis Pola Urutan",
+        "Pengenalan Urutan Logis"
+      ],
+      "skills": ["Pengenalan Pola", "Kognitif", "Keterampilan Visual", "Motorik Halus"],
+      "preview": [
+        "/products/CUT AND PASTE/Pattern Sheets/5.jpg",
+        "/products/CUT AND PASTE/Pattern Sheets/6.jpg",
+        "/products/CUT AND PASTE/Pattern Sheets/7.jpg",
+        "/products/CUT AND PASTE/Pattern Sheets/8.jpg",
+        "/products/CUT AND PASTE/Pattern Sheets/9.jpg",
+        "/products/CUT AND PASTE/Pattern Sheets/1.png",
+        "/products/CUT AND PASTE/Pattern Sheets/2.png",
+        "/products/CUT AND PASTE/Pattern Sheets/3.png",
+        "/products/CUT AND PASTE/Pattern Sheets/4.png"
+      ]
+    },
+    {
+      "id": "E5F6G7H8I9J0K1L2",
+      "title": "Skill Menggunting Garis",
+      "description": "Kumpulan lembar kerja untuk melatih keterampilan motorik halus dan koordinasi mata-tangan dengan menggunting berbagai jenis garis (lurus, bergelombang, zigzag, lengkung). Aktivitas persiapan penting untuk memotong bentuk.",
+      "ageCategory": "3+",
+      "subcategory": "cut-and-paste",
+      "ageRange": "3+ tahun",
+      "minAge": 3,
+      "price": 3150,
+      "priceCategory": 19100,
+      "slug-file": "scissor-cutting-worksheet",
+      "image": "/products/CUT AND PASTE/Scissor Cutting Worksheet/3.jpg",
+      "features": [
+        "Latihan Menggunting Berbagai Garis",
+        "Melatih Motorik Halus",
+        "Pola Gunting Sederhana hingga Menantang",
+        "Koordinasi Mata-Tangan"
+      ],
+      "skills": ["Motorik Halus", "Koordinasi Mata-Tangan", "Keterampilan Gunting"],
+      "preview": [
+        "/products/CUT AND PASTE/Scissor Cutting Worksheet/3.jpg",
+        "/products/CUT AND PASTE/Scissor Cutting Worksheet/4.jpg",
+        "/products/CUT AND PASTE/Scissor Cutting Worksheet/5.jpg",
+        "/products/CUT AND PASTE/Scissor Cutting Worksheet/1.png",
+        "/products/CUT AND PASTE/Scissor Cutting Worksheet/2.png"
+      ]
+    },
+    {
+      "id": "R7S6T5U4V3W2X1Y0",
+      "title": "Latihan Dasar Menggunting",
+      "description": "Aktivitas menggunting dasar untuk anak yang baru mulai menggunakan gunting. Fokus pada pemotongan garis lurus pendek untuk membangun kekuatan tangan, ketepatan pegangan gunting, dan kontrol motorik.",
+      "ageCategory": "3+",
+      "subcategory": "cut-and-paste",
+      "ageRange": "3+ tahun",
+      "minAge": 3,
+      "price": 3550,
+      "priceCategory": 13700,
+      "slug-file": "scissors-practice",
+      "image": "/products/CUT AND PASTE/Scissors Practice/3.jpg",
+      "features": [
+        "Latihan Gunting untuk Pemula",
+        "Fokus pada Garis Lurus dan Pendek",
+        "Membangun Kekuatan Tangan",
+        "Kontrol Gunting Dasar"
+      ],
+      "skills": ["Motorik Halus", "Keterampilan Gunting", "Koordinasi Mata-Tangan"],
+      "preview": [
+        "/products/CUT AND PASTE/Scissors Practice/1.jpg",
+        "/products/CUT AND PASTE/Scissors Practice/3.jpg",
+        "/products/CUT AND PASTE/Scissors Practice/2.jpg",
+        "/products/CUT AND PASTE/Scissors Practice/4.jpg",
+        "/products/CUT AND PASTE/Scissors Practice/5.jpg"
+      ]
+    },
+    {
+      "id": "A1B2C3D4E5F6G7H8",
+      "title": "Titik Huruf Kapital Dasar",
+      "description": "Koleksi lembar kerja 'Dot Mat' untuk melatih anak mengisi huruf kapital (A-Z) menggunakan spidol dot atau stiker, fokus pada pengenalan bentuk huruf dasar.",
+      "ageCategory": "2+",
+      "subcategory": "do-a-dot",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 2990,
+      "priceCategory": 13150,
+      "slug-file": "dot-letter",
+      "image": "/products/DO A DOT/DOT Letter/1.jpg",
+      "features": [
+        "Lembar Kerja Huruf Kapital",
+        "Melatih Koordinasi untuk Menulis",
+        "Aktivitas Mandiri dengan Spidol Dot"
+      ],
+      "skills": ["Pengenalan Alfabet", "Motorik Halus", "Fokus & Ketekunan"],
+      "preview": [
+        "/products/DO A DOT/DOT Letter/1.jpg",
+        "/products/DO A DOT/DOT Letter/2.jpg",
+        "/products/DO A DOT/DOT Letter/3.jpg"
+      ]
+    },
+    {
+      "id": "X9W8V7U6T5S4R3Q2",
+      "title": "Titik Objek & Huruf Alfabet (A-Z)",
+      "description": "Set aktivitas Dot Marker lengkap dari A sampai Z, menggabungkan pengenalan huruf kapital/kecil dengan ilustrasi objek (Apple, Ball, Cat) untuk pembelajaran kosakata dini.",
+      "ageCategory": "2+",
+      "subcategory": "do-a-dot",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3650,
+      "priceCategory": 17900,
+      "slug-file": "dot-object-letter-1",
+      "image": "/products/DO A DOT/DOT Object & Letter 1/1.jpg",
+      "features": [
+        "Belajar 26 Huruf (Besar & Kecil)",
+        "Memperkaya Kosakata dengan Objek",
+        "Dapat diisi dengan Pom-poms atau Stiker"
+      ],
+      "skills": ["Pengenalan Huruf & Kosakata", "Motorik Halus", "Asosiasi Kata-Gambar"],
+      "preview": [
+        "/products/DO A DOT/DOT Object & Letter 1/1.jpg",
+        "/products/DO A DOT/DOT Object & Letter 1/2.jpg",
+        "/products/DO A DOT/DOT Object & Letter 1/3.jpg"
+      ]
+    },
+    {
+      "id": "R1S9T4V8W3Z7Y2X6",
+      "title": "Aktivitas Titik Buah, Sayur, & Huruf",
+      "description": "Set lembar kerja komprehensif untuk melatih motorik halus dan mengenalkan berbagai macam buah, sayuran, dan benda, dilengkapi dengan lembar kerja pengisian huruf DOT.",
+      "ageCategory": "2+",
+      "subcategory": "do-a-dot",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3250,
+      "priceCategory": 16950,
+      "slug-file": "dot-object-letter-2",
+      "image": "/products/DO A DOT/DOT Object & Letter 2/1.jpg",
+      "features": [
+        "20+ Gambar Objek (Buah & Sayur)",
+        "Melatih Identifikasi Benda & Warna",
+        "Lembar Latihan Huruf DOT Terpisah"
+      ],
+      "skills": ["Pengenalan Kosakata (Objek)", "Motorik Halus", "Fokus & Ketepatan"],
+      "preview": [
+        "/products/DO A DOT/DOT Object & Letter 2/1.jpg",
+        "/products/DO A DOT/DOT Object & Letter 2/2.jpg",
+        "/products/DO A DOT/DOT Object & Letter 2/3.jpg"
+      ]
+    },
+    {
+      "id": "M4L3K2J1H9G8F7E6",
+      "title": "Dot Painting Bentuk Dasar",
+      "description": "Paket lembar kerja Dot Painting untuk mengenalkan anak pada berbagai bentuk geometri, mulai dari bentuk dasar (lingkaran, persegi) hingga kompleks (bintang, heksagon).",
+      "ageCategory": "2+",
+      "subcategory": "do-a-dot",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 3300,
+      "priceCategory": 10550,
+      "slug-file": "dot-shape",
+      "image": "/products/DO A DOT/DOT Shape/1.jpg",
+      "features": [
+        "10+ Lembar Bentuk Geometri",
+        "Pelajaran Menggambar Bentuk",
+        "Melatih Ketelitian dalam Mengisi Ruang"
+      ],
+      "skills": ["Pengenalan Bentuk (Geometri)", "Motorik Halus", "Keterampilan Pra-Matematika"],
+      "preview": ["/products/DO A DOT/DOT Shape/1.jpg", "/products/DO A DOT/DOT Shape/2.jpg"]
     },
     {
       "id": 13,
@@ -650,26 +1124,6 @@
       "slug-file": "tracing-sheets-3"
     },
     {
-      "id": 18,
-      "title": "Mencocokkan Angka dan Jumlah",
-      "description": "Permainan mencocokkan angka dengan jumlah benda untuk belajar konsep bilangan",
-      "ageCategory": "2+",
-      "subcategory": "matching",
-      "ageRange": "2+ tahun",
-      "minAge": 2,
-      "price": 33000,
-      "priceCategory": 36000,
-      "image": "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=400",
-      "features": ["Angka 1-10", "Gambar Menarik", "Konsep Bilangan"],
-      "skills": ["Matematika", "Visual", "Logika"],
-      "preview": [
-        "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300",
-        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300",
-        "https://images.unsplash.com/photo-1601363772159-b5b53e8a48f5?w=300",
-        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300"
-      ]
-    },
-    {
       "id": 19,
       "title": "Permainan Peran Keluarga",
       "description": "Aktivitas bermain peran dengan tema keluarga untuk mengajarkan nilai-nilai keluarga",
@@ -687,26 +1141,6 @@
         "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=300",
         "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=300",
         "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=300"
-      ]
-    },
-    {
-      "id": 21,
-      "title": "Menggunting Bentuk Transportasi",
-      "description": "Pola menggunting berbagai alat transportasi untuk melatih motorik halus",
-      "ageCategory": "3+",
-      "subcategory": "cut-and-paste",
-      "ageRange": "3+ tahun",
-      "minAge": 3,
-      "price": 27000,
-      "priceCategory": 24000,
-      "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400",
-      "features": ["12 Kendaraan", "Garis Tebal", "Mudah Digunting"],
-      "skills": ["Motorik Halus", "Transportasi", "Koordinasi"],
-      "preview": [
-        "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=300",
-        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=300",
-        "https://images.unsplash.com/photo-1593642532400-2682810df593?w=300",
-        "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=300"
       ]
     },
     {
@@ -786,26 +1220,6 @@
       "slug-file": "ending-letter"
     },
     {
-      "id": 25,
-      "title": "Labirin Petualangan Hewan",
-      "description": "Koleksi labirin bertema hewan untuk melatih konsentrasi dan problem solving",
-      "ageCategory": "3+",
-      "subcategory": "maze-worksheet",
-      "ageRange": "3+ tahun",
-      "minAge": 3,
-      "price": 31000,
-      "priceCategory": 34000,
-      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=400",
-      "features": ["20 Labirin", "Tingkat Kesulitan Bertahap", "Tema Hewan"],
-      "skills": ["Konsentrasi", "Problem Solving", "Koordinasi"],
-      "preview": [
-        "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=300",
-        "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=300",
-        "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=300",
-        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300"
-      ]
-    },
-    {
       "id": "F5I9C3L7K1T6B4S2",
       "title": "Mencari dan Mewarnai Sight Words (Color Search)",
       "description": "Modul latihan yang berfokus pada pengenalan kata-kata yang sering muncul (Sight Words) melalui aktivitas mencari kata yang tersembunyi (Word Search) dan mewarnainya. Anak akan melatih pengenalan visual kata, fokus, dan pembedaan kata-kata yang mirip secara intensif.",
@@ -849,26 +1263,6 @@
         "https://images.unsplash.com/photo-1553696590-4b3f68898333?w=300",
         "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=300",
         "https://images.unsplash.com/photo-1563281577-a7be47e20db9?w=300"
-      ]
-    },
-    {
-      "id": 28,
-      "title": "Labirin Angka dan Huruf",
-      "description": "Labirin edukatif yang menggabungkan pengenalan angka dan huruf",
-      "ageCategory": "3+",
-      "subcategory": "maze-worksheet",
-      "ageRange": "3+ tahun",
-      "minAge": 3,
-      "price": 36000,
-      "priceCategory": 39000,
-      "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
-      "features": ["25 Labirin", "Alfabet & Angka", "Tingkat Lanjut"],
-      "skills": ["Literasi", "Numerasi", "Problem Solving"],
-      "preview": [
-        "https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?w=300",
-        "https://images.unsplash.com/photo-1632571401005-458e9d244591?w=300",
-        "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300",
-        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b0d0?w=300"
       ]
     }
   ]

@@ -16,7 +16,7 @@ import {
   Brain,
   type LucideIcon,
 } from "lucide-react";
-import mock from "./mock.json";
+import { product_list } from "./product-list.json";
 import { categories } from "./categories.json";
 import ProductDetailModal from "@/components/ProductDetailModal/ProductDetailModal";
 import AgeCategoryFilter from "@/components/AgeCategoryFilter/AgeCategoryFilter";
@@ -60,7 +60,7 @@ const ProductsPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  const productsPerPage = 6;
+  const productsPerPage = 10;
 
   const ageCategories = [
     { id: "semua", name: "Semua Usia", emoji: "🎯", color: "teal" },
@@ -78,7 +78,7 @@ const ProductsPage: React.FC = () => {
       return allSubcategories;
     }
 
-    const productsForAge = (mock.mockdata as Product[]).filter(
+    const productsForAge = (product_list as Product[]).filter(
       (product) => product.ageCategory === selectedAgeCategory
     );
 
@@ -89,7 +89,7 @@ const ProductsPage: React.FC = () => {
 
   // Filter and search products
   const filteredProducts = useMemo(() => {
-    let filtered = mock.mockdata as Product[];
+    let filtered = product_list as Product[];
 
     if (selectedAgeCategory !== "semua") {
       filtered = filtered.filter((product) => product.ageCategory === selectedAgeCategory);
@@ -280,9 +280,9 @@ const ProductsPage: React.FC = () => {
           transition={{ delay: 0.3 }}
         >
           <p className="text-gray-600">
-            Menampilkan <span className="text-teal-600">{filteredProducts.length}</span>
-            {filteredProducts.length !== (mock.mockdata as Product[]).length && (
-              <span> dari {(mock.mockdata as Product[]).length} total produk</span>
+            Menampilkan <span className="text-teal-600">{filteredProducts.length}</span> produk 
+            {filteredProducts.length !== (product_list as Product[]).length && (
+              <span> dari {(product_list as Product[]).length} total produk</span>
             )}
           </p>
         </motion.div>
