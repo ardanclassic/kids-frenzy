@@ -27,20 +27,20 @@ const Navigation: React.FC = () => {
     <>
       {/* Fixed Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200/50 shadow-lg">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-3 lg:px-4 py-2.5 lg:py-4 flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <motion.div
-              className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
+              className="w-9 h-9 lg:w-12 lg:h-12 rounded-full flex items-center justify-center shadow-lg"
               style={{ background: `linear-gradient(135deg, #FF6B6B, #4ECDC4)` }}
               whileHover={{ rotate: 360, scale: 1.05 }}
               transition={{ duration: 0.5 }}
             >
-              <BookOpen className="text-white w-6 h-6" />
+              <BookOpen className="text-white w-4 h-4 lg:w-6 lg:h-6" />
             </motion.div>
-            <div>
-              <h1 className="text-2xl text-gradient text-transparent">Kids Frenzy</h1>
-              <p className="font-medium text-gray-400">Digital Learning</p>
+            <div className="text-left">
+              <h1 className="text-lg lg:text-2xl font-bold text-gradient text-transparent">Kids Frenzy</h1>
+              <p className="text-xs lg:text-sm font-medium text-gray-400 hidden sm:block">Digital Learning</p>
             </div>
           </Link>
 
@@ -97,13 +97,13 @@ const Navigation: React.FC = () => {
           {/* Mobile Menu Button */}
           <motion.button
             onClick={toggleMenu}
-            className="lg:hidden p-3 rounded-full text-white shadow-lg relative overflow-hidden"
+            className="lg:hidden p-2 rounded-full text-white shadow-lg relative overflow-hidden"
             style={{ background: `linear-gradient(135deg, #FF6B6B, #4ECDC4)` }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <motion.div animate={{ rotate: isMenuOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </motion.div>
           </motion.button>
         </div>

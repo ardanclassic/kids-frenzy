@@ -72,7 +72,7 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-5 mb-12"
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5 mb-12"
       >
         {products.map((product) => {
           const subcategoryInfo = getSubcategoryInfo(product.subcategory);
@@ -102,9 +102,12 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                   {/* MOBILE VIEW - Compact Layout */}
                   <div className="md:hidden">
                     {/* Top Badge - Mobile */}
-                    <div className="absolute top-2 right-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-                      <span className="px-2 py-0.5 rounded-md text-xs bg-amber-100/90 backdrop-blur-sm text-amber-700">
-                        {product.ageRange}
+                    <div className="absolute top-3 left-3 right-3 flex items-start justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                      <span className="px-3 py-1.5 rounded-xl text-xs bg-white/90 backdrop-blur-sm text-slate-700 flex items-center gap-1.5 shadow-sm">
+                        <span className="text-sm">{subcategoryInfo.emoji}</span>
+                      </span>
+                      <span className="px-3 py-1.5 rounded-xl text-xs bg-amber-100/90 backdrop-blur-sm text-amber-700 shadow-sm">
+                        {product.minAge}+
                       </span>
                     </div>
 
@@ -156,10 +159,9 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                     <div className="absolute top-3 left-3 right-3 flex items-start justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-300">
                       <span className="px-3 py-1.5 rounded-xl text-xs bg-white/90 backdrop-blur-sm text-slate-700 flex items-center gap-1.5 shadow-sm">
                         <span className="text-sm">{subcategoryInfo.emoji}</span>
-                        <span>{subcategoryInfo.name}</span>
                       </span>
                       <span className="px-3 py-1.5 rounded-xl text-xs bg-amber-100/90 backdrop-blur-sm text-amber-700 shadow-sm">
-                        {product.ageRange}
+                        {product.minAge}+
                       </span>
                     </div>
 
