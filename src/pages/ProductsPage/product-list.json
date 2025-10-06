@@ -10,9 +10,12 @@
       "minAge": 2,
       "price": 3700,
       "priceCategory": 15900,
-      "pageCount": 50,
+      "totalPages": 53,
+      "slug-file": "alphabet",
       "image": "/products/COLORING/ALPHABET/1.jpg",
-      "features": ["26 Halaman Mewarnai Huruf", "Latihan Find and Color", "Fokus Literasi Awal", "50 Halaman Total"],
+      "checkout_link": "http://lynk.id/bitlab/9z9040xmvrok/checkout",
+      "bundle_checkout_link": "",
+      "features": ["Latihan Find and Color", "Fokus Literasi Awal"],
       "skills": ["Kreativitas", "Pengenalan Abjad", "Motorik Halus", "Fokus"],
       "preview": [
         "/products/COLORING/ALPHABET/1.jpg",
@@ -20,8 +23,7 @@
         "/products/COLORING/ALPHABET/3.jpg",
         "/products/COLORING/ALPHABET/4.jpg",
         "/products/COLORING/ALPHABET/5.jpg"
-      ],
-      "slug-file": "alphabet"
+      ]
     },
     {
       "id": 2,
@@ -33,7 +35,10 @@
       "minAge": 1,
       "price": 35000,
       "priceCategory": 38000,
+      "totalPages": 30,
       "image": "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=400",
+      "checkout_link": "",
+      "bundle_checkout_link": "",
       "features": ["40 Kartu", "Nama Bilingual", "Cetak Mudah"],
       "skills": ["Kosakata", "Visual", "Memori"],
       "preview": [
@@ -51,10 +56,13 @@
       "subcategory": "puzzle-game",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3900,
+      "price": 6500,
       "priceCategory": 15500,
+      "totalPages": 70,
       "slug-file": "puzzle-game-1",
       "image": "/products/PUZZLE GAME/Puzzle Game 1/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/95w67kdkmoyk/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Puluhan desain puzzle objek yang beragam",
         "Melatih pemecahan masalah visual dan spasial",
@@ -88,10 +96,13 @@
       "subcategory": "puzzle-game",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3750,
+      "price": 4400,
       "priceCategory": 16900,
+      "totalPages": 40,
       "slug-file": "puzzle-game-2",
       "image": "/products/PUZZLE GAME/Puzzle Game 2/5.jpg",
+      "checkout_link": "http://lynk.id/bitlab/kme2rg7q7x2y/checkout",
+      "bundle_checkout_link": "",
       "features": ["Puzzle Abjad A-G", "Desain Huruf Kartun", "Asah Motorik & Logika", "Siap Cetak & Potong"],
       "skills": [
         "Pengenalan Abjad/Huruf (Pre-Literasi)",
@@ -120,8 +131,11 @@
       "minAge": 3,
       "price": 45000,
       "priceCategory": 42000,
+      "totalPages": 30,
       "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400",
-      "features": ["26 Halaman", "Garis Bantuan", "Contoh Kata"],
+      "checkout_link": "",
+      "bundle_checkout_link": "",
+      "features": ["Garis Bantuan", "Contoh Kata"],
       "skills": ["Menulis", "Motorik Halus", "Alfabet"],
       "preview": [
         "https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?w=300",
@@ -138,10 +152,12 @@
       "subcategory": "busy-books",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "totalPage": 21,
-      "price": 3850,
+      "price": 3550,
       "priceCategory": 15900,
+      "totalPages": 21,
       "image": "/products/BUSY BOOKS/Busy Book - 1 (DIY Toddler)/3.jpg",
+      "checkout_link": "http://lynk.id/bitlab/ggdw043god03/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Aktivitas Mencocokkan Warna",
         "Pengenalan 9 Bentuk Dasar",
@@ -160,17 +176,18 @@
     {
       "id": "N1L5F9C3T7R2S6M4",
       "title": "Mewarnai Sederhana (Objek & Warna)",
-      "description": "Kumpulan lembar kerja mewarnai yang fokus pada **objek sederhana** (seperti bola, pohon, apel) dan **petunjuk warna yang jelas**. Aktivitas ini dirancang untuk memperkenalkan anak pada nama-nama warna dasar dan objek sehari-hari, serta meningkatkan kemampuan mengikuti instruksi visual sederhana.",
+      "description": "Kumpulan lembar kerja mewarnai yang fokus pada objek sederhana (seperti bola, pohon, apel) dan petunjuk warna yang jelas. Aktivitas ini dirancang untuk memperkenalkan anak pada nama-nama warna dasar dan objek sehari-hari, serta meningkatkan kemampuan mengikuti instruksi visual sederhana.",
       "ageCategory": "2+",
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 3600,
       "priceCategory": 14500,
-      "pageCount": 30,
+      "totalPages": 35,
       "image": "/products/COLORING/FUN COLORING 1/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/rlwmzzwl94ee/checkout",
+      "bundle_checkout_link": "",
       "features": [
-        "30 Halaman Mewarnai",
         "Petunjuk Warna dalam Teks",
         "Objek Sehari-hari (Hewan, Benda)",
         "Fokus pada Keterampilan Mewarnai"
@@ -185,16 +202,19 @@
     },
     {
       "id": "J8C4B9W6A2D5Y7X3",
-      "title": "Anak Cerdas: Mengenal Huruf, Angka, Bentuk, Hewan & Transportasi",
+      "title": "Mengenal Huruf, Angka, Bentuk, Hewan & Transportasi",
       "description": "Modul interaktif yang komprehensif untuk pengenalan dunia sekitar, mencakup kategori Hewan (Laut, Hutan, Ternak), Transportasi (Udara, Darat, Air), Huruf A-Z dan bunyi awalnya, berhitung 1-10, serta berbagai bentuk geometri. Melatih keterampilan kognitif dan motorik halus.",
       "ageCategory": "2+",
       "subcategory": "busy-books",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "totalPage": 50,
-      "price": 7790,
+      "price": 6790,
       "priceCategory": 16500,
+      "totalPages": 50,
+      "slug-file": "busy-book-2-kids-binder",
       "image": "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/x8d01eqg6jr4/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "26 Huruf A-Z & Bunyi Awal",
         "Transportasi Darat, Laut, Udara",
@@ -215,8 +235,7 @@
         "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/4.jpg",
         "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/5.jpg",
         "/products/BUSY BOOKS/Busy Book - 2 (Kids Binder)/6.jpg"
-      ],
-      "slug-file": "busy-book-2-kids-binder"
+      ]
     },
     {
       "id": "B9G4C1J7F5L2K8H3",
@@ -226,12 +245,14 @@
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3600,
+      "price": 4000,
       "priceCategory": 14500,
-      "pageCount": 54,
+      "totalPages": 59,
+      "slug-file": "beginning-sound",
       "image": "/products/COLORING/BEGINNING SOUND/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/759wddrw2kl9/checkout",
+      "bundle_checkout_link": "",
       "features": [
-        "54 Halaman Latihan",
         "Fokus Pengenalan Bunyi Awal",
         "Aktivitas Mewarnai Selektif",
         "Melatih Keterampilan Fonik"
@@ -244,25 +265,26 @@
         "/products/COLORING/BEGINNING SOUND/4.jpg",
         "/products/COLORING/BEGINNING SOUND/5.jpg",
         "/products/COLORING/BEGINNING SOUND/6.jpg"
-      ],
-      "slug-file": "beginning-sound"
+      ]
     },
     {
       "id": "A8C1E5G9H3K7M2O6",
       "title": "Buku Mewarnai Lengkap (Abjad, Buah, Sayur, Hewan)",
-      "description": "Modul mewarnai yang sangat beragam, mencakup pengenalan **Abjad (A-Z)**, **Buah-buahan**, **Sayuran**, dan **Hewan**. Setiap halaman fokus pada satu objek yang disertai dengan namanya, menjadikannya alat yang efektif untuk pengembangan kosakata, kreativitas, dan pengenalan huruf/objek secara umum.",
+      "description": "Modul mewarnai yang sangat beragam, mencakup pengenalan Abjad (A-Z), Buah-buahan, Sayuran, dan Hewan. Setiap halaman fokus pada satu objek yang disertai dengan namanya, menjadikannya alat yang efektif untuk pengembangan kosakata, kreativitas, dan pengenalan huruf/objek secara umum.",
       "ageCategory": "2+",
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 4100,
+      "price": 6200,
       "priceCategory": 19500,
-      "pageCount": 70,
+      "totalPages": 85,
+      "slug-file": "fun-coloring-3",
       "image": "/products/COLORING/FUN COLORING 3/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/gje6l0j61y5y/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Mencakup 4 Topik Utama",
         "Pengenalan Kosakata Luas",
-        "70 Halaman Aktivitas Mewarnai",
         "Latihan Motorik Halus"
       ],
       "skills": ["Kosakata", "Pengenalan Abjad", "Kreativitas", "Motorik Halus"],
@@ -273,23 +295,23 @@
         "/products/COLORING/FUN COLORING 3/4.jpg",
         "/products/COLORING/FUN COLORING 3/5.jpg",
         "/products/COLORING/FUN COLORING 3/6.jpg"
-      ],
-      "slug-file": "fun-coloring-3"
+      ]
     },
     {
       "id": "S6W1R5T9F3C7L2A4",
       "title": "Buku Mencari dan Mewarnai Sight Words (Color Hunt)",
-      "description": "Modul lembar kerja yang intensif melatih pengenalan visual kata-kata yang sering muncul (Sight Words) melalui aktivitas mencari kata yang spesifik di antara kata-kata lain dan mewarnainya. Fokus utama adalah pada **diskriminasi visual** dan **mempercepat pengenalan kata** tanpa perlu mengeja.",
+      "description": "Modul lembar kerja yang intensif melatih pengenalan visual kata-kata yang sering muncul (Sight Words) melalui aktivitas mencari kata yang spesifik di antara kata-kata lain dan mewarnainya. Fokus utama adalah pada diskriminasi visual dan mempercepat pengenalan kata tanpa perlu mengeja.",
       "ageCategory": "2+",
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3600,
+      "price": 4200,
       "priceCategory": 14500,
-      "pageCount": 49,
+      "totalPages": 50,
       "image": "/products/COLORING/SIGHT WORD/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/rjrq826goky8/checkout",
+      "bundle_checkout_link": "",
       "features": [
-        "49 Halaman Latihan Sight Word",
         "Latihan Diskriminasi Visual",
         "Meningkatkan Fokus & Konsentrasi",
         "Aktivitas Mewarnai yang Menyenangkan"
@@ -306,15 +328,17 @@
     {
       "id": "T4R8P2H6V1J5D9S3",
       "title": "Buku Latihan Simetri & Mewarnai Angka",
-      "description": "Modul unik yang menggabungkan dua jenis latihan: **Simetri** (menciptakan gambar simetris dengan menjiplak dan mewarnai) dan **Color by Number** (mewarnai berdasarkan angka). Ini dirancang untuk melatih kesadaran spasial, kemampuan tracing, sekaligus memperkuat pengenalan angka.",
+      "description": "Modul unik yang menggabungkan dua jenis latihan: Simetri (menciptakan gambar simetris dengan menjiplak dan mewarnai) dan Color by Number (mewarnai berdasarkan angka). Ini dirancang untuk melatih kesadaran spasial, kemampuan tracing, sekaligus memperkuat pengenalan angka.",
       "ageCategory": "2+",
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3500,
+      "price": 3000,
       "priceCategory": 12500,
-      "pageCount": 23,
+      "totalPages": 25,
       "image": "/products/COLORING/FUN COLORING 2/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/m1326lpqezor/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Latihan Simetri (Tracing & Coloring)",
         "Aktivitas Color by Number",
@@ -332,15 +356,18 @@
     {
       "id": "L1M2N3P4Q5R6S7T8",
       "title": "Mencocokkan Huruf Alfabet",
-      "description": "Latihan dasar untuk mengenal dan mencocokkan huruf **kapital (uppercase)** dengan huruf **kecil (lowercase)**, serta mencocokkan huruf dengan **gambar yang relevan**. Meliputi berbagai aktivitas seperti **menarik garis** dan **menggunting-menempel (cut and paste)**. Sangat baik untuk **pengenalan alfabet** dan melatih **keterampilan visual**.",
+      "description": "Latihan dasar untuk mengenal dan mencocokkan huruf kapital (uppercase) dengan huruf kecil (lowercase), serta mencocokkan huruf dengan gambar yang relevan. Meliputi berbagai aktivitas seperti menarik garis dan menggunting-menempel (cut and paste). Sangat baik untuk pengenalan alfabet dan melatih keterampilan visual.",
       "ageCategory": "2+",
       "subcategory": "matching",
       "ageRange": "2+ tahun",
       "minAge": 2,
       "price": 3600,
       "priceCategory": 14900,
+      "totalPages": 30,
       "slug-file": "alphabet-matching",
       "image": "/products/MATCHING/Alphabet Matching/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/52kx8j9719o7/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Mencocokkan Huruf Kapital dengan Huruf Kecil",
         "Mencocokkan Huruf dengan Gambar Benda",
@@ -368,10 +395,13 @@
       "subcategory": "matching",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3850,
+      "price": 2850,
       "priceCategory": 12500,
+      "totalPages": 21,
       "slug-file": "color-matching",
       "image": "/products/MATCHING/Color Matching/3.jpg",
+      "checkout_link": "http://lynk.id/bitlab/wp1onve6mvw1/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Permainan Mencocokkan Warna",
         "Mencocokkan Warna dengan Nama",
@@ -393,10 +423,13 @@
       "subcategory": "matching",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3650,
+      "price": 5650,
       "priceCategory": 18900,
+      "totalPages": 50,
       "slug-file": "shadow-matching",
       "image": "/products/MATCHING/Shadow Matching/2.jpg",
+      "checkout_link": "http://lynk.id/bitlab/ge7zkdykjenn/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Permainan Mencocokkan Bayangan",
         "Melatih Diskriminasi Visual",
@@ -424,10 +457,13 @@
       "subcategory": "matching",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3700,
+      "price": 2800,
       "priceCategory": 15500,
+      "totalPages": 20,
       "slug-file": "shape-matching",
       "image": "/products/MATCHING/Shape Matching/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/0gxn9l054kjr/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Permainan Mencocokkan Bentuk Geometri",
         "Mencakup Bentuk Dasar dan Lanjutan",
@@ -449,10 +485,13 @@
       "subcategory": "matching",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3550,
+      "price": 2550,
       "priceCategory": 14500,
+      "totalPages": 20,
       "slug-file": "word-matching",
       "image": "/products/MATCHING/Word Matching/1.jpg",
+      "checkout_link": "",
+      "bundle_checkout_link": "",
       "features": [
         "Permainan Mencocokkan Kata-Kata",
         "Menggunakan Sight Words (Kata Kunci)",
@@ -468,16 +507,19 @@
     },
     {
       "id": "A1B2C3D4E5F6G7H8",
-      "title": "Mencocokkan Warna",
+      "title": "Mencocokkan Warna Objek",
       "description": "Latihan mengenal dan mencocokkan berbagai warna melalui gambar-gambar yang menarik: mobil, balon hati, es krim, toples, lebah, dan buah-buahan. Melatih kemampuan kognitif dan visual.",
-      "ageCategory": "3+",
-      "subcategory": "cut-and-paste",
-      "ageRange": "3+ tahun",
-      "minAge": 3,
-      "price": 3500,
+      "ageCategory": "2+",
+      "subcategory": "matching",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 2700,
       "priceCategory": 14500,
-      "slug-file": "mencocokan-warna",
-      "image": "/products/CUT AND PASTE/Color Matching/1.jpg",
+      "totalPages": 20,
+      "slug-file": "color-matching-2",
+      "image": "/products/MATCHING/Color Matching 2/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/47qk0xkk4n6g/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Permainan Mencocokkan Warna",
         "Bermacam Objek (Mobil, Balon, Es Krim, dll.)",
@@ -485,12 +527,12 @@
       ],
       "skills": ["Pengenalan Warna", "Kognitif", "Keterampilan Visual"],
       "preview": [
-        "/products/CUT AND PASTE/Color Matching/1.jpg",
-        "/products/CUT AND PASTE/Color Matching/2.jpg",
-        "/products/CUT AND PASTE/Color Matching/3.jpg",
-        "/products/CUT AND PASTE/Color Matching/4.jpg",
-        "/products/CUT AND PASTE/Color Matching/5.jpg",
-        "/products/CUT AND PASTE/Color Matching/6.jpg"
+        "/products/MATCHING/Color Matching/1.jpg",
+        "/products/MATCHING/Color Matching/2.jpg",
+        "/products/MATCHING/Color Matching/3.jpg",
+        "/products/MATCHING/Color Matching/4.jpg",
+        "/products/MATCHING/Color Matching/5.jpg",
+        "/products/MATCHING/Color Matching/6.jpg"
       ]
     },
     {
@@ -501,10 +543,13 @@
       "subcategory": "maze-worksheet",
       "ageRange": "3+ tahun",
       "minAge": 3,
-      "price": 3750,
+      "price": 8750,
       "priceCategory": 16900,
+      "totalPages": 100,
       "slug-file": "maze-game",
       "image": "/products/MAZE WORKSHEET/Maze Game/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/r6718zj2ky6m/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "52 Labirin Huruf Kapital (A-Z) dan Kecil (a-z)",
         "7 Labirin Bentuk (Segitiga, Kotak, Hati, dll.)",
@@ -528,10 +573,13 @@
       "subcategory": "cut-and-paste",
       "ageRange": "3+ tahun",
       "minAge": 3,
-      "price": 3700,
+      "price": 2400,
       "priceCategory": 18500,
+      "totalPages": 12,
       "slug-file": "color-sorting",
       "image": "/products/CUT AND PASTE/Color Sorting/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/qr1ep6gqjnlr/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Permainan Memilah/Menyortir Warna",
         "Mencakup 9 Jenis Warna",
@@ -545,6 +593,35 @@
       ]
     },
     {
+      "id": "K5Z9Q2L6H0W8G7X3",
+      "title": "Mengenal Alfabet A-Z",
+      "description": "Latihan mengenal huruf kapital dan huruf kecil A-Z sekaligus mempelajari 26 kosakata benda/hewan yang diawali oleh setiap huruf (seperti Ant, Alligator, Apple, hingga Zebra, Zip, Zoo). Kegiatan gunting dan tempel melatih kemampuan motorik halus, fokus, dan pengenalan kosakata/huruf.",
+      "ageCategory": "3+",
+      "subcategory": "cut-and-paste",
+      "ageRange": "3+ tahun",
+      "minAge": 3,
+      "price": 8100,
+      "priceCategory": 15500,
+      "totalPages": 80,
+      "slug-file": "cut-and-paste-abjad",
+      "image": "/products/CUT AND PASTE/Cut & Paste/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/e3qgywe4eyw8/checkout",
+      "bundle_checkout_link": "",
+      "features": [
+        "Mencakup 26 huruf (A-Z) dan 26 kosakata baru",
+        "Permainan Menggunting dan Menempel Edukatif",
+        "Aktivitas untuk pengenalan huruf, benda, dan motorik halus"
+      ],
+      "skills": ["Motorik Halus", "Pengenalan Huruf dan Bunyi (Phonics)", "Kosakata (Vocabulary)", "Kognitif Dasar"],
+      "preview": [
+        "/products/CUT AND PASTE/Cut & Paste/1.jpg",
+        "/products/CUT AND PASTE/Cut & Paste/2.jpg",
+        "/products/CUT AND PASTE/Cut & Paste/3.jpg",
+        "/products/CUT AND PASTE/Cut & Paste/4.jpg",
+        "/products/CUT AND PASTE/Cut & Paste/5.jpg"
+      ]
+    },
+    {
       "id": "P1T2R3M4W5F6X7Y8",
       "title": "Mencocokkan Ekspresi Emosi (Laki-laki)",
       "description": "Latihan mengenal dan mencocokkan 10 ekspresi emosi (senang, sedih, marah, gembira, dll.) menggunakan gambar karakter anak laki-laki. Melatih kecerdasan emosional (EQ) dan keterampilan memotong/menempel.",
@@ -552,10 +629,13 @@
       "subcategory": "cut-and-paste",
       "ageRange": "3+ tahun",
       "minAge": 3,
-      "price": 3850,
+      "price": 2500,
       "priceCategory": 12400,
+      "totalPages": 10,
       "slug-file": "emotions-activity-for-boy",
       "image": "/products/CUT AND PASTE/Emotions Activity for BOY/2.jpg",
+      "checkout_link": "http://lynk.id/bitlab/gyjezdd1dz98/checkout ",
+      "bundle_checkout_link": "",
       "features": [
         "10 Ekspresi Emosi Dasar",
         "Karakter Anak Laki-laki",
@@ -577,10 +657,13 @@
       "subcategory": "cut-and-paste",
       "ageRange": "3+ tahun",
       "minAge": 3,
-      "price": 3450,
+      "price": 2500,
       "priceCategory": 17800,
+      "totalPages": 10,
       "slug-file": "emotions-activity-for-girl",
       "image": "/products/CUT AND PASTE/Emotions Activity for GIRL/2.jpg",
+      "checkout_link": "http://lynk.id/bitlab/q618oqd67gnp/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "10 Ekspresi Emosi Dasar",
         "Karakter Anak Perempuan",
@@ -602,10 +685,13 @@
       "subcategory": "cut-and-paste",
       "ageRange": "3+ tahun",
       "minAge": 3,
-      "price": 3950,
+      "price": 2500,
       "priceCategory": 10500,
+      "totalPages": 10,
       "slug-file": "missing-shape",
       "image": "/products/CUT AND PASTE/Missing Shape/2.jpg",
+      "checkout_link": "http://lynk.id/bitlab/3wqvkj522w0p/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Permainan Mencari Bentuk yang Hilang",
         "Pengenalan Bentuk Geometris",
@@ -627,10 +713,13 @@
       "subcategory": "cut-and-paste",
       "ageRange": "3+ tahun",
       "minAge": 3,
-      "price": 3600,
+      "price": 5700,
       "priceCategory": 15900,
+      "totalPages": 50,
       "slug-file": "pattern-sheets",
       "image": "/products/CUT AND PASTE/Pattern Sheets/6.jpg",
+      "checkout_link": "http://lynk.id/bitlab/mjm7e9jndvrn/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Latihan Melanjutkan Pola Visual",
         "Metode Cut & Paste",
@@ -658,10 +747,13 @@
       "subcategory": "cut-and-paste",
       "ageRange": "3+ tahun",
       "minAge": 3,
-      "price": 3150,
+      "price": 3800,
       "priceCategory": 19100,
+      "totalPages": 20,
       "slug-file": "scissor-cutting-worksheet",
       "image": "/products/CUT AND PASTE/Scissor Cutting Worksheet/3.jpg",
+      "checkout_link": "http://lynk.id/bitlab/ok1x7voqqglg/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Latihan Menggunting Berbagai Garis",
         "Melatih Motorik Halus",
@@ -685,10 +777,13 @@
       "subcategory": "cut-and-paste",
       "ageRange": "3+ tahun",
       "minAge": 3,
-      "price": 3550,
+      "price": 3650,
       "priceCategory": 13700,
+      "totalPages": 30,
       "slug-file": "scissors-practice",
       "image": "/products/CUT AND PASTE/Scissors Practice/3.jpg",
+      "checkout_link": "http://lynk.id/bitlab/y91m867k05w5/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Latihan Gunting untuk Pemula",
         "Fokus pada Garis Lurus dan Pendek",
@@ -714,8 +809,11 @@
       "minAge": 2,
       "price": 2990,
       "priceCategory": 13150,
+      "totalPages": 26,
       "slug-file": "dot-letter",
       "image": "/products/DO A DOT/DOT Letter/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/mkw60g0l0669/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Lembar Kerja Huruf Kapital",
         "Melatih Koordinasi untuk Menulis",
@@ -736,10 +834,13 @@
       "subcategory": "do-a-dot",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3650,
+      "price": 3000,
       "priceCategory": 17900,
+      "totalPages": 26,
       "slug-file": "dot-object-letter-1",
       "image": "/products/DO A DOT/DOT Object & Letter 1/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/z15m8glqlw21/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Belajar 26 Huruf (Besar & Kecil)",
         "Memperkaya Kosakata dengan Objek",
@@ -760,10 +861,13 @@
       "subcategory": "do-a-dot",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3250,
+      "price": 5250,
       "priceCategory": 16950,
+      "totalPages": 50,
       "slug-file": "dot-object-letter-2",
       "image": "/products/DO A DOT/DOT Object & Letter 2/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/0jv251vg4y23/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "20+ Gambar Objek (Buah & Sayur)",
         "Melatih Identifikasi Benda & Warna",
@@ -784,10 +888,13 @@
       "subcategory": "do-a-dot",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3300,
+      "price": 2000,
       "priceCategory": 10550,
+      "totalPages": 10,
       "slug-file": "dot-shape",
       "image": "/products/DO A DOT/DOT Shape/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/qm01ngrn4dj7/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "10+ Lembar Bentuk Geometri",
         "Pelajaran Menggambar Bentuk",
@@ -806,7 +913,10 @@
       "minAge": 3,
       "price": 55000,
       "priceCategory": 58000,
+      "totalPages": 30,
       "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400",
+      "checkout_link": "",
+      "bundle_checkout_link": "",
       "features": ["Peralatan Dokter DIY", "10 Skenario", "Kartu Pasien"],
       "skills": ["Empati", "Komunikasi", "Problem Solving"],
       "preview": [
@@ -824,10 +934,13 @@
       "subcategory": "busy-books",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "totalPage": 29,
-      "price": 6950,
+      "price": 4550,
       "priceCategory": 18200,
+      "totalPages": 29,
+      "slug-file": "busy-book-3-human-anatomy",
       "image": "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/n7k93x7qnm15/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Diagram dan Organ Tubuh Utama",
         "Pengenalan Kerangka Manusia (Skeleton)",
@@ -843,8 +956,7 @@
         "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/4.jpg",
         "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/5.jpg",
         "/products/BUSY BOOKS/Busy Book - 3 (Human Anatomy)/6.jpg"
-      ],
-      "slug-file": "busy-book-3-human-anatomy"
+      ]
     },
     {
       "id": "C7N3R9B1D5F8G2H4",
@@ -854,12 +966,14 @@
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3650,
+      "price": 4500,
       "priceCategory": 14900,
-      "pageCount": 47,
+      "totalPages": 50,
+      "slug-file": "color-by-number",
       "image": "/products/COLORING/COLOR by NUMBER/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/g97rolon5q3z/checkout",
+      "bundle_checkout_link": "",
       "features": [
-        "45+ Halaman Mewarnai Angka",
         "Melatih Pengenalan Angka 1-12",
         "Meningkatkan Fokus & Konsentrasi",
         "Aktivitas yang Menyenangkan"
@@ -870,8 +984,7 @@
         "/products/COLORING/COLOR by NUMBER/2.jpg",
         "/products/COLORING/COLOR by NUMBER/3.jpg",
         "/products/COLORING/COLOR by NUMBER/4.jpg"
-      ],
-      "slug-file": "color-by-number"
+      ]
     },
     {
       "id": "W5L1K9X3P7A4C6D8",
@@ -883,8 +996,11 @@
       "minAge": 5,
       "price": 3450,
       "priceCategory": 11900,
-      "pageCount": 28,
+      "totalPages": 30,
+      "slug-file": "learning-shapes",
       "image": "/products/ACTIVITY/LEARNING SHAPES/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/4gvj7wjzverp/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "6 Bentuk Geometri Utama",
         "Aktivitas Mewarnai & Tracing",
@@ -899,8 +1015,7 @@
         "/products/ACTIVITY/LEARNING SHAPES/4.jpg",
         "/products/ACTIVITY/LEARNING SHAPES/5.jpg",
         "/products/ACTIVITY/LEARNING SHAPES/6.jpg"
-      ],
-      "slug-file": "learning-shapes"
+      ]
     },
     {
       "id": "P2R9F5T1K8M4V7G3",
@@ -910,10 +1025,13 @@
       "subcategory": "activity",
       "ageRange": "5+ tahun",
       "minAge": 5,
-      "price": 3250,
+      "price": 2750,
       "priceCategory": 11500,
-      "pageCount": 25,
+      "totalPages": 21,
+      "slug-file": "read-and-circle",
       "image": "/products/ACTIVITY/READ AND CIRCLE/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/vq81dmzlj910/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Fokus Sight Words Dasar",
         "Melatih Kecepatan Pengenalan Kata",
@@ -925,8 +1043,7 @@
         "/products/ACTIVITY/READ AND CIRCLE/1.jpg",
         "/products/ACTIVITY/READ AND CIRCLE/2.jpg",
         "/products/ACTIVITY/READ AND CIRCLE/3.jpg"
-      ],
-      "slug-file": "read-and-circle"
+      ]
     },
     {
       "id": "Q4B7J2M5R9Z1V6C3",
@@ -936,10 +1053,13 @@
       "subcategory": "activity",
       "ageRange": "5+ tahun",
       "minAge": 5,
-      "price": 3950,
+      "price": 9800,
       "priceCategory": 19500,
-      "pageCount": 115,
+      "totalPages": 115,
       "image": "/products/ACTIVITY/READING COMPREHENSION/1.jpg",
+      "slug-file": "reading-comprehension",
+      "checkout_link": "http://lynk.id/bitlab/22qmgr6e2kyx/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "100+ Latihan Bacaan",
         "Berbagai Jenis Pertanyaan (Esai, True/False)",
@@ -953,23 +1073,24 @@
         "/products/ACTIVITY/READING COMPREHENSION/3.jpg",
         "/products/ACTIVITY/READING COMPREHENSION/4.jpg",
         "/products/ACTIVITY/READING COMPREHENSION/5.jpg"
-      ],
-      "slug-file": "reading-comprehension"
+      ]
     },
     {
       "id": "K5F9H2J6Y1T8G4D7",
       "title": "Pemahaman & Pengetahuan Umum",
-      "description": "Modul lembar kerja komprehensif (100 halaman) yang berisi teks informatif singkat tentang topik Sains (Apel, Burung, Pelangi) dan Sosial (Profesi: Tentara, Tukang Pipa). Setiap teks diikuti oleh pertanyaan untuk menguji pemahaman, analisis teks, dan meningkatkan pengetahuan umum.",
+      "description": "Modul lembar kerja komprehensif yang berisi teks informatif singkat tentang topik Sains (Apel, Burung, Pelangi) dan Sosial (Profesi: Tentara, Tukang Pipa). Setiap teks diikuti oleh pertanyaan untuk menguji pemahaman, analisis teks, dan meningkatkan pengetahuan umum.",
       "ageCategory": "5+",
       "subcategory": "activity",
       "ageRange": "5+ tahun",
       "minAge": 5,
-      "price": 3900,
+      "price": 9500,
       "priceCategory": 17500,
-      "pageCount": 100,
+      "totalPages": 100,
       "image": "/products/ACTIVITY/READING WORKSHEETS 1/1.jpg",
+      "slug-file": "reading-worksheets-1",
+      "checkout_link": "http://lynk.id/bitlab/l32vpjg22pzv/checkout",
+      "bundle_checkout_link": "",
       "features": [
-        "100 Halaman Latihan",
         "Bacaan Sains dan Sosial Dasar",
         "Pertanyaan Pemahaman Teks",
         "Peningkatan Pengetahuan Umum"
@@ -983,8 +1104,7 @@
         "/products/ACTIVITY/READING WORKSHEETS 1/5.jpg",
         "/products/ACTIVITY/READING WORKSHEETS 1/6.jpg",
         "/products/ACTIVITY/READING WORKSHEETS 1/7.jpg"
-      ],
-      "slug-file": "reading-worksheets-1"
+      ]
     },
     {
       "id": "Z1C4T9G2P6X8M3S7",
@@ -994,12 +1114,14 @@
       "subcategory": "activity",
       "ageRange": "5+ tahun",
       "minAge": 5,
-      "price": 3650,
+      "price": 7400,
       "priceCategory": 14900,
-      "pageCount": 75,
+      "totalPages": 77,
       "image": "/products/ACTIVITY/READING WORKSHEETS 2/1.jpg",
+      "slug-file": "reading-worksheets-2",
+      "checkout_link": "http://lynk.id/bitlab/44q9o06o2o74/checkout",
+      "bundle_checkout_link": "",
       "features": [
-        "75 Halaman Latihan",
         "Bacaan Pendek tentang Objek & Hewan",
         "Pertanyaan Pilihan Ganda",
         "Fokus Pemahaman Literal"
@@ -1013,8 +1135,7 @@
         "/products/ACTIVITY/READING WORKSHEETS 2/5.jpg",
         "/products/ACTIVITY/READING WORKSHEETS 2/6.jpg",
         "/products/ACTIVITY/READING WORKSHEETS 2/7.jpg"
-      ],
-      "slug-file": "reading-worksheets-2"
+      ]
     },
     {
       "id": "M6Q3Z8X1V4P7D9T2",
@@ -1024,10 +1145,13 @@
       "subcategory": "activity",
       "ageRange": "5+ tahun",
       "minAge": 5,
-      "price": 3500,
+      "price": 2000,
       "priceCategory": 12500,
-      "pageCount": 30,
+      "totalPages": 7,
       "image": "/products/ACTIVITY/TRACE AND WRITE/1.jpg",
+      "slug-file": "trace-and-write",
+      "checkout_link": "http://lynk.id/bitlab/04pn9yrkgj8d/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Tracing dan Menulis Nama Bentuk",
         "Melatih Kontrol Pensil",
@@ -1035,8 +1159,7 @@
         "Meningkatkan Motorik Halus"
       ],
       "skills": ["Motorik Halus", "Keterampilan Pra-menulis", "Pengenalan Kosakata", "Koordinasi Mata-Tangan"],
-      "preview": ["/products/ACTIVITY/TRACE AND WRITE/1.jpg"],
-      "slug-file": "trace-and-write"
+      "preview": ["/products/ACTIVITY/TRACE AND WRITE/1.jpg"]
     },
     {
       "id": "F8D3A7B1C5E9H2G4",
@@ -1046,12 +1169,14 @@
       "subcategory": "activity",
       "ageRange": "5+ tahun",
       "minAge": 5,
-      "price": 3800,
+      "price": 4800,
       "priceCategory": 16500,
-      "pageCount": 68,
+      "totalPages": 70,
       "image": "/products/ACTIVITY/TRACING SHEETS 1/1.jpg",
+      "slug-file": "tracing-sheets-1",
+      "checkout_link": "http://lynk.id/bitlab/2p7ngpqv0z09/checkout",
+      "bundle_checkout_link": "",
       "features": [
-        "68 Halaman Latihan Sight Word",
         "Aktivitas Menjiplak dan Menulis",
         "Melatih Pembentukan Kalimat Sederhana",
         "Fokus Keterampilan Pra-menulis"
@@ -1064,8 +1189,7 @@
         "/products/ACTIVITY/TRACING SHEETS 1/4.jpg",
         "/products/ACTIVITY/TRACING SHEETS 1/5.jpg",
         "/products/ACTIVITY/TRACING SHEETS 1/6.jpg"
-      ],
-      "slug-file": "tracing-sheets-1"
+      ]
     },
     {
       "id": "A3D7G9K2M5Q8S1T4",
@@ -1075,10 +1199,13 @@
       "subcategory": "activity",
       "ageRange": "5+ tahun",
       "minAge": 5,
-      "price": 3750,
+      "price": 4000,
       "priceCategory": 15900,
-      "pageCount": 63,
+      "totalPages": 67,
       "image": "/products/ACTIVITY/TRACING SHEETS 2/1.jpg",
+      "slug-file": "tracing-sheets-2",
+      "checkout_link": "http://lynk.id/bitlab/o3mpe3367x1k/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "60+ Latihan Tracing Sight Word",
         "Fokus 100% Latihan Menjiplak",
@@ -1092,8 +1219,7 @@
         "/products/ACTIVITY/TRACING SHEETS 2/3.jpg",
         "/products/ACTIVITY/TRACING SHEETS 2/4.jpg",
         "/products/ACTIVITY/TRACING SHEETS 2/5.jpg"
-      ],
-      "slug-file": "tracing-sheets-2"
+      ]
     },
     {
       "id": "H2J5N9P3R6W1Y4T7",
@@ -1103,12 +1229,14 @@
       "subcategory": "activity",
       "ageRange": "5+ tahun",
       "minAge": 5,
-      "price": 3850,
+      "price": 7500,
       "priceCategory": 16900,
-      "pageCount": 78,
+      "totalPages": 80,
       "image": "/products/ACTIVITY/TRACING SHEETS 3/1.jpg",
+      "slug-file": "tracing-sheets-3",
+      "checkout_link": "http://lynk.id/bitlab/ojpndj1677ed/checkout",
+      "bundle_checkout_link": "",
       "features": [
-        "78 Halaman Latihan Sight Word",
         "5 Aktivitas Per Kata (Trace, Write, Color, Find)",
         "Melatih Keterampilan Pra-menulis",
         "Meningkatkan Kefasihan Membaca"
@@ -1120,8 +1248,7 @@
         "/products/ACTIVITY/TRACING SHEETS 3/3.jpg",
         "/products/ACTIVITY/TRACING SHEETS 3/4.jpg",
         "/products/ACTIVITY/TRACING SHEETS 3/5.jpg"
-      ],
-      "slug-file": "tracing-sheets-3"
+      ]
     },
     {
       "id": 19,
@@ -1133,7 +1260,10 @@
       "minAge": 3,
       "price": 35000,
       "priceCategory": 32000,
+      "totalPages": 30,
       "image": "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400",
+      "checkout_link": "",
+      "bundle_checkout_link": "",
       "features": ["Berbagai Peran", "Aktivitas Keluarga", "Bonding Time"],
       "skills": ["Sosial", "Emosi", "Keluarga"],
       "preview": [
@@ -1151,10 +1281,13 @@
       "subcategory": "busy-books",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "totalPage": 42,
-      "price": 7600,
+      "price": 5600,
       "priceCategory": 12500,
+      "totalPages": 42,
+      "slug-file": "busy-book-4-farm",
       "image": "/products/BUSY BOOKS/Busy Book - 4 (Farm)/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/kpzrn58g4d80/checkout",
+      "bundle_checkout_link": "",
       "features": [
         "Koleksi Hewan Ternak dan Faktanya",
         "Pengenalan Hasil Produk Peternakan",
@@ -1174,8 +1307,7 @@
         "/products/BUSY BOOKS/Busy Book - 4 (Farm)/4.jpg",
         "/products/BUSY BOOKS/Busy Book - 4 (Farm)/5.jpg",
         "/products/BUSY BOOKS/Busy Book - 4 (Farm)/6.jpg"
-      ],
-      "slug-file": "busy-book-4-farm"
+      ]
     },
     {
       "id": 23,
@@ -1187,7 +1319,10 @@
       "minAge": 2,
       "price": 52000,
       "priceCategory": 49000,
+      "totalPages": 30,
       "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400",
+      "checkout_link": "",
+      "bundle_checkout_link": "",
       "features": ["10 Lagu", "Gerakan Sederhana", "Instrumen DIY"],
       "skills": ["Musik", "Motorik Kasar", "Koordinasi"],
       "preview": [
@@ -1205,35 +1340,38 @@
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3550,
+      "price": 2000,
       "priceCategory": 13900,
-      "pageCount": 20,
+      "totalPages": 10,
+      "slug-file": "ending-letter",
       "image": "/products/COLORING/ENDING LETTER/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/egj7vp10ypq1/checkout",
+      "bundle_checkout_link": "",
       "features": [
-        "20 Halaman Latihan Huruf Akhir",
         "Fokus Pengenalan Bunyi Akhir",
         "Melatih Analisis Kata",
         "Keterampilan Pra-membaca"
       ],
       "skills": ["Fonik Dasar", "Analisis Kata", "Kosakata", "Pengenalan Huruf"],
-      "preview": ["/products/COLORING/ENDING LETTER/1.jpg", "/products/COLORING/ENDING LETTER/2.jpg"],
-      "slug-file": "ending-letter"
+      "preview": ["/products/COLORING/ENDING LETTER/1.jpg", "/products/COLORING/ENDING LETTER/2.jpg"]
     },
     {
-      "id": "F5I9C3L7K1T6B4S2",
-      "title": "Mencari dan Mewarnai Sight Words (Color Search)",
-      "description": "Modul latihan yang berfokus pada pengenalan kata-kata yang sering muncul (Sight Words) melalui aktivitas mencari kata yang tersembunyi (Word Search) dan mewarnainya. Anak akan melatih pengenalan visual kata, fokus, dan pembedaan kata-kata yang mirip secara intensif.",
+      "id": "M2Z7H5P0A4E8J2G6",
+      "title": "Mewarnai & Detektif Kata: 20 Sight Words Pertama",
+      "description": "Modul latihan yang berfokus pada pengenalan 20 kata yang sering muncul (Sight Words) melalui aktivitas mencari kata yang tersembunyi (Word Search bergambar bintang) dan mewarnainya. Anak akan melatih pengenalan visual kata, fokus, dan pembedaan kata-kata yang mirip secara intensif.",
       "ageCategory": "2+",
       "subcategory": "coloring",
       "ageRange": "2+ tahun",
       "minAge": 2,
-      "price": 3400,
-      "priceCategory": 11900,
-      "pageCount": 16,
+      "price": 2000,
+      "priceCategory": 18250,
+      "totalPages": 20,
+      "slug-file": "find-the-color",
       "image": "/products/COLORING/FIND THE COLOR/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/w38jdwzxmzgw/checkout",
+      "bundle_checkout_link": "",
       "features": [
-        "16 Halaman Word Search Sederhana",
-        "Fokus Pengenalan Sight Word",
+        "Fokus Pengenalan 20 Sight Word Awal",
         "Melatih Fokus Visual",
         "Aktivitas Mewarnai"
       ],
@@ -1242,8 +1380,7 @@
         "/products/COLORING/FIND THE COLOR/1.jpg",
         "/products/COLORING/FIND THE COLOR/2.jpg",
         "/products/COLORING/FIND THE COLOR/3.jpg"
-      ],
-      "slug-file": "find-the-color"
+      ]
     },
     {
       "id": 27,
@@ -1255,7 +1392,10 @@
       "minAge": 1,
       "price": 32000,
       "priceCategory": 35000,
+      "totalPages": 30,
       "image": "https://images.unsplash.com/photo-1560807707-8cc77767d783?w=400",
+      "checkout_link": "",
+      "bundle_checkout_link": "",
       "features": ["24 Kartu", "Fakta Hewan", "Bilingual"],
       "skills": ["Kosakata", "Pengetahuan", "Memori"],
       "preview": [

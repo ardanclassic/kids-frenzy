@@ -17,6 +17,9 @@ interface Product {
   features: string[];
   skills: string[];
   preview: string[];
+  totalPages?: number;
+  checkout_link?: string;
+  bundle_checkout_link?: string;
 }
 
 interface ProductDetailModalProps {
@@ -208,22 +211,24 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 <h4 className="text-base text-amber-900">Yang Anda Dapatkan</h4>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                {["File PDF siap cetak", "Akses download selamanya", "Update gratis jika ada revisi"].map(
-                  (item, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.9 + index * 0.1, duration: 0.3 }}
-                      className="flex items-center gap-2 p-2.5 rounded-lg bg-green-400/20 border border-amber-100"
-                    >
-                      <div className="w-5 h-5 rounded-full bg-gradient-to-br from-emerald-400 to-green-500 flex items-center justify-center flex-shrink-0 shadow-sm">
-                        <Check className="w-3 h-3 text-white" />
-                      </div>
-                      <span className="text-xs text-slate-700 font-medium">{item}</span>
-                    </motion.div>
-                  )
-                )}
+                {[
+                  product.totalPages ? `${product.totalPages} halaman seru & edukatif` : "File PDF siap cetak",
+                  "Akses download selamanya",
+                  "Update gratis jika ada revisi",
+                ].map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.9 + index * 0.1, duration: 0.3 }}
+                    className="flex items-center gap-2 p-2.5 rounded-lg bg-green-400/20 border border-amber-100"
+                  >
+                    <div className="w-5 h-5 rounded-full bg-gradient-to-br from-emerald-400 to-green-500 flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <Check className="w-3 h-3 text-white" />
+                    </div>
+                    <span className="text-xs text-slate-700 font-medium">{item}</span>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
 
@@ -236,16 +241,26 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             >
               <div className="flex flex-col md:flex-row gap-2.5">
                 {/* Single Product Button */}
-                <button className="w-full md:flex-1 flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white hover:shadow-xl hover:scale-[1.02] shadow-lg transition-all duration-200">
+                <a
+                  href={product.checkout_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full md:flex-1 flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white hover:shadow-xl hover:scale-[1.02] shadow-lg transition-all duration-200"
+                >
                   <ShoppingCart className="w-5 h-5" />
                   <span className="font-semibold">Beli Produk Ini - {formatPrice(product.price)}</span>
-                </button>
+                </a>
 
                 {/* Category Bundle Button */}
-                <button className="w-full md:flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 text-amber-900 border-2 border-amber-300 hover:border-amber-400 hover:shadow-lg transition-all duration-200 group">
+                <a
+                  // href={product.bundle_checkout_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full md:flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 text-amber-900 border-2 border-amber-300 hover:border-amber-400 hover:shadow-lg transition-all duration-200 group"
+                >
                   <Award className="w-4 h-4 text-amber-600 group-hover:scale-110 transition-transform" />
                   <span className="font-semibold">Paket Kategori {formatPrice(product.priceCategory)}</span>
-                </button>
+                </a>
               </div>
             </motion.div>
           </div>

@@ -84,7 +84,7 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
               onClick={() => onProductClick(product)}
             >
               {/* Card Container */}
-              <div className="relative overflow-hidden rounded-lg md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-500">
+              <div className="relative overflow-hidden rounded-lg md:rounded-xl shadow-md hover:shadow-xl transition-all duration-500 border">
                 <div className="relative aspect-[3/4]">
                   {/* Main Image */}
                   <img
@@ -102,26 +102,24 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                   {/* MOBILE VIEW - Compact Layout */}
                   <div className="md:hidden">
                     {/* Top Badge - Mobile */}
-                    <div className="absolute top-3 left-3 right-3 flex items-start justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-                      <span className="px-3 py-1.5 rounded-xl text-xs bg-white/90 backdrop-blur-sm text-slate-700 flex items-center gap-1.5 shadow-sm">
+                    <div className="absolute top-0 left-0 right-0 flex items-start justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                      <span className="px-1.5 py-0.5 rounded-br-lg text-xs bg-black/30 backdrop-blur-sm text-slate-700 flex items-center gap-1.5 shadow-sm">
                         <span className="text-sm">{subcategoryInfo.emoji}</span>
                       </span>
-                      <span className="px-3 py-1.5 rounded-xl text-xs bg-amber-100/90 backdrop-blur-sm text-amber-700 shadow-sm">
+                      <span className="px-1.5 py-0.5 rounded-bl-lg text-xs bg-amber-200/70 backdrop-blur-sm text-amber-700 shadow-sm">
                         {product.minAge}+
                       </span>
                     </div>
 
                     {/* Bottom Info - Mobile Default */}
                     <div className="absolute bottom-0 left-0 right-0 p-2.5 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-                      <div className="space-y-1.5">
-                        <h3
-                          className="text-white text-xs leading-snug line-clamp-2"
-                          style={{ textShadow: "0 2px 8px rgba(0,0,0,0.8), 0 0 2px rgba(0,0,0,0.9)" }}
-                        >
-                          {product.title}
-                        </h3>
-                        <div className="inline-flex items-center px-2 py-1 bg-emerald-100/90 backdrop-blur-sm rounded-md">
-                          <span className="text-emerald-700 text-xs">{formatPrice(product.price)}</span>
+                      <div
+                        className="space-y-1.5"
+                        style={{ textShadow: "0 2px 8px rgba(0,0,0,0.8), 0 0 2px rgba(0,0,0,0.9)" }}
+                      >
+                        <h3 className="text-white text-xs leading-tight">{product.title}</h3>
+                        <div className="inline-flex items-center">
+                          <span className="text-emerald-200 text-sm">{formatPrice(product.price)}</span>
                         </div>
                       </div>
                     </div>
@@ -156,26 +154,24 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                   {/* DESKTOP VIEW - Full Details */}
                   <div className="hidden md:block">
                     {/* Top Badges - Desktop */}
-                    <div className="absolute top-3 left-3 right-3 flex items-start justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-                      <span className="px-3 py-1.5 rounded-xl text-xs bg-white/90 backdrop-blur-sm text-slate-700 flex items-center gap-1.5 shadow-sm">
+                    <div className="absolute top-0 left-0 right-0 flex items-start justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                      <span className="px-1.5 py-0.5 rounded-br-lg text-xs bg-black/30 backdrop-blur-sm text-slate-700 flex items-center gap-1.5 shadow-sm">
                         <span className="text-sm">{subcategoryInfo.emoji}</span>
                       </span>
-                      <span className="px-3 py-1.5 rounded-xl text-xs bg-amber-100/90 backdrop-blur-sm text-amber-700 shadow-sm">
+                      <span className="px-1.5 py-0.5 rounded-bl-lg text-xs bg-amber-200/70 backdrop-blur-sm text-amber-700 shadow-sm">
                         {product.minAge}+
                       </span>
                     </div>
 
                     {/* Bottom Info - Desktop Default */}
                     <div className="absolute bottom-0 left-0 right-0 p-4 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-                      <div className="space-y-2">
-                        <h3
-                          className="text-white text-sm leading-snug line-clamp-2"
-                          style={{ textShadow: "0 2px 10px rgba(0,0,0,0.9), 0 0 3px rgba(0,0,0,1)" }}
-                        >
-                          {product.title}
-                        </h3>
-                        <div className="inline-flex items-center px-3 py-1.5 bg-emerald-100/90 backdrop-blur-sm rounded-lg">
-                          <span className="text-emerald-700 font-semibold">{formatPrice(product.price)}</span>
+                      <div
+                        className="space-y-2"
+                        style={{ textShadow: "0 2px 10px rgba(0,0,0,0.9), 0 0 3px rgba(0,0,0,1)" }}
+                      >
+                        <h3 className="text-white text-sm">{product.title}</h3>
+                        <div className="inline-flex items-center">
+                          <span className="text-emerald-200 font-semibold">{formatPrice(product.price)}</span>
                         </div>
                       </div>
                     </div>
@@ -184,7 +180,8 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                     <div className="absolute inset-0 flex flex-col p-5 space-y-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-y-auto">
                       {/* Content */}
                       <div className="flex-1 space-y-3">
-                        <p className="text-white/90 text-sm leading-relaxed line-clamp-4">{product.description}</p>
+                        <h3 className="text-white leading-tight">{product.title}</h3>
+                        <p className="text-white/90 text-sm leading-tight line-clamp-4">{product.description}</p>
                       </div>
 
                       {/* Footer */}
