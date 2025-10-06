@@ -4,7 +4,7 @@ import { X, BookOpen, Sparkles, Brain, ShoppingCart, Award, Check } from "lucide
 import PreviewGallery from "../PreviewGallery/PreviewGallery";
 
 interface Product {
-  id: number;
+  id: string;
   title: string;
   description: string;
   ageCategory: string;

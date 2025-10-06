@@ -9,7 +9,7 @@ import SidebarFilter from "@/components/sidebar";
 import Pagination from "@/components/pagination";
 
 interface Product {
-  id: number;
+  id: string;
   title: string;
   description: string;
   ageCategory: string;
@@ -18,10 +18,14 @@ interface Product {
   minAge: number;
   price: number;
   priceCategory: number;
+  slug: string;
   image: string;
   features: string[];
   skills: string[];
   preview: string[];
+  totalPages?: number;
+  checkout_link?: string;
+  bundle_checkout_link?: string;
 }
 
 const ProductsPage: React.FC = () => {
