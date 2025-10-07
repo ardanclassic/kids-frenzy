@@ -1,5 +1,42 @@
 {
-  "categories": [
+  "age_categories": [
+    {
+      "id": "semua",
+      "name": "Semua Usia",
+      "emoji": "🎯",
+      "color": "teal",
+      "minAge": 0
+    },
+    {
+      "id": "1+",
+      "name": "1+ Tahun",
+      "emoji": "👶",
+      "color": "coral",
+      "minAge": 1
+    },
+    {
+      "id": "2+",
+      "name": "2+ Tahun",
+      "emoji": "🧸",
+      "color": "lavender",
+      "minAge": 2
+    },
+    {
+      "id": "3+",
+      "name": "3+ Tahun",
+      "emoji": "🎨",
+      "color": "sage",
+      "minAge": 3
+    },
+    {
+      "id": "5+",
+      "name": "5+ Tahun",
+      "emoji": "🚀",
+      "color": "purple",
+      "minAge": 5
+    }
+  ],
+  "activity_categories": [
     {
       "id": "all-activities",
       "name": "Semua Aktivitas",
@@ -116,6 +153,40 @@
       "description": "Kegiatan tambahan yang mendukung berbagai keterampilan dan kreativitas",
       "color": "gray",
       "minAge": 2
+    }
+  ],
+  "language_categories": [
+    {
+      "id": "all-languages",
+      "name": "Semua Bahasa",
+      "emoji": "🌍",
+      "icon": "Globe",
+      "description": "Tersedia dalam berbagai bahasa",
+      "color": "blue"
+    },
+    {
+      "id": "indonesian",
+      "name": "Bahasa Indonesia",
+      "emoji": "🇮🇩",
+      "icon": "Languages",
+      "description": "Konten dalam Bahasa Indonesia",
+      "color": "red"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "emoji": "🇬🇧",
+      "icon": "Languages",
+      "description": "Content in English",
+      "color": "blue"
+    },
+    {
+      "id": "bilingual",
+      "name": "Bilingual",
+      "emoji": "🌐",
+      "icon": "Languages",
+      "description": "Dwibahasa (Indonesia & English)",
+      "color": "purple"
     }
   ]
 }

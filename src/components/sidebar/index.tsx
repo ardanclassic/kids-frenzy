@@ -16,6 +16,9 @@ import {
   Shuffle,
   Target,
   Brain,
+  BookOpen,
+  Globe,
+  Languages,
 } from "lucide-react";
 import { useFilterStore } from "@/store/filterStore";
 import "./sidebar.scss";
@@ -32,7 +35,7 @@ interface AgeCategory {
   minAge?: number;
 }
 
-interface Subcategory {
+interface ActivityCategory {
   id: string;
   name: string;
   icon: string;
@@ -47,6 +50,7 @@ interface Subcategory {
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   Sparkles,
   BookMarked,
+  BookOpen,
   Target,
   Shuffle,
   Palette,
@@ -55,6 +59,8 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   PenTool,
   Users,
   MoreHorizontal,
+  Globe,
+  Languages,
 };
 
 // ========================================
@@ -72,18 +78,18 @@ const getIconComponent = (iconName: string) => {
 interface FilterContentProps {
   searchTerm: string;
   selectedAgeCategory: string;
-  selectedSubcategory: string;
+  selectedActivityCategory: string;
   ageCategories: AgeCategory[];
-  subcategories: Subcategory[];
+  activityCategories: ActivityCategory[];
   totalResults: number;
   totalProducts: number;
   isAgeCategoryOpen: boolean;
-  isSubcategoryOpen: boolean;
+  isActivityCategoryOpen: boolean;
   onSearchChange: (value: string) => void;
   onAgeCategoryClick: (categoryId: string) => void;
-  onSubcategoryClick: (subcategoryId: string) => void;
+  onActivityCategoryClick: (activityCategoryId: string) => void;
   onToggleAgeCategory: () => void;
-  onToggleSubcategory: () => void;
+  onToggleActivityCategory: () => void;
   onReset: () => void;
   hasActiveFilters: boolean;
 }
@@ -92,18 +98,18 @@ const FilterContent: React.FC<FilterContentProps> = React.memo((props) => {
   const {
     searchTerm,
     selectedAgeCategory,
-    selectedSubcategory,
+    selectedActivityCategory,
     ageCategories,
-    subcategories,
+    activityCategories,
     totalResults,
     totalProducts,
     isAgeCategoryOpen,
-    isSubcategoryOpen,
+    isActivityCategoryOpen,
     onSearchChange,
     onAgeCategoryClick,
-    onSubcategoryClick,
+    onActivityCategoryClick,
     onToggleAgeCategory,
-    onToggleSubcategory,
+    onToggleActivityCategory,
     onReset,
     hasActiveFilters,
   } = props;
@@ -189,20 +195,20 @@ const FilterContent: React.FC<FilterContentProps> = React.memo((props) => {
         </AnimatePresence>
       </div>
 
-      {/* Subcategory Section */}
+      {/* Activity Category Section */}
       <div className="filter-section">
         <button
-          onClick={onToggleSubcategory}
+          onClick={onToggleActivityCategory}
           className="section-header"
-          aria-expanded={isSubcategoryOpen}
+          aria-expanded={isActivityCategoryOpen}
           type="button"
         >
           <h3 className="section-title">Aktivitas</h3>
-          <ChevronDown className={`chevron-icon ${isSubcategoryOpen ? "rotate" : ""}`} />
+          <ChevronDown className={`chevron-icon ${isActivityCategoryOpen ? "rotate" : ""}`} />
         </button>
 
         <AnimatePresence initial={false}>
-          {isSubcategoryOpen && (
+          {isActivityCategoryOpen && (
             <motion.div
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
@@ -211,24 +217,24 @@ const FilterContent: React.FC<FilterContentProps> = React.memo((props) => {
               className="section-content"
             >
               <div className="filter-options">
-                {subcategories.map((subcategory) => {
-                  const IconComponent = getIconComponent(subcategory.icon);
-                  const isSelected = selectedSubcategory === subcategory.id;
+                {activityCategories.map((activityCategory) => {
+                  const IconComponent = getIconComponent(activityCategory.icon);
+                  const isSelected = selectedActivityCategory === activityCategory.id;
 
                   return (
                     <motion.button
-                      key={subcategory.id}
-                      onClick={() => onSubcategoryClick(subcategory.id)}
+                      key={activityCategory.id}
+                      onClick={() => onActivityCategoryClick(activityCategory.id)}
                       className={`filter-option ${isSelected ? "active" : ""}`}
                       whileHover={{ scale: 1.015 }}
                       whileTap={{ scale: 0.985 }}
-                      title={subcategory.description}
+                      title={activityCategory.description}
                       aria-pressed={isSelected}
-                      aria-label={`${subcategory.name} - ${subcategory.description}`}
+                      aria-label={`${activityCategory.name} - ${activityCategory.description}`}
                       type="button"
                     >
                       <IconComponent className="icon" aria-hidden="true" />
-                      <span className="name">{subcategory.name}</span>
+                      <span className="name">{activityCategory.name}</span>
                     </motion.button>
                   );
                 })}
@@ -276,7 +282,7 @@ const FilterContent: React.FC<FilterContentProps> = React.memo((props) => {
 FilterContent.displayName = "FilterContent";
 
 // ========================================
-// COMPONENT: Mobile Sidebar Wrapper (Simplified)
+// COMPONENT: Mobile Sidebar Wrapper
 // ========================================
 
 const MobileSidebarWrapper: React.FC = () => {
@@ -332,7 +338,7 @@ const MobileSidebarWrapper: React.FC = () => {
 
             {/* Mobile Content */}
             <div className="sidebar-content">
-              <MobileFilterContentConnector />
+              <FilterContentConnector />
             </div>
           </motion.aside>
         </>
@@ -342,70 +348,73 @@ const MobileSidebarWrapper: React.FC = () => {
 };
 
 // ========================================
-// CONNECTOR: Mobile Filter Content (Bridge to Store)
+// CONNECTOR: Filter Content (Bridge to Store)
 // ========================================
 
-const MobileFilterContentConnector: React.FC = () => {
+const FilterContentConnector: React.FC = () => {
   // Get all data from store
   const searchTerm = useFilterStore((state) => state.searchTerm);
   const selectedAgeCategory = useFilterStore((state) => state.selectedAgeCategory);
-  const selectedSubcategory = useFilterStore((state) => state.selectedSubcategory);
+  const selectedActivityCategory = useFilterStore((state) => state.selectedActivityCategory);
   const ageCategories = useFilterStore((state) => state.ageCategories);
-  const subcategories = useFilterStore((state) => state.subcategories);
+  const activityCategories = useFilterStore((state) => state.activityCategories);
   const totalResults = useFilterStore((state) => state.totalResults);
   const totalProducts = useFilterStore((state) => state.totalProducts);
   const isAgeCategoryOpen = useFilterStore((state) => state.isAgeCategoryOpen);
-  const isSubcategoryOpen = useFilterStore((state) => state.isSubcategoryOpen);
+  const isActivityCategoryOpen = useFilterStore((state) => state.isActivityCategoryOpen);
 
   // Get actions
   const setSearchTerm = useFilterStore((state) => state.setSearchTerm);
   const setSelectedAgeCategory = useFilterStore((state) => state.setSelectedAgeCategory);
-  const setSelectedSubcategory = useFilterStore((state) => state.setSelectedSubcategory);
+  const setSelectedActivityCategory = useFilterStore((state) => state.setSelectedActivityCategory);
   const toggleAgeCategoryOpen = useFilterStore((state) => state.toggleAgeCategoryOpen);
-  const toggleSubcategoryOpen = useFilterStore((state) => state.toggleSubcategoryOpen);
+  const toggleActivityCategoryOpen = useFilterStore((state) => state.toggleActivityCategoryOpen);
   const resetFilters = useFilterStore((state) => state.resetFilters);
-  const hasActiveFilters = useFilterStore((state) => state.hasActiveFilters); // Now a boolean value, not function // Now a boolean value, not function
+  const hasActiveFilters = useFilterStore((state) => state.hasActiveFilters);
 
   // Stable callbacks
   const handleSearchChange = useCallback((value: string) => setSearchTerm(value), [setSearchTerm]);
   const handleAgeCategoryClick = useCallback((id: string) => setSelectedAgeCategory(id), [setSelectedAgeCategory]);
-  const handleSubcategoryClick = useCallback((id: string) => setSelectedSubcategory(id), [setSelectedSubcategory]);
+  const handleActivityCategoryClick = useCallback(
+    (id: string) => setSelectedActivityCategory(id),
+    [setSelectedActivityCategory]
+  );
 
   // Memoize props to prevent unnecessary re-renders
   const filterProps = useMemo(
     () => ({
       searchTerm,
       selectedAgeCategory,
-      selectedSubcategory,
+      selectedActivityCategory,
       ageCategories,
-      subcategories,
+      activityCategories,
       totalResults,
       totalProducts,
       isAgeCategoryOpen,
-      isSubcategoryOpen,
+      isActivityCategoryOpen,
       onSearchChange: handleSearchChange,
       onAgeCategoryClick: handleAgeCategoryClick,
-      onSubcategoryClick: handleSubcategoryClick,
+      onActivityCategoryClick: handleActivityCategoryClick,
       onToggleAgeCategory: toggleAgeCategoryOpen,
-      onToggleSubcategory: toggleSubcategoryOpen,
+      onToggleActivityCategory: toggleActivityCategoryOpen,
       onReset: resetFilters,
-      hasActiveFilters: hasActiveFilters, // Direct boolean value
+      hasActiveFilters,
     }),
     [
       searchTerm,
       selectedAgeCategory,
-      selectedSubcategory,
+      selectedActivityCategory,
       ageCategories,
-      subcategories,
+      activityCategories,
       totalResults,
       totalProducts,
       isAgeCategoryOpen,
-      isSubcategoryOpen,
+      isActivityCategoryOpen,
       handleSearchChange,
       handleAgeCategoryClick,
-      handleSubcategoryClick,
+      handleActivityCategoryClick,
       toggleAgeCategoryOpen,
-      toggleSubcategoryOpen,
+      toggleActivityCategoryOpen,
       resetFilters,
       hasActiveFilters,
     ]
@@ -415,79 +424,79 @@ const MobileFilterContentConnector: React.FC = () => {
 };
 
 // ========================================
-// MAIN COMPONENT
+// MAIN COMPONENT: SidebarFilter
 // ========================================
 
 const SidebarFilter: React.FC = () => {
   // Get all data from store
   const searchTerm = useFilterStore((state) => state.searchTerm);
   const selectedAgeCategory = useFilterStore((state) => state.selectedAgeCategory);
-  const selectedSubcategory = useFilterStore((state) => state.selectedSubcategory);
+  const selectedActivityCategory = useFilterStore((state) => state.selectedActivityCategory);
   const ageCategories = useFilterStore((state) => state.ageCategories);
-  const subcategories = useFilterStore((state) => state.subcategories);
+  const activityCategories = useFilterStore((state) => state.activityCategories);
   const totalResults = useFilterStore((state) => state.totalResults);
   const totalProducts = useFilterStore((state) => state.totalProducts);
   const isAgeCategoryOpen = useFilterStore((state) => state.isAgeCategoryOpen);
-  const isSubcategoryOpen = useFilterStore((state) => state.isSubcategoryOpen);
+  const isActivityCategoryOpen = useFilterStore((state) => state.isActivityCategoryOpen);
 
   // Get actions
   const setSearchTerm = useFilterStore((state) => state.setSearchTerm);
   const setSelectedAgeCategory = useFilterStore((state) => state.setSelectedAgeCategory);
-  const setSelectedSubcategory = useFilterStore((state) => state.setSelectedSubcategory);
+  const setSelectedActivityCategory = useFilterStore((state) => state.setSelectedActivityCategory);
   const toggleAgeCategoryOpen = useFilterStore((state) => state.toggleAgeCategoryOpen);
-  const toggleSubcategoryOpen = useFilterStore((state) => state.toggleSubcategoryOpen);
+  const toggleActivityCategoryOpen = useFilterStore((state) => state.toggleActivityCategoryOpen);
   const resetFilters = useFilterStore((state) => state.resetFilters);
   const hasActiveFilters = useFilterStore((state) => state.hasActiveFilters);
 
   // Stable callbacks for desktop
   const handleSearchChange = useCallback((value: string) => setSearchTerm(value), [setSearchTerm]);
   const handleAgeCategoryClick = useCallback((id: string) => setSelectedAgeCategory(id), [setSelectedAgeCategory]);
-  const handleSubcategoryClick = useCallback((id: string) => setSelectedSubcategory(id), [setSelectedSubcategory]);
+  const handleActivityCategoryClick = useCallback(
+    (id: string) => setSelectedActivityCategory(id),
+    [setSelectedActivityCategory]
+  );
 
   // Memoize props for desktop
   const filterProps = useMemo(
     () => ({
       searchTerm,
       selectedAgeCategory,
-      selectedSubcategory,
+      selectedActivityCategory,
       ageCategories,
-      subcategories,
+      activityCategories,
       totalResults,
       totalProducts,
       isAgeCategoryOpen,
-      isSubcategoryOpen,
+      isActivityCategoryOpen,
       onSearchChange: handleSearchChange,
       onAgeCategoryClick: handleAgeCategoryClick,
-      onSubcategoryClick: handleSubcategoryClick,
+      onActivityCategoryClick: handleActivityCategoryClick,
       onToggleAgeCategory: toggleAgeCategoryOpen,
-      onToggleSubcategory: toggleSubcategoryOpen,
+      onToggleActivityCategory: toggleActivityCategoryOpen,
       onReset: resetFilters,
-      hasActiveFilters: hasActiveFilters, // Direct boolean value
+      hasActiveFilters,
     }),
     [
       searchTerm,
       selectedAgeCategory,
-      selectedSubcategory,
+      selectedActivityCategory,
       ageCategories,
-      subcategories,
+      activityCategories,
       totalResults,
       totalProducts,
       isAgeCategoryOpen,
-      isSubcategoryOpen,
+      isActivityCategoryOpen,
       handleSearchChange,
       handleAgeCategoryClick,
-      handleSubcategoryClick,
+      handleActivityCategoryClick,
       toggleAgeCategoryOpen,
-      toggleSubcategoryOpen,
+      toggleActivityCategoryOpen,
       resetFilters,
       hasActiveFilters,
     ]
   );
 
-  // ========================================
-  // COMPONENT: Desktop Sidebar
-  // ========================================
-
+  // Memoize Desktop Sidebar
   const DesktopSidebar = useMemo(
     () => (
       <aside className="sidebar-filter desktop-sidebar" aria-label="Product filters">
@@ -502,10 +511,6 @@ const SidebarFilter: React.FC = () => {
     ),
     [filterProps]
   );
-
-  // ========================================
-  // MAIN RENDER
-  // ========================================
 
   return (
     <>

@@ -8,7 +8,7 @@ interface Product {
   title: string;
   description: string;
   ageCategory: string;
-  subcategory: string;
+  activityCategory: string;
   ageRange: string;
   minAge: number;
   price: number;
@@ -25,19 +25,19 @@ interface Product {
 interface ProductDetailModalProps {
   product: Product | null;
   onClose: () => void;
-  getSubcategoryInfo: (subcategoryId: string) => { emoji: string; name: string; description: string };
+  getActivityCategoryInfo: (activityCategoryId: string) => { emoji: string; name: string; description: string };
   formatPrice: (price: number) => string;
 }
 
 const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
   product,
   onClose,
-  getSubcategoryInfo,
+  getActivityCategoryInfo,
   formatPrice,
 }) => {
   if (!product) return null;
 
-  const subcategoryInfo = getSubcategoryInfo(product.subcategory);
+  const activityCategoryInfo = getActivityCategoryInfo(product.activityCategory);
 
   return (
     <AnimatePresence>
@@ -95,7 +95,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   transition={{ delay: 0.4 }}
                   className="px-3 py-1 rounded-full text-xs bg-white/95 text-indigo-700 shadow-md"
                 >
-                  {subcategoryInfo.emoji} {subcategoryInfo.name}
+                  {activityCategoryInfo.emoji} {activityCategoryInfo.name}
                 </motion.span>
                 <motion.span
                   initial={{ opacity: 0, x: -20 }}
@@ -126,7 +126,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               </div>
               <p className="text-sm text-slate-700 leading-relaxed mb-2">{product.description}</p>
               <p className="text-xs text-slate-600 italic pl-3 border-l-2 border-indigo-300">
-                {subcategoryInfo.description}
+                {activityCategoryInfo.description}
               </p>
             </motion.div>
 

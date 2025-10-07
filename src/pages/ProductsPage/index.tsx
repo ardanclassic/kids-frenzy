@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Search, Sparkles } from "lucide-react";
-import { product_list } from "./product-list.json";
-import { categories } from "./categories.json";
+import { product_list } from "@/assets/json/product-list.json";
+import { age_categories, activity_categories } from "@/assets/json/categories.json";
 import ProductDetailModal from "@/components/ProductDetailModal/ProductDetailModal";
 import ProductsGrid from "@/components/ProductsGrid";
 import SidebarFilter from "@/components/sidebar";
@@ -14,7 +14,7 @@ interface Product {
   title: string;
   description: string;
   ageCategory: string;
-  subcategory: string;
+  activityCategory: string;
   ageRange: string;
   minAge: number;
   price: number;
@@ -31,37 +31,28 @@ interface Product {
 
 const productsPerPage = 12;
 
-// Define age categories outside component to prevent re-creation
-const AGE_CATEGORIES = [
-  { id: "semua", name: "Semua Usia", emoji: "🎯", color: "teal" },
-  { id: "1+", name: "1+ Tahun", emoji: "👶", color: "coral", minAge: 1 },
-  { id: "2+", name: "2+ Tahun", emoji: "🧸", color: "lavender", minAge: 2 },
-  { id: "3+", name: "3+ Tahun", emoji: "🎨", color: "sage", minAge: 3 },
-  { id: "5+", name: "5+ Tahun", emoji: "🚀", color: "purple", minAge: 5 },
-];
-
 const ProductsPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  // Get filter values from Zustand store - use separate selectors to prevent unnecessary re-renders
+  // Get filter values from Zustand store
   const searchTerm = useFilterStore((state) => state.searchTerm);
   const selectedAgeCategory = useFilterStore((state) => state.selectedAgeCategory);
-  const selectedSubcategory = useFilterStore((state) => state.selectedSubcategory);
+  const selectedActivityCategory = useFilterStore((state) => state.selectedActivityCategory);
 
-  const allSubcategories = categories;
-
-  // Get available subcategories based on selected age
-  const availableSubcategories = useMemo(() => {
+  // Get available activity categories based on selected age
+  const availableActivityCategories = useMemo(() => {
     if (selectedAgeCategory === "semua") {
-      return allSubcategories;
+      return activity_categories;
     }
 
     const productsForAge = (product_list as Product[]).filter((product) => product.ageCategory === selectedAgeCategory);
-    const subcategoriesWithProducts = new Set(productsForAge.map((p) => p.subcategory));
+    const activityCategoriesWithProducts = new Set(productsForAge.map((p) => p.activityCategory));
 
-    return allSubcategories.filter((sub) => sub.id === "all-activities" || subcategoriesWithProducts.has(sub.id));
-  }, [selectedAgeCategory, allSubcategories]);
+    return activity_categories.filter(
+      (activity) => activity.id === "all-activities" || activityCategoriesWithProducts.has(activity.id)
+    );
+  }, [selectedAgeCategory]);
 
   // Filter and search products
   const filteredProducts = useMemo(() => {
@@ -71,8 +62,8 @@ const ProductsPage: React.FC = () => {
       filtered = filtered.filter((product) => product.ageCategory === selectedAgeCategory);
     }
 
-    if (selectedSubcategory !== "all-activities") {
-      filtered = filtered.filter((product) => product.subcategory === selectedSubcategory);
+    if (selectedActivityCategory !== "all-activities") {
+      filtered = filtered.filter((product) => product.activityCategory === selectedActivityCategory);
     }
 
     if (searchTerm) {
@@ -84,17 +75,17 @@ const ProductsPage: React.FC = () => {
     }
 
     return filtered;
-  }, [searchTerm, selectedAgeCategory, selectedSubcategory]);
+  }, [searchTerm, selectedAgeCategory, selectedActivityCategory]);
 
   // Sync data to store whenever they change
   React.useEffect(() => {
     useFilterStore.setState({
-      ageCategories: AGE_CATEGORIES,
-      subcategories: availableSubcategories,
+      ageCategories: age_categories,
+      activityCategories: availableActivityCategories,
       totalResults: filteredProducts.length,
       totalProducts: (product_list as Product[]).length,
     });
-  }, [availableSubcategories, filteredProducts.length]);
+  }, [availableActivityCategories, filteredProducts.length]);
 
   // Pagination
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
@@ -109,8 +100,8 @@ const ProductsPage: React.FC = () => {
     }).format(price);
   };
 
-  const getSubcategoryInfo = (subcategoryId: string) => {
-    return allSubcategories.find((sub) => sub.id === subcategoryId) || allSubcategories[0];
+  const getActivityCategoryInfo = (activityCategoryId: string) => {
+    return activity_categories.find((activity) => activity.id === activityCategoryId) || activity_categories[0];
   };
 
   return (
@@ -143,7 +134,7 @@ const ProductsPage: React.FC = () => {
 
           {/* Main Content with Sidebar Layout */}
           <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
-            {/* Sidebar Filter - Only pass data props, not state setters */}
+            {/* Sidebar Filter */}
             <div className="lg:w-80 flex-shrink-0">
               <SidebarFilter />
             </div>
@@ -153,10 +144,10 @@ const ProductsPage: React.FC = () => {
               <ProductsGrid
                 products={currentProducts}
                 selectedAgeCategory={selectedAgeCategory}
-                selectedSubcategory={selectedSubcategory}
+                selectedActivityCategory={selectedActivityCategory}
                 searchTerm={searchTerm}
                 onProductClick={setSelectedProduct}
-                getSubcategoryInfo={getSubcategoryInfo}
+                getActivityCategoryInfo={getActivityCategoryInfo}
                 formatPrice={formatPrice}
               />
 
@@ -191,7 +182,7 @@ const ProductsPage: React.FC = () => {
       <ProductDetailModal
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}
-        getSubcategoryInfo={getSubcategoryInfo}
+        getActivityCategoryInfo={getActivityCategoryInfo}
         formatPrice={formatPrice}
       />
     </div>

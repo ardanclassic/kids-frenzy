@@ -14,7 +14,7 @@ interface AgeCategory {
   minAge?: number;
 }
 
-interface Subcategory {
+interface ActivityCategory {
   id: string;
   name: string;
   icon: string;
@@ -26,11 +26,11 @@ interface FilterState {
   // Filter Values (PERSISTED)
   searchTerm: string;
   selectedAgeCategory: string;
-  selectedSubcategory: string;
+  selectedActivityCategory: string;
 
   // Data Arrays (NOT persisted - will be set by components)
   ageCategories: AgeCategory[];
-  subcategories: Subcategory[];
+  activityCategories: ActivityCategory[];
 
   // Statistics (NOT persisted)
   totalResults: number;
@@ -39,15 +39,15 @@ interface FilterState {
   // UI State (NOT persisted)
   isMobileFilterOpen: boolean;
   isAgeCategoryOpen: boolean;
-  isSubcategoryOpen: boolean;
+  isActivityCategoryOpen: boolean;
 
   // Setters - hanya untuk filter values dan UI state
   setSearchTerm: (term: string) => void;
   setSelectedAgeCategory: (categoryId: string) => void;
-  setSelectedSubcategory: (subcategoryId: string) => void;
+  setSelectedActivityCategory: (activityCategoryId: string) => void;
   setIsMobileFilterOpen: (isOpen: boolean) => void;
   toggleAgeCategoryOpen: () => void;
-  toggleSubcategoryOpen: () => void;
+  toggleActivityCategoryOpen: () => void;
   resetFilters: () => void;
 
   // Computed Values
@@ -62,7 +62,7 @@ interface FilterState {
 const calculateActiveFilterCount = (state: FilterState): number => {
   const filters = [
     state.selectedAgeCategory !== "semua",
-    state.selectedSubcategory !== "all-activities",
+    state.selectedActivityCategory !== "all-activities",
     state.searchTerm !== "",
   ];
   return filters.filter(Boolean).length;
@@ -70,7 +70,9 @@ const calculateActiveFilterCount = (state: FilterState): number => {
 
 const calculateHasActiveFilters = (state: FilterState): boolean => {
   return (
-    state.selectedAgeCategory !== "semua" || state.selectedSubcategory !== "all-activities" || state.searchTerm !== ""
+    state.selectedAgeCategory !== "semua" ||
+    state.selectedActivityCategory !== "all-activities" ||
+    state.searchTerm !== ""
   );
 };
 
@@ -84,14 +86,14 @@ export const useFilterStore = create<FilterState>()(
       // Initial State
       searchTerm: "",
       selectedAgeCategory: "semua",
-      selectedSubcategory: "all-activities",
+      selectedActivityCategory: "all-activities",
       ageCategories: [],
-      subcategories: [],
+      activityCategories: [],
       totalResults: 0,
       totalProducts: 0,
       isMobileFilterOpen: false,
       isAgeCategoryOpen: true,
-      isSubcategoryOpen: true,
+      isActivityCategoryOpen: true,
 
       // Computed Values - Initial
       hasActiveFilters: false,
@@ -117,22 +119,22 @@ export const useFilterStore = create<FilterState>()(
           const newState = {
             ...state,
             selectedAgeCategory: categoryId,
-            selectedSubcategory: "all-activities", // Reset kategori saat usia berubah
+            selectedActivityCategory: "all-activities", // Reset kategori saat usia berubah
           };
           return {
             selectedAgeCategory: categoryId,
-            selectedSubcategory: "all-activities",
+            selectedActivityCategory: "all-activities",
             hasActiveFilters: calculateHasActiveFilters(newState),
             activeFilterCount: calculateActiveFilterCount(newState),
           };
         });
       },
 
-      setSelectedSubcategory: (subcategoryId) => {
+      setSelectedActivityCategory: (activityCategoryId) => {
         set((state) => {
-          const newState = { ...state, selectedSubcategory: subcategoryId };
+          const newState = { ...state, selectedActivityCategory: activityCategoryId };
           return {
-            selectedSubcategory: subcategoryId,
+            selectedActivityCategory: activityCategoryId,
             hasActiveFilters: calculateHasActiveFilters(newState),
             activeFilterCount: calculateActiveFilterCount(newState),
           };
@@ -151,8 +153,8 @@ export const useFilterStore = create<FilterState>()(
         set((state) => ({ isAgeCategoryOpen: !state.isAgeCategoryOpen }));
       },
 
-      toggleSubcategoryOpen: () => {
-        set((state) => ({ isSubcategoryOpen: !state.isSubcategoryOpen }));
+      toggleActivityCategoryOpen: () => {
+        set((state) => ({ isActivityCategoryOpen: !state.isActivityCategoryOpen }));
       },
 
       // ========================================
@@ -163,7 +165,7 @@ export const useFilterStore = create<FilterState>()(
         set({
           searchTerm: "",
           selectedAgeCategory: "semua",
-          selectedSubcategory: "all-activities",
+          selectedActivityCategory: "all-activities",
           hasActiveFilters: false,
           activeFilterCount: 0,
         });
@@ -176,7 +178,7 @@ export const useFilterStore = create<FilterState>()(
       partialize: (state) => ({
         searchTerm: state.searchTerm,
         selectedAgeCategory: state.selectedAgeCategory,
-        selectedSubcategory: state.selectedSubcategory,
+        selectedActivityCategory: state.selectedActivityCategory,
       }),
       // Rehydrate computed values after loading from localStorage
       onRehydrateStorage: () => (state) => {

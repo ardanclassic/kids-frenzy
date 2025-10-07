@@ -107,7 +107,7 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 80%;
+  width: 100%;
   max-width: 320px;
   z-index: 50;
   border-radius: 0;
@@ -140,7 +140,7 @@
 
 .sidebar-title {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #1f2937;
   margin: 0;
   flex: 1;
@@ -291,7 +291,7 @@
 
 .section-title {
   font-size: 0.8125rem;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.025em;
   margin: 0;
@@ -314,15 +314,20 @@
   overflow: hidden;
 }
 
-// Filter Options
+// Filter Options - Flexible Dynamic Layout (Tags/Chips Style)
 .filter-options {
-  display: grid;
-  gap: 0.375rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   padding-bottom: 0.25rem;
+
+  @media (max-width: 768px) {
+    gap: 0.375rem;
+  }
 }
 
 .filter-option {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.625rem;
   padding: 0.625rem 0.75rem;
@@ -338,6 +343,8 @@
   font-size: 0.8125rem;
   line-height: 1.25;
   position: relative;
+  white-space: nowrap;
+  flex-shrink: 0;
 
   &:hover {
     background: #f3f4f6;
@@ -385,7 +392,6 @@
 }
 
 .name {
-  flex: 1;
   font-size: 0.8125rem;
   line-height: 1.25;
 }
@@ -407,7 +413,7 @@
   align-items: baseline;
   gap: 0.25rem;
   flex: 1;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
 }
 
@@ -425,7 +431,7 @@
 .results-total {
   font-size: 0.875rem;
   color: #92400e;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 // Reset Button

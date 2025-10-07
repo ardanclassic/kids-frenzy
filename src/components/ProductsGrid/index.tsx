@@ -7,7 +7,7 @@ interface Product {
   title: string;
   description: string;
   ageCategory: string;
-  subcategory: string;
+  activityCategory: string;
   ageRange: string;
   minAge: number;
   price: number;
@@ -22,7 +22,7 @@ interface Product {
   bundle_checkout_link?: string;
 }
 
-interface SubcategoryInfo {
+interface ActivityCategoryInfo {
   id: string;
   name: string;
   emoji: string;
@@ -31,20 +31,20 @@ interface SubcategoryInfo {
 interface ProductsGridProps {
   products: Product[];
   selectedAgeCategory: string;
-  selectedSubcategory: string;
+  selectedActivityCategory: string;
   searchTerm: string;
   onProductClick: (product: Product) => void;
-  getSubcategoryInfo: (subcategoryId: string) => SubcategoryInfo;
+  getActivityCategoryInfo: (activityCategoryId: string) => ActivityCategoryInfo;
   formatPrice: (price: number) => string;
 }
 
 const ProductsGrid: React.FC<ProductsGridProps> = ({
   products,
   selectedAgeCategory,
-  selectedSubcategory,
+  selectedActivityCategory,
   searchTerm,
   onProductClick,
-  getSubcategoryInfo,
+  getActivityCategoryInfo,
   formatPrice,
 }) => {
   const containerVariants: any = {
@@ -72,14 +72,14 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={`${selectedAgeCategory}-${selectedSubcategory}-${searchTerm}`}
+        key={`${selectedAgeCategory}-${selectedActivityCategory}-${searchTerm}`}
         variants={containerVariants}
         initial="hidden"
         animate="visible"
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5 mb-12"
       >
         {products.map((product) => {
-          const subcategoryInfo = getSubcategoryInfo(product.subcategory);
+          const activityCategoryInfo = getActivityCategoryInfo(product.activityCategory);
           return (
             <motion.div
               key={product.id}
@@ -108,7 +108,7 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                     {/* Top Badge - Mobile */}
                     <div className="absolute top-0 left-0 right-0 flex items-start justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-300">
                       <span className="px-1.5 py-0.5 rounded-br-lg text-xs bg-black/30 backdrop-blur-sm text-slate-700 flex items-center gap-1.5 shadow-sm">
-                        <span className="text-sm">{subcategoryInfo.emoji}</span>
+                        <span className="text-sm">{activityCategoryInfo.emoji}</span>
                       </span>
                       <span className="px-1.5 py-0.5 rounded-bl-lg text-xs bg-amber-200/70 backdrop-blur-sm text-amber-700 shadow-sm">
                         {product.minAge}+
@@ -133,7 +133,7 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                       <div className="space-y-2">
                         <div className="flex items-center justify-between">
                           <span className="px-2 py-0.5 rounded-md text-xs bg-slate-100/90 backdrop-blur-sm text-slate-700">
-                            {subcategoryInfo.emoji} {subcategoryInfo.name}
+                            {activityCategoryInfo.emoji} {activityCategoryInfo.name}
                           </span>
                           <span className="px-2 py-0.5 rounded-md text-xs bg-amber-100/90 backdrop-blur-sm text-amber-700">
                             {product.ageRange}
@@ -160,7 +160,7 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                     {/* Top Badges - Desktop */}
                     <div className="absolute top-0 left-0 right-0 flex items-start justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-300">
                       <span className="px-1.5 py-0.5 rounded-br-lg text-xs bg-black/30 backdrop-blur-sm text-slate-700 flex items-center gap-1.5 shadow-sm">
-                        <span className="text-sm">{subcategoryInfo.emoji}</span>
+                        <span className="text-sm">{activityCategoryInfo.emoji}</span>
                       </span>
                       <span className="px-1.5 py-0.5 rounded-bl-lg text-xs bg-amber-200/70 backdrop-blur-sm text-amber-700 shadow-sm">
                         {product.minAge}+
