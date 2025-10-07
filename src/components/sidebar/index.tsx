@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// SidebarFilter.tsx
+import React, { useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Search,
@@ -16,7 +17,12 @@ import {
   Target,
   Brain,
 } from "lucide-react";
+import { useFilterStore } from "@/store/filterStore";
 import "./sidebar.scss";
+
+// ========================================
+// TYPES & INTERFACES
+// ========================================
 
 interface AgeCategory {
   id: string;
@@ -34,21 +40,11 @@ interface Subcategory {
   description: string;
 }
 
-interface SidebarFilterProps {
-  searchTerm: string;
-  onSearchChange: (value: string) => void;
-  ageCategories: AgeCategory[];
-  selectedAgeCategory: string;
-  onAgeCategoryChange: (categoryId: string) => void;
-  subcategories: Subcategory[];
-  selectedSubcategory: string;
-  onSubcategoryChange: (subcategoryId: string) => void;
-  totalResults: number;
-  totalProducts: number;
-  onResetFilters: () => void;
-}
+// ========================================
+// CONSTANTS - ICON MAPPING
+// ========================================
 
-const iconMap: Record<string, any> = {
+const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   Sparkles,
   BookMarked,
   Target,
@@ -61,35 +57,71 @@ const iconMap: Record<string, any> = {
   MoreHorizontal,
 };
 
-const SidebarFilter: React.FC<SidebarFilterProps> = ({
-  searchTerm,
-  onSearchChange,
-  ageCategories,
-  selectedAgeCategory,
-  onAgeCategoryChange,
-  subcategories,
-  selectedSubcategory,
-  onSubcategoryChange,
-  totalResults,
-  totalProducts,
-  onResetFilters,
-}) => {
-  const [isAgeCategoryOpen, setIsAgeCategoryOpen] = useState(true);
-  const [isSubcategoryOpen, setIsSubcategoryOpen] = useState(true);
-  const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
+// ========================================
+// HELPER: GET ICON COMPONENT
+// ========================================
 
-  const hasActiveFilters =
-    selectedAgeCategory !== "semua" || selectedSubcategory !== "all-activities" || searchTerm !== "";
+const getIconComponent = (iconName: string) => {
+  return ICON_MAP[iconName] || Sparkles;
+};
 
-  const activeFilterCount = [
-    selectedAgeCategory !== "semua",
-    selectedSubcategory !== "all-activities",
-    searchTerm !== "",
-  ].filter(Boolean).length;
+// ========================================
+// SHARED COMPONENT: Filter Content (Pure & Memoized)
+// ========================================
 
-  const FilterContent = () => (
+interface FilterContentProps {
+  searchTerm: string;
+  selectedAgeCategory: string;
+  selectedSubcategory: string;
+  ageCategories: AgeCategory[];
+  subcategories: Subcategory[];
+  totalResults: number;
+  totalProducts: number;
+  isAgeCategoryOpen: boolean;
+  isSubcategoryOpen: boolean;
+  onSearchChange: (value: string) => void;
+  onAgeCategoryClick: (categoryId: string) => void;
+  onSubcategoryClick: (subcategoryId: string) => void;
+  onToggleAgeCategory: () => void;
+  onToggleSubcategory: () => void;
+  onReset: () => void;
+  hasActiveFilters: boolean;
+}
+
+const FilterContent: React.FC<FilterContentProps> = React.memo((props) => {
+  const {
+    searchTerm,
+    selectedAgeCategory,
+    selectedSubcategory,
+    ageCategories,
+    subcategories,
+    totalResults,
+    totalProducts,
+    isAgeCategoryOpen,
+    isSubcategoryOpen,
+    onSearchChange,
+    onAgeCategoryClick,
+    onSubcategoryClick,
+    onToggleAgeCategory,
+    onToggleSubcategory,
+    onReset,
+    hasActiveFilters,
+  } = props;
+
+  const handleSearchChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      onSearchChange(e.target.value);
+    },
+    [onSearchChange]
+  );
+
+  const handleClearSearch = useCallback(() => {
+    onSearchChange("");
+  }, [onSearchChange]);
+
+  return (
     <>
-      {/* Search Bar */}
+      {/* Search Section */}
       <div className="filter-section">
         <div className="search-wrapper">
           <Search className="search-icon" />
@@ -97,20 +129,26 @@ const SidebarFilter: React.FC<SidebarFilterProps> = ({
             type="text"
             placeholder="Cari..."
             value={searchTerm}
-            onChange={(e) => onSearchChange(e.target.value)}
+            onChange={handleSearchChange}
             className="search-input"
+            aria-label="Search products"
           />
           {searchTerm && (
-            <button onClick={() => onSearchChange("")} className="clear-btn" aria-label="Clear search">
+            <button onClick={handleClearSearch} className="clear-btn" aria-label="Clear search" type="button">
               <X className="w-3.5 h-3.5" />
             </button>
           )}
         </div>
       </div>
 
-      {/* Age Category Filter */}
+      {/* Age Category Section */}
       <div className="filter-section">
-        <button onClick={() => setIsAgeCategoryOpen(!isAgeCategoryOpen)} className="section-header">
+        <button
+          onClick={onToggleAgeCategory}
+          className="section-header"
+          aria-expanded={isAgeCategoryOpen}
+          type="button"
+        >
           <h3 className="section-title">Usia</h3>
           <ChevronDown className={`chevron-icon ${isAgeCategoryOpen ? "rotate" : ""}`} />
         </button>
@@ -125,27 +163,40 @@ const SidebarFilter: React.FC<SidebarFilterProps> = ({
               className="section-content"
             >
               <div className="filter-options">
-                {ageCategories.map((category) => (
-                  <motion.button
-                    key={category.id}
-                    onClick={() => onAgeCategoryChange(category.id)}
-                    className={`filter-option ${selectedAgeCategory === category.id ? "active" : ""}`}
-                    whileHover={{ scale: 1.015 }}
-                    whileTap={{ scale: 0.985 }}
-                  >
-                    <span className="emoji">{category.emoji}</span>
-                    <span className="name">{category.name}</span>
-                  </motion.button>
-                ))}
+                {ageCategories.map((category) => {
+                  const isSelected = selectedAgeCategory === category.id;
+
+                  return (
+                    <motion.button
+                      key={category.id}
+                      onClick={() => onAgeCategoryClick(category.id)}
+                      className={`filter-option ${isSelected ? "active" : ""}`}
+                      whileHover={{ scale: 1.015 }}
+                      whileTap={{ scale: 0.985 }}
+                      aria-pressed={isSelected}
+                      type="button"
+                    >
+                      <span className="emoji" aria-hidden="true">
+                        {category.emoji}
+                      </span>
+                      <span className="name">{category.name}</span>
+                    </motion.button>
+                  );
+                })}
               </div>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
 
-      {/* Subcategory Filter */}
+      {/* Subcategory Section */}
       <div className="filter-section">
-        <button onClick={() => setIsSubcategoryOpen(!isSubcategoryOpen)} className="section-header">
+        <button
+          onClick={onToggleSubcategory}
+          className="section-header"
+          aria-expanded={isSubcategoryOpen}
+          type="button"
+        >
           <h3 className="section-title">Aktivitas</h3>
           <ChevronDown className={`chevron-icon ${isSubcategoryOpen ? "rotate" : ""}`} />
         </button>
@@ -161,17 +212,22 @@ const SidebarFilter: React.FC<SidebarFilterProps> = ({
             >
               <div className="filter-options">
                 {subcategories.map((subcategory) => {
-                  const IconComponent = iconMap[subcategory.icon] || Sparkles;
+                  const IconComponent = getIconComponent(subcategory.icon);
+                  const isSelected = selectedSubcategory === subcategory.id;
+
                   return (
                     <motion.button
                       key={subcategory.id}
-                      onClick={() => onSubcategoryChange(subcategory.id)}
-                      className={`filter-option ${selectedSubcategory === subcategory.id ? "active" : ""}`}
+                      onClick={() => onSubcategoryClick(subcategory.id)}
+                      className={`filter-option ${isSelected ? "active" : ""}`}
                       whileHover={{ scale: 1.015 }}
                       whileTap={{ scale: 0.985 }}
                       title={subcategory.description}
+                      aria-pressed={isSelected}
+                      aria-label={`${subcategory.name} - ${subcategory.description}`}
+                      type="button"
                     >
-                      <IconComponent className="icon" />
+                      <IconComponent className="icon" aria-hidden="true" />
                       <span className="name">{subcategory.name}</span>
                     </motion.button>
                   );
@@ -182,90 +238,283 @@ const SidebarFilter: React.FC<SidebarFilterProps> = ({
         </AnimatePresence>
       </div>
 
-      {/* Results & Reset */}
+      {/* Bottom Section */}
       <div className="bottom-section">
-        <div className="results-chip">
-          <span className="results-count">{totalResults}</span>
-          <span className="results-separator">/</span>
-          <span className="results-total">{totalProducts}</span>
+        <div className="results-chip" role="status" aria-live="polite">
+          <span className="results-count" aria-label={`${totalResults} results found`}>
+            {totalResults}
+          </span>
+          <span className="results-separator" aria-hidden="true">
+            /
+          </span>
+          <span className="results-total" aria-label={`out of ${totalProducts} total products`}>
+            {totalProducts}
+          </span>
         </div>
 
         {hasActiveFilters && (
           <motion.button
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            onClick={onResetFilters}
+            exit={{ opacity: 0, scale: 0.9 }}
+            onClick={onReset}
             className="reset-btn"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
+            aria-label="Reset all filters"
+            type="button"
           >
-            <X className="w-3.5 h-3.5" />
+            <X className="w-3.5 h-3.5" aria-hidden="true" />
             Reset
           </motion.button>
         )}
       </div>
     </>
   );
+});
+
+FilterContent.displayName = "FilterContent";
+
+// ========================================
+// COMPONENT: Mobile Sidebar Wrapper (Simplified)
+// ========================================
+
+const MobileSidebarWrapper: React.FC = () => {
+  const isMobileFilterOpen = useFilterStore((state) => state.isMobileFilterOpen);
+  const setIsMobileFilterOpen = useFilterStore((state) => state.setIsMobileFilterOpen);
+
+  const handleClose = useCallback(() => {
+    setIsMobileFilterOpen(false);
+  }, [setIsMobileFilterOpen]);
 
   return (
-    <>
-      {/* Mobile Filter Toggle Button */}
-      <motion.button
-        onClick={() => setIsMobileFilterOpen(true)}
-        className="mobile-filter-toggle"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        aria-label="Open filters"
-      >
-        <Filter className="w-4 h-4" />
-        {hasActiveFilters && <span className="filter-badge">{activeFilterCount}</span>}
-      </motion.button>
+    <AnimatePresence mode="wait">
+      {isMobileFilterOpen && (
+        <>
+          {/* Backdrop Overlay */}
+          <motion.div
+            key="mobile-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            onClick={handleClose}
+            className="mobile-overlay"
+            aria-hidden="true"
+          />
 
-      {/* Desktop Sidebar */}
-      <div className="sidebar-filter desktop-sidebar">
+          {/* Drawer Sidebar */}
+          <motion.aside
+            key="mobile-sidebar"
+            initial={{ x: "-100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "-100%" }}
+            transition={{
+              type: "spring",
+              damping: 30,
+              stiffness: 300,
+            }}
+            className="sidebar-filter mobile-sidebar"
+            aria-label="Mobile product filters"
+            role="dialog"
+            aria-modal="true"
+          >
+            {/* Mobile Header */}
+            <div className="sidebar-header">
+              <Filter className="header-icon" aria-hidden="true" />
+              <h2 className="sidebar-title" id="mobile-filter-title">
+                Filter
+              </h2>
+              <button onClick={handleClose} className="close-btn" aria-label="Close filter menu" type="button">
+                <X className="w-5 h-5" aria-hidden="true" />
+              </button>
+            </div>
+
+            {/* Mobile Content */}
+            <div className="sidebar-content">
+              <MobileFilterContentConnector />
+            </div>
+          </motion.aside>
+        </>
+      )}
+    </AnimatePresence>
+  );
+};
+
+// ========================================
+// CONNECTOR: Mobile Filter Content (Bridge to Store)
+// ========================================
+
+const MobileFilterContentConnector: React.FC = () => {
+  // Get all data from store
+  const searchTerm = useFilterStore((state) => state.searchTerm);
+  const selectedAgeCategory = useFilterStore((state) => state.selectedAgeCategory);
+  const selectedSubcategory = useFilterStore((state) => state.selectedSubcategory);
+  const ageCategories = useFilterStore((state) => state.ageCategories);
+  const subcategories = useFilterStore((state) => state.subcategories);
+  const totalResults = useFilterStore((state) => state.totalResults);
+  const totalProducts = useFilterStore((state) => state.totalProducts);
+  const isAgeCategoryOpen = useFilterStore((state) => state.isAgeCategoryOpen);
+  const isSubcategoryOpen = useFilterStore((state) => state.isSubcategoryOpen);
+
+  // Get actions
+  const setSearchTerm = useFilterStore((state) => state.setSearchTerm);
+  const setSelectedAgeCategory = useFilterStore((state) => state.setSelectedAgeCategory);
+  const setSelectedSubcategory = useFilterStore((state) => state.setSelectedSubcategory);
+  const toggleAgeCategoryOpen = useFilterStore((state) => state.toggleAgeCategoryOpen);
+  const toggleSubcategoryOpen = useFilterStore((state) => state.toggleSubcategoryOpen);
+  const resetFilters = useFilterStore((state) => state.resetFilters);
+  const hasActiveFilters = useFilterStore((state) => state.hasActiveFilters); // Now a boolean value, not function // Now a boolean value, not function
+
+  // Stable callbacks
+  const handleSearchChange = useCallback((value: string) => setSearchTerm(value), [setSearchTerm]);
+  const handleAgeCategoryClick = useCallback((id: string) => setSelectedAgeCategory(id), [setSelectedAgeCategory]);
+  const handleSubcategoryClick = useCallback((id: string) => setSelectedSubcategory(id), [setSelectedSubcategory]);
+
+  // Memoize props to prevent unnecessary re-renders
+  const filterProps = useMemo(
+    () => ({
+      searchTerm,
+      selectedAgeCategory,
+      selectedSubcategory,
+      ageCategories,
+      subcategories,
+      totalResults,
+      totalProducts,
+      isAgeCategoryOpen,
+      isSubcategoryOpen,
+      onSearchChange: handleSearchChange,
+      onAgeCategoryClick: handleAgeCategoryClick,
+      onSubcategoryClick: handleSubcategoryClick,
+      onToggleAgeCategory: toggleAgeCategoryOpen,
+      onToggleSubcategory: toggleSubcategoryOpen,
+      onReset: resetFilters,
+      hasActiveFilters: hasActiveFilters, // Direct boolean value
+    }),
+    [
+      searchTerm,
+      selectedAgeCategory,
+      selectedSubcategory,
+      ageCategories,
+      subcategories,
+      totalResults,
+      totalProducts,
+      isAgeCategoryOpen,
+      isSubcategoryOpen,
+      handleSearchChange,
+      handleAgeCategoryClick,
+      handleSubcategoryClick,
+      toggleAgeCategoryOpen,
+      toggleSubcategoryOpen,
+      resetFilters,
+      hasActiveFilters,
+    ]
+  );
+
+  return <FilterContent {...filterProps} />;
+};
+
+// ========================================
+// MAIN COMPONENT
+// ========================================
+
+const SidebarFilter: React.FC = () => {
+  // Get all data from store
+  const searchTerm = useFilterStore((state) => state.searchTerm);
+  const selectedAgeCategory = useFilterStore((state) => state.selectedAgeCategory);
+  const selectedSubcategory = useFilterStore((state) => state.selectedSubcategory);
+  const ageCategories = useFilterStore((state) => state.ageCategories);
+  const subcategories = useFilterStore((state) => state.subcategories);
+  const totalResults = useFilterStore((state) => state.totalResults);
+  const totalProducts = useFilterStore((state) => state.totalProducts);
+  const isAgeCategoryOpen = useFilterStore((state) => state.isAgeCategoryOpen);
+  const isSubcategoryOpen = useFilterStore((state) => state.isSubcategoryOpen);
+
+  // Get actions
+  const setSearchTerm = useFilterStore((state) => state.setSearchTerm);
+  const setSelectedAgeCategory = useFilterStore((state) => state.setSelectedAgeCategory);
+  const setSelectedSubcategory = useFilterStore((state) => state.setSelectedSubcategory);
+  const toggleAgeCategoryOpen = useFilterStore((state) => state.toggleAgeCategoryOpen);
+  const toggleSubcategoryOpen = useFilterStore((state) => state.toggleSubcategoryOpen);
+  const resetFilters = useFilterStore((state) => state.resetFilters);
+  const hasActiveFilters = useFilterStore((state) => state.hasActiveFilters);
+
+  // Stable callbacks for desktop
+  const handleSearchChange = useCallback((value: string) => setSearchTerm(value), [setSearchTerm]);
+  const handleAgeCategoryClick = useCallback((id: string) => setSelectedAgeCategory(id), [setSelectedAgeCategory]);
+  const handleSubcategoryClick = useCallback((id: string) => setSelectedSubcategory(id), [setSelectedSubcategory]);
+
+  // Memoize props for desktop
+  const filterProps = useMemo(
+    () => ({
+      searchTerm,
+      selectedAgeCategory,
+      selectedSubcategory,
+      ageCategories,
+      subcategories,
+      totalResults,
+      totalProducts,
+      isAgeCategoryOpen,
+      isSubcategoryOpen,
+      onSearchChange: handleSearchChange,
+      onAgeCategoryClick: handleAgeCategoryClick,
+      onSubcategoryClick: handleSubcategoryClick,
+      onToggleAgeCategory: toggleAgeCategoryOpen,
+      onToggleSubcategory: toggleSubcategoryOpen,
+      onReset: resetFilters,
+      hasActiveFilters: hasActiveFilters, // Direct boolean value
+    }),
+    [
+      searchTerm,
+      selectedAgeCategory,
+      selectedSubcategory,
+      ageCategories,
+      subcategories,
+      totalResults,
+      totalProducts,
+      isAgeCategoryOpen,
+      isSubcategoryOpen,
+      handleSearchChange,
+      handleAgeCategoryClick,
+      handleSubcategoryClick,
+      toggleAgeCategoryOpen,
+      toggleSubcategoryOpen,
+      resetFilters,
+      hasActiveFilters,
+    ]
+  );
+
+  // ========================================
+  // COMPONENT: Desktop Sidebar
+  // ========================================
+
+  const DesktopSidebar = useMemo(
+    () => (
+      <aside className="sidebar-filter desktop-sidebar" aria-label="Product filters">
         <div className="sidebar-header">
-          <Filter className="header-icon" />
+          <Filter className="header-icon" aria-hidden="true" />
           <h2 className="sidebar-title">Filter</h2>
         </div>
         <div className="sidebar-content">
-          <FilterContent />
+          <FilterContent {...filterProps} />
         </div>
-      </div>
+      </aside>
+    ),
+    [filterProps]
+  );
 
-      {/* Mobile Sidebar */}
-      <AnimatePresence>
-        {isMobileFilterOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsMobileFilterOpen(false)}
-              className="mobile-overlay"
-            />
-            <motion.div
-              initial={{ x: "-100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "-100%" }}
-              transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="sidebar-filter mobile-sidebar"
-            >
-              <div className="sidebar-header">
-                <Filter className="header-icon" />
-                <h2 className="sidebar-title">Filter</h2>
-                <button onClick={() => setIsMobileFilterOpen(false)} className="close-btn" aria-label="Close filters">
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
-              <div className="sidebar-content">
-                <FilterContent />
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+  // ========================================
+  // MAIN RENDER
+  // ========================================
+
+  return (
+    <>
+      {DesktopSidebar}
+      <MobileSidebarWrapper />
     </>
   );
 };
+
+SidebarFilter.displayName = "SidebarFilter";
 
 export default SidebarFilter;

@@ -7,6 +7,7 @@ import ProductDetailModal from "@/components/ProductDetailModal/ProductDetailMod
 import ProductsGrid from "@/components/ProductsGrid";
 import SidebarFilter from "@/components/sidebar";
 import Pagination from "@/components/pagination";
+import { useFilterStore } from "@/store/filterStore";
 
 interface Product {
   id: string;
@@ -28,22 +29,25 @@ interface Product {
   bundle_checkout_link?: string;
 }
 
+const productsPerPage = 12;
+
+// Define age categories outside component to prevent re-creation
+const AGE_CATEGORIES = [
+  { id: "semua", name: "Semua Usia", emoji: "🎯", color: "teal" },
+  { id: "1+", name: "1+ Tahun", emoji: "👶", color: "coral", minAge: 1 },
+  { id: "2+", name: "2+ Tahun", emoji: "🧸", color: "lavender", minAge: 2 },
+  { id: "3+", name: "3+ Tahun", emoji: "🎨", color: "sage", minAge: 3 },
+  { id: "5+", name: "5+ Tahun", emoji: "🚀", color: "purple", minAge: 5 },
+];
+
 const ProductsPage: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedAgeCategory, setSelectedAgeCategory] = useState("semua");
-  const [selectedSubcategory, setSelectedSubcategory] = useState("all-activities");
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  const productsPerPage = 12;
-
-  const ageCategories = [
-    { id: "semua", name: "Semua Usia", emoji: "🎯", color: "teal" },
-    { id: "1+", name: "1+ Tahun", emoji: "👶", color: "coral", minAge: 1 },
-    { id: "2+", name: "2+ Tahun", emoji: "🧸", color: "lavender", minAge: 2 },
-    { id: "3+", name: "3+ Tahun", emoji: "🎨", color: "sage", minAge: 3 },
-    { id: "5+", name: "5+ Tahun", emoji: "🚀", color: "purple", minAge: 5 },
-  ];
+  // Get filter values from Zustand store - use separate selectors to prevent unnecessary re-renders
+  const searchTerm = useFilterStore((state) => state.searchTerm);
+  const selectedAgeCategory = useFilterStore((state) => state.selectedAgeCategory);
+  const selectedSubcategory = useFilterStore((state) => state.selectedSubcategory);
 
   const allSubcategories = categories;
 
@@ -57,7 +61,7 @@ const ProductsPage: React.FC = () => {
     const subcategoriesWithProducts = new Set(productsForAge.map((p) => p.subcategory));
 
     return allSubcategories.filter((sub) => sub.id === "all-activities" || subcategoriesWithProducts.has(sub.id));
-  }, [selectedAgeCategory]);
+  }, [selectedAgeCategory, allSubcategories]);
 
   // Filter and search products
   const filteredProducts = useMemo(() => {
@@ -82,6 +86,16 @@ const ProductsPage: React.FC = () => {
     return filtered;
   }, [searchTerm, selectedAgeCategory, selectedSubcategory]);
 
+  // Sync data to store whenever they change
+  React.useEffect(() => {
+    useFilterStore.setState({
+      ageCategories: AGE_CATEGORIES,
+      subcategories: availableSubcategories,
+      totalResults: filteredProducts.length,
+      totalProducts: (product_list as Product[]).length,
+    });
+  }, [availableSubcategories, filteredProducts.length]);
+
   // Pagination
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
   const startIndex = (currentPage - 1) * productsPerPage;
@@ -97,19 +111,6 @@ const ProductsPage: React.FC = () => {
 
   const getSubcategoryInfo = (subcategoryId: string) => {
     return allSubcategories.find((sub) => sub.id === subcategoryId) || allSubcategories[0];
-  };
-
-  const resetFilters = () => {
-    setSearchTerm("");
-    setSelectedAgeCategory("semua");
-    setSelectedSubcategory("all-activities");
-    setCurrentPage(1);
-  };
-
-  const handleAgeChange = (ageId: string) => {
-    setSelectedAgeCategory(ageId);
-    setSelectedSubcategory("all-activities");
-    setCurrentPage(1);
   };
 
   return (
@@ -142,24 +143,9 @@ const ProductsPage: React.FC = () => {
 
           {/* Main Content with Sidebar Layout */}
           <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
-            {/* Sidebar Filter */}
+            {/* Sidebar Filter - Only pass data props, not state setters */}
             <div className="lg:w-80 flex-shrink-0">
-              <SidebarFilter
-                searchTerm={searchTerm}
-                onSearchChange={setSearchTerm}
-                ageCategories={ageCategories}
-                selectedAgeCategory={selectedAgeCategory}
-                onAgeCategoryChange={handleAgeChange}
-                subcategories={availableSubcategories}
-                selectedSubcategory={selectedSubcategory}
-                onSubcategoryChange={(id: any) => {
-                  setSelectedSubcategory(id);
-                  setCurrentPage(1);
-                }}
-                totalResults={filteredProducts.length}
-                totalProducts={(product_list as Product[]).length}
-                onResetFilters={resetFilters}
-              />
+              <SidebarFilter />
             </div>
 
             {/* Products Content */}
@@ -194,12 +180,6 @@ const ProductsPage: React.FC = () => {
                   <p className="text-sm sm:text-base text-gray-600 mb-5 sm:mb-6 lg:mb-8 max-w-md mx-auto">
                     Coba ubah kata kunci pencarian atau filter kategori
                   </p>
-                  <button
-                    onClick={resetFilters}
-                    className="px-5 py-2.5 sm:px-6 sm:py-3 bg-gradient-to-r from-teal-500 to-blue-500 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-teal-500/30 transition-all duration-200 text-sm sm:text-base"
-                  >
-                    Reset Pencarian
-                  </button>
                 </motion.div>
               )}
             </div>
