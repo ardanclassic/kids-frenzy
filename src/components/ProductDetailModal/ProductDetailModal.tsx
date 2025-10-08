@@ -261,13 +261,13 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
                 {/* Category Bundle Button */}
                 <a
-                  // href={product.bundle_checkout_link}
+                  href={product.bundle_checkout_link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full md:flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 text-amber-900 border-2 border-amber-300 hover:border-amber-400 hover:shadow-lg transition-all duration-200 group"
                 >
                   <Award className="w-4 h-4 text-amber-600 group-hover:scale-110 transition-transform" />
-                  <span className="font-semibold">Paket Kategori {formatPrice(product.priceCategory)}</span>
+                  <span className="font-semibold">Bundling 1 Kategori {formatPrice(product.priceCategory)}</span>
                 </a>
               </div>
             </motion.div>
