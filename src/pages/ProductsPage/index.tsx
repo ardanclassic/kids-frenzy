@@ -106,9 +106,9 @@ const ProductsPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-50/50 via-blue-50/30 to-purple-50/50">
-      {/* Header */}
       <div className="pt-20 sm:pt-24 lg:pt-32 pb-4 sm:pb-6 lg:pb-8 px-4">
         <div className="container mx-auto">
+          {/* Header */}
           <motion.div
             className="text-center mb-4 sm:mb-6 lg:mb-10"
             initial={{ opacity: 0, y: 15 }}
@@ -122,7 +122,7 @@ const ProductsPage: React.FC = () => {
             </div>
 
             {/* Title - Compact */}
-            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-1.5 sm:mb-2 lg:mb-3 leading-tight">
+            <h1 className="text-2xl sm:text-3xl lg:text-5xl mb-1.5 sm:mb-2 lg:mb-3 leading-tight">
               <span className="text-gradient">Edukatif & Interaktif</span>
             </h1>
 
@@ -151,10 +151,10 @@ const ProductsPage: React.FC = () => {
                 formatPrice={formatPrice}
               />
 
-              {/* Pagination - Mobile Optimized */}
+              {/* Pagination */}
               <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
 
-              {/* No Results - Compact */}
+              {/* No Results */}
               {filteredProducts.length === 0 && (
                 <motion.div
                   className="text-center py-12 sm:py-16 lg:py-20 px-4"
@@ -165,11 +165,11 @@ const ProductsPage: React.FC = () => {
                   <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 lg:mb-6 shadow-inner">
                     <Search className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-gray-400" />
                   </div>
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-2 sm:mb-3 lg:mb-4">
-                    Tidak ada produk ditemukan
+                  <h3 className="text-lg sm:text-xl lg:text-2xl text-gray-800 mb-2 sm:mb-3 lg:mb-4">
+                    Tidak ada produk yang ditemukan
                   </h3>
                   <p className="text-sm sm:text-base text-gray-600 mb-5 sm:mb-6 lg:mb-8 max-w-md mx-auto">
-                    Coba ubah kata kunci pencarian atau filter kategori
+                    Coba ubah kata kunci pencarian atau filter lainnya untuk menemukan produk yang Anda cari.
                   </p>
                 </motion.div>
               )}

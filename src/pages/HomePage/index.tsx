@@ -361,7 +361,7 @@ const HomePage: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center px-4">
               <Link to="/products">
                 <motion.button
-                  className="bg-white text-kid-coral font-semibold py-3 px-6 md:py-4 md:px-8 rounded-full shadow-xl hover:shadow-2xl transition-all duration-200 text-base md:text-lg group w-full sm:w-auto"
+                  className="bg-white text-kid-coral py-3 px-6 md:py-4 md:px-8 rounded-full shadow-xl hover:shadow-2xl transition-all duration-200 text-base md:text-lg group w-full sm:w-auto"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                 >
