@@ -66,7 +66,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             <X className="w-5 h-5 text-slate-700" />
           </motion.button>
 
-          {/* Hero Image - Compact */}
+          {/* Hero Image */}
           <div className="relative h-48 md:h-56 overflow-hidden md:rounded-t-xl">
             <motion.img
               initial={{ scale: 1.2 }}
@@ -104,6 +104,14 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   className="px-3 py-1 rounded-full text-xs bg-gradient-to-r from-rose-400 to-pink-500 text-white shadow-md"
                 >
                   {product.ageRange}
+                </motion.span>
+                <motion.span
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="px-3 py-1 rounded-full text-xs bg-gradient-to-r from-amber-600 to-orange-400 text-white shadow-md"
+                >
+                  {product.totalPages ? `${product.totalPages} halaman` : ""}
                 </motion.span>
               </div>
             </motion.div>
