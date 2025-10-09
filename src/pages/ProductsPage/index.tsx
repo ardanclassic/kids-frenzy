@@ -1,13 +1,20 @@
 import React, { useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import { Search, Sparkles } from "lucide-react";
+import { Search } from "lucide-react";
 import { product_list } from "@/assets/json/product-list.json";
-import { age_categories, activity_categories } from "@/assets/json/categories.json";
+import {
+  age_categories,
+  activity_categories,
+  language_categories,
+  bundling_categories,
+} from "@/assets/json/categories.json";
 import ProductDetailModal from "@/components/ProductDetailModal/ProductDetailModal";
 import ProductsGrid from "@/components/ProductsGrid";
+import ProductSubheader from "@/components/ProductSubheader";
 import SidebarFilter from "@/components/sidebar";
 import Pagination from "@/components/pagination";
 import { useFilterStore } from "@/store/filterStore";
+import { useSortStore } from "@/store/sortStore";
 
 interface Product {
   id: string;
@@ -25,6 +32,8 @@ interface Product {
   skills: string[];
   preview: string[];
   totalPages?: number;
+  language?: string;
+  bundlingCategory?: string;
   checkout_link?: string;
   bundle_checkout_link?: string;
 }
@@ -39,10 +48,16 @@ const ProductsPage: React.FC = () => {
   const searchTerm = useFilterStore((state) => state.searchTerm);
   const selectedAgeCategory = useFilterStore((state) => state.selectedAgeCategory);
   const selectedActivityCategory = useFilterStore((state) => state.selectedActivityCategory);
+  const selectedLanguageCategory = useFilterStore((state) => state.selectedLanguageCategory);
+  const selectedBundlingCategory = useFilterStore((state) => state.selectedBundlingCategory);
+  const isBundlingMode = useFilterStore((state) => state.isBundlingMode);
+
+  // Get sort value from Zustand store
+  const selectedSort = useSortStore((state) => state.selectedSort);
 
   // Get available activity categories based on selected age
   const availableActivityCategories = useMemo(() => {
-    if (selectedAgeCategory === "semua") {
+    if (selectedAgeCategory === "all-age") {
       return activity_categories;
     }
 
@@ -58,14 +73,28 @@ const ProductsPage: React.FC = () => {
   const filteredProducts = useMemo(() => {
     let filtered = product_list as Product[];
 
-    if (selectedAgeCategory !== "semua") {
-      filtered = filtered.filter((product) => product.ageCategory === selectedAgeCategory);
+    // BUNDLING MODE: Filter by bundling category
+    if (isBundlingMode) {
+      filtered = filtered.filter((product) => product.bundlingCategory === selectedBundlingCategory);
+    } else {
+      // NORMAL MODE: Filter by age and activity
+      filtered = filtered.filter((product) => !product.bundlingCategory);
+
+      if (selectedAgeCategory !== "all-age") {
+        filtered = filtered.filter((product) => product.ageCategory === selectedAgeCategory);
+      }
+
+      if (selectedActivityCategory !== "all-activities") {
+        filtered = filtered.filter((product) => product.activityCategory === selectedActivityCategory);
+      }
     }
 
-    if (selectedActivityCategory !== "all-activities") {
-      filtered = filtered.filter((product) => product.activityCategory === selectedActivityCategory);
+    // Language filter (always active, independent)
+    if (selectedLanguageCategory !== "all-languages") {
+      filtered = filtered.filter((product) => product.language === selectedLanguageCategory);
     }
 
+    // Search filter (always active)
     if (searchTerm) {
       filtered = filtered.filter(
         (product) =>
@@ -75,22 +104,72 @@ const ProductsPage: React.FC = () => {
     }
 
     return filtered;
-  }, [searchTerm, selectedAgeCategory, selectedActivityCategory]);
+  }, [
+    searchTerm,
+    selectedAgeCategory,
+    selectedActivityCategory,
+    selectedLanguageCategory,
+    selectedBundlingCategory,
+    isBundlingMode,
+  ]);
+
+  // Sort products
+  const sortedProducts = useMemo(() => {
+    const products = [...filteredProducts];
+
+    switch (selectedSort) {
+      case "name-asc":
+        return products.sort((a, b) => a.title.localeCompare(b.title));
+
+      case "name-desc":
+        return products.sort((a, b) => b.title.localeCompare(a.title));
+
+      case "price-asc":
+        return products.sort((a, b) => a.price - b.price);
+
+      case "price-desc":
+        return products.sort((a, b) => b.price - a.price);
+
+      case "age-asc":
+        return products.sort((a, b) => a.minAge - b.minAge);
+
+      case "age-desc":
+        return products.sort((a, b) => b.minAge - a.minAge);
+
+      case "default":
+      default:
+        return products; // Keep original order
+    }
+  }, [filteredProducts, selectedSort]);
 
   // Sync data to store whenever they change
   React.useEffect(() => {
     useFilterStore.setState({
       ageCategories: age_categories,
       activityCategories: availableActivityCategories,
-      totalResults: filteredProducts.length,
+      languageCategories: language_categories,
+      bundlingCategories: bundling_categories,
+      totalResults: sortedProducts.length,
       totalProducts: (product_list as Product[]).length,
     });
-  }, [availableActivityCategories, filteredProducts.length]);
+  }, [availableActivityCategories, sortedProducts.length]);
+
+  // Reset to page 1 when filters or sort change
+  React.useEffect(() => {
+    setCurrentPage(1);
+  }, [
+    searchTerm,
+    selectedAgeCategory,
+    selectedActivityCategory,
+    selectedLanguageCategory,
+    selectedBundlingCategory,
+    selectedSort,
+  ]);
 
   // Pagination
-  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+  const totalPages = Math.ceil(sortedProducts.length / productsPerPage);
   const startIndex = (currentPage - 1) * productsPerPage;
-  const currentProducts = filteredProducts.slice(startIndex, startIndex + productsPerPage);
+  const currentProducts = sortedProducts.slice(startIndex, startIndex + productsPerPage);
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("id-ID", {
@@ -108,30 +187,6 @@ const ProductsPage: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-teal-50/50 via-blue-50/30 to-purple-50/50">
       <div className="pt-20 sm:pt-24 lg:pt-32 pb-4 sm:pb-6 lg:pb-8 px-4">
         <div className="container mx-auto">
-          {/* Header */}
-          <motion.div
-            className="text-center mb-4 sm:mb-6 lg:mb-10"
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            {/* Badge - Hidden on small mobile */}
-            <div className="hidden sm:inline-flex items-center gap-1.5 mb-2 lg:mb-3 px-3 py-1 bg-white/70 backdrop-blur-sm rounded-full border border-teal-200/50 shadow-sm">
-              <Sparkles className="w-3.5 h-3.5 text-teal-500" />
-              <span className="text-xs font-medium text-teal-700">Produk Digital Terbaik</span>
-            </div>
-
-            {/* Title - Compact */}
-            <h1 className="text-2xl sm:text-3xl lg:text-5xl mb-1.5 sm:mb-2 lg:mb-3 leading-tight">
-              <span className="text-gradient">Edukatif & Interaktif</span>
-            </h1>
-
-            {/* Description - More compact */}
-            <p className="text-xs sm:text-sm lg:text-lg text-gray-600 max-w-2xl mx-auto px-2">
-              Koleksi pembelajaran digital untuk tumbuh kembang optimal
-            </p>
-          </motion.div>
-
           {/* Main Content with Sidebar Layout */}
           <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
             {/* Sidebar Filter */}
@@ -141,6 +196,12 @@ const ProductsPage: React.FC = () => {
 
             {/* Products Content */}
             <div className="flex-1 min-w-0">
+              {/* Product Subheader - Info & Sort */}
+              {sortedProducts.length > 0 && (
+                <ProductSubheader currentCount={currentProducts.length} totalCount={sortedProducts.length} />
+              )}
+
+              {/* Products Grid */}
               <ProductsGrid
                 products={currentProducts}
                 selectedAgeCategory={selectedAgeCategory}
@@ -155,7 +216,7 @@ const ProductsPage: React.FC = () => {
               <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
 
               {/* No Results */}
-              {filteredProducts.length === 0 && (
+              {sortedProducts.length === 0 && (
                 <motion.div
                   className="text-center py-12 sm:py-16 lg:py-20 px-4"
                   initial={{ opacity: 0, y: 20 }}

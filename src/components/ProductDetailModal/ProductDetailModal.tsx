@@ -260,7 +260,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 </a>
 
                 {/* Category Bundle Button */}
-                <a
+                {/* <a
                   href={product.bundle_checkout_link}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -268,7 +268,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 >
                   <Award className="w-4 h-4 text-amber-600 group-hover:scale-110 transition-transform" />
                   <span className="font-semibold">Bundling 1 Kategori {formatPrice(product.priceCategory)}</span>
-                </a>
+                </a> */}
               </div>
             </motion.div>
           </div>

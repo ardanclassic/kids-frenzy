@@ -1,7 +1,7 @@
 {
   "age_categories": [
     {
-      "id": "semua",
+      "id": "all-age",
       "name": "Semua Usia",
       "emoji": "🎯",
       "color": "teal",
@@ -157,56 +157,44 @@
   ],
   "bundling_categories": [
     {
-      "id": "bundle-1",
-      "name": "Bundling Usia 1+",
-      "emoji": "⚡",
-      "icon": "MoreHorizontal",
-      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk usia 1 tahun ke atas",
+      "id": "no-bundle",
+      "name": "No Bundling",
+      "emoji": "📦",
+      "icon": "Box",
+      "description": "Produk individual tanpa paket bundling",
       "color": "gray",
-      "minAge": 1
+      "minAge": 0
     },
     {
-      "id": "bundle-2",
-      "name": "Bundling Usia 2+",
-      "emoji": "⚡",
-      "icon": "MoreHorizontal",
-      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk usia 2 tahun ke atas",
-      "color": "gray",
-      "minAge": 2
-    },
-    {
-      "id": "bundle-3",
-      "name": "Bundling Usia 3+",
-      "emoji": "⚡",
-      "icon": "MoreHorizontal",
-      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk usia 3 tahun ke atas",
-      "color": "gray",
-      "minAge": 3
-    },
-    {
-      "id": "bundle-5",
-      "name": "Bundling Usia 5+",
-      "emoji": "⚡",
-      "icon": "MoreHorizontal",
-      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk usia 5 tahun ke atas",
-      "color": "gray",
-      "minAge": 5
-    },
-    {
-      "id": "bundle-all",
-      "name": "Bundling All in One",
-      "emoji": "⚡",
-      "icon": "MoreHorizontal",
+      "id": "all-bundles",
+      "name": "All in One",
+      "emoji": "🎁",
+      "icon": "Package",
       "description": "Paket bundling komplit untuk berbagai aktivitas edukatif",
-      "color": "gray",
-      "minAge": 100
+      "color": "purple"
+    },
+    {
+      "id": "bundle-age",
+      "name": "Usia",
+      "emoji": "👶",
+      "icon": "Users",
+      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk berbagai usia",
+      "color": "blue"
+    },
+    {
+      "id": "bundle-category",
+      "name": "Kategori",
+      "emoji": "📚",
+      "icon": "BookMarked",
+      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk berbagai kategori",
+      "color": "teal"
     }
   ],
   "language_categories": [
     {
       "id": "all-languages",
       "name": "Semua Bahasa",
-      "emoji": "🌍",
+      "emoji": "🌐",
       "icon": "Globe",
       "description": "Tersedia dalam berbagai bahasa",
       "color": "blue"
@@ -226,14 +214,6 @@
       "icon": "Languages",
       "description": "Content in English",
       "color": "blue"
-    },
-    {
-      "id": "bilingual",
-      "name": "Bilingual",
-      "emoji": "🌐",
-      "icon": "Languages",
-      "description": "Dwibahasa (Indonesia & English)",
-      "color": "purple"
     }
   ]
 }

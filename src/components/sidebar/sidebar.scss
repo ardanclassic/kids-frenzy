@@ -91,9 +91,9 @@
 .desktop-sidebar {
   display: none;
   position: sticky;
-  top: 5.5rem;
+  top: 8rem;
   height: fit-content;
-  max-height: calc(100vh - 7rem);
+  max-height: calc(67vh);
   width: 100%;
 
   @media (min-width: 1024px) {

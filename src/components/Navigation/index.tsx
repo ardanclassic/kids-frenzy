@@ -2,7 +2,16 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, BookOpen, Star, Users, HelpCircle, MessageCircle, Filter } from "lucide-react";
+import {
+  X,
+  BookOpen,
+  Star,
+  Users,
+  HelpCircle,
+  MessageCircle,
+  SlidersHorizontal,
+  EllipsisVertical,
+} from "lucide-react";
 import { useFilterStore } from "@/store/filterStore";
 
 // ========================================
@@ -170,7 +179,7 @@ const Navigation: React.FC = () => {
           whileTap={{ scale: 0.95 }}
           aria-label="Open filters"
         >
-          <Filter size={18} />
+          <SlidersHorizontal size={18} />
           {hasActiveFilters && (
             <motion.span
               initial={{ scale: 0 }}
@@ -194,7 +203,7 @@ const Navigation: React.FC = () => {
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
       >
         <motion.div animate={{ rotate: isMenuOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
-          {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          {isMenuOpen ? <X size={20} /> : <EllipsisVertical size={20} />}
         </motion.div>
       </motion.button>
     </div>

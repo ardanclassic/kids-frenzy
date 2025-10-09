@@ -22,15 +22,37 @@ interface ActivityCategory {
   description: string;
 }
 
+interface LanguageCategory {
+  id: string;
+  name: string;
+  emoji: string;
+  icon: string;
+  description: string;
+  color: string;
+}
+
+interface BundlingCategory {
+  id: string;
+  name: string;
+  emoji: string;
+  icon: string;
+  description: string;
+  color: string;
+}
+
 interface FilterState {
   // Filter Values (PERSISTED)
   searchTerm: string;
   selectedAgeCategory: string;
   selectedActivityCategory: string;
+  selectedLanguageCategory: string;
+  selectedBundlingCategory: string;
 
   // Data Arrays (NOT persisted - will be set by components)
   ageCategories: AgeCategory[];
   activityCategories: ActivityCategory[];
+  languageCategories: LanguageCategory[];
+  bundlingCategories: BundlingCategory[];
 
   // Statistics (NOT persisted)
   totalResults: number;
@@ -40,19 +62,26 @@ interface FilterState {
   isMobileFilterOpen: boolean;
   isAgeCategoryOpen: boolean;
   isActivityCategoryOpen: boolean;
+  isLanguageCategoryOpen: boolean;
+  isBundlingCategoryOpen: boolean;
 
   // Setters - hanya untuk filter values dan UI state
   setSearchTerm: (term: string) => void;
   setSelectedAgeCategory: (categoryId: string) => void;
   setSelectedActivityCategory: (activityCategoryId: string) => void;
+  setSelectedLanguageCategory: (languageCategoryId: string) => void;
+  setSelectedBundlingCategory: (bundlingCategoryId: string) => void;
   setIsMobileFilterOpen: (isOpen: boolean) => void;
   toggleAgeCategoryOpen: () => void;
   toggleActivityCategoryOpen: () => void;
+  toggleLanguageCategoryOpen: () => void;
+  toggleBundlingCategoryOpen: () => void;
   resetFilters: () => void;
 
   // Computed Values
   hasActiveFilters: boolean;
   activeFilterCount: number;
+  isBundlingMode: boolean; // NEW: untuk cek apakah sedang dalam mode bundling
 }
 
 // ========================================
@@ -61,8 +90,10 @@ interface FilterState {
 
 const calculateActiveFilterCount = (state: FilterState): number => {
   const filters = [
-    state.selectedAgeCategory !== "semua",
+    state.selectedAgeCategory !== "all-age",
     state.selectedActivityCategory !== "all-activities",
+    state.selectedLanguageCategory !== "all-languages",
+    state.selectedBundlingCategory !== "no-bundles",
     state.searchTerm !== "",
   ];
   return filters.filter(Boolean).length;
@@ -70,10 +101,16 @@ const calculateActiveFilterCount = (state: FilterState): number => {
 
 const calculateHasActiveFilters = (state: FilterState): boolean => {
   return (
-    state.selectedAgeCategory !== "semua" ||
+    state.selectedAgeCategory !== "all-age" ||
     state.selectedActivityCategory !== "all-activities" ||
+    state.selectedLanguageCategory !== "all-languages" ||
+    state.selectedBundlingCategory !== "no-bundle" ||
     state.searchTerm !== ""
   );
+};
+
+const calculateIsBundlingMode = (state: FilterState): boolean => {
+  return state.selectedBundlingCategory !== "no-bundle";
 };
 
 // ========================================
@@ -85,19 +122,26 @@ export const useFilterStore = create<FilterState>()(
     (set) => ({
       // Initial State
       searchTerm: "",
-      selectedAgeCategory: "semua",
+      selectedAgeCategory: "all-age",
       selectedActivityCategory: "all-activities",
+      selectedLanguageCategory: "all-languages",
+      selectedBundlingCategory: "no-bundle",
       ageCategories: [],
       activityCategories: [],
+      languageCategories: [],
+      bundlingCategories: [],
       totalResults: 0,
       totalProducts: 0,
       isMobileFilterOpen: false,
       isAgeCategoryOpen: true,
       isActivityCategoryOpen: true,
+      isLanguageCategoryOpen: true,
+      isBundlingCategoryOpen: true,
 
       // Computed Values - Initial
       hasActiveFilters: false,
       activeFilterCount: 0,
+      isBundlingMode: false,
 
       // ========================================
       // ACTIONS - Filter Values
@@ -119,13 +163,17 @@ export const useFilterStore = create<FilterState>()(
           const newState = {
             ...state,
             selectedAgeCategory: categoryId,
-            selectedActivityCategory: "all-activities", // Reset kategori saat usia berubah
+            selectedActivityCategory: "all-activities", // Reset activity saat usia berubah
+            // Reset bundling jika bukan "all-age"
+            selectedBundlingCategory: categoryId !== "all-age" ? "no-bundle" : state.selectedBundlingCategory,
           };
           return {
             selectedAgeCategory: categoryId,
             selectedActivityCategory: "all-activities",
+            selectedBundlingCategory: newState.selectedBundlingCategory,
             hasActiveFilters: calculateHasActiveFilters(newState),
             activeFilterCount: calculateActiveFilterCount(newState),
+            isBundlingMode: calculateIsBundlingMode(newState),
           };
         });
       },
@@ -137,6 +185,38 @@ export const useFilterStore = create<FilterState>()(
             selectedActivityCategory: activityCategoryId,
             hasActiveFilters: calculateHasActiveFilters(newState),
             activeFilterCount: calculateActiveFilterCount(newState),
+          };
+        });
+      },
+
+      setSelectedLanguageCategory: (languageCategoryId) => {
+        set((state) => {
+          const newState = { ...state, selectedLanguageCategory: languageCategoryId };
+          return {
+            selectedLanguageCategory: languageCategoryId,
+            hasActiveFilters: calculateHasActiveFilters(newState),
+            activeFilterCount: calculateActiveFilterCount(newState),
+          };
+        });
+      },
+
+      setSelectedBundlingCategory: (bundlingCategoryId) => {
+        set((state) => {
+          const newState = {
+            ...state,
+            selectedBundlingCategory: bundlingCategoryId,
+            // Jika bundling dipilih (bukan no-bundle), reset age dan activity
+            selectedAgeCategory: bundlingCategoryId !== "no-bundle" ? "all-age" : state.selectedAgeCategory,
+            selectedActivityCategory:
+              bundlingCategoryId !== "no-bundle" ? "all-activities" : state.selectedActivityCategory,
+          };
+          return {
+            selectedBundlingCategory: bundlingCategoryId,
+            selectedAgeCategory: newState.selectedAgeCategory,
+            selectedActivityCategory: newState.selectedActivityCategory,
+            hasActiveFilters: calculateHasActiveFilters(newState),
+            activeFilterCount: calculateActiveFilterCount(newState),
+            isBundlingMode: calculateIsBundlingMode(newState),
           };
         });
       },
@@ -157,6 +237,14 @@ export const useFilterStore = create<FilterState>()(
         set((state) => ({ isActivityCategoryOpen: !state.isActivityCategoryOpen }));
       },
 
+      toggleLanguageCategoryOpen: () => {
+        set((state) => ({ isLanguageCategoryOpen: !state.isLanguageCategoryOpen }));
+      },
+
+      toggleBundlingCategoryOpen: () => {
+        set((state) => ({ isBundlingCategoryOpen: !state.isBundlingCategoryOpen }));
+      },
+
       // ========================================
       // ACTIONS - Reset
       // ========================================
@@ -164,10 +252,13 @@ export const useFilterStore = create<FilterState>()(
       resetFilters: () => {
         set({
           searchTerm: "",
-          selectedAgeCategory: "semua",
+          selectedAgeCategory: "all-age",
           selectedActivityCategory: "all-activities",
+          selectedLanguageCategory: "all-languages",
+          selectedBundlingCategory: "no-bundle",
           hasActiveFilters: false,
           activeFilterCount: 0,
+          isBundlingMode: false,
         });
       },
     }),
@@ -179,12 +270,15 @@ export const useFilterStore = create<FilterState>()(
         searchTerm: state.searchTerm,
         selectedAgeCategory: state.selectedAgeCategory,
         selectedActivityCategory: state.selectedActivityCategory,
+        selectedLanguageCategory: state.selectedLanguageCategory,
+        selectedBundlingCategory: state.selectedBundlingCategory,
       }),
       // Rehydrate computed values after loading from localStorage
       onRehydrateStorage: () => (state) => {
         if (state) {
           state.hasActiveFilters = calculateHasActiveFilters(state);
           state.activeFilterCount = calculateActiveFilterCount(state);
+          state.isBundlingMode = calculateIsBundlingMode(state);
         }
       },
     }
