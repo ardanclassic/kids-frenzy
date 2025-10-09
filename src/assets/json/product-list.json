@@ -1883,6 +1883,37 @@
         "/products/LAINNYA/CHORE CHART/4.jpg",
         "/products/LAINNYA/CHORE CHART/5.jpg"
       ]
+    },
+    {
+      "id": "A4J6K2P9S8B1D7R5",
+      "title": "BUNDLING - Semua Usia 2+ Tahun",
+      "description": "Paket produk lengkap untuk anak usia 2 tahun ke atas, mencakup berbagai aktivitas edukatif seperti Busy Books, Do a Dot, Matching, Coloring, Puzzle Game, dan lainnya. Dirancang untuk mengembangkan keterampilan motorik, kesadaran spasial, kognitif, keterampilan visual, serta fokus dan konsentrasi.",
+      "ageCategory": "2+",
+      "activityCategory": "others",
+      "ageRange": "2+ tahun",
+      "minAge": 2,
+      "price": 4350,
+      "priceCategory": 4350,
+      "totalPages": 38,
+      "lang": "en",
+      "slug": "kids-chore-chart",
+      "image": "/products/LAINNYA/CHORE CHART/1.jpg",
+      "checkout_link": "http://lynk.id/bitlab/3ovxllrj793v/checkout",
+      "bundle_checkout_link": "http://lynk.id/bitlab/3ovxllrj793v/checkout",
+      "features": [
+        "Beragam jenis 'Chore Chart' (Bagan Tugas)",
+        "Checklist Rutinitas Harian (Pagi, Siang, Malam)",
+        "Bagan Hadiah dan Uang Saku",
+        "Perencana Mingguan dan Bulanan"
+      ],
+      "skills": ["Tanggung Jawab", "Keterampilan Hidup", "Organisasi", "Disiplin Diri"],
+      "preview": [
+        "/products/LAINNYA/CHORE CHART/1.jpg",
+        "/products/LAINNYA/CHORE CHART/2.jpg",
+        "/products/LAINNYA/CHORE CHART/3.jpg",
+        "/products/LAINNYA/CHORE CHART/4.jpg",
+        "/products/LAINNYA/CHORE CHART/5.jpg"
+      ]
     }
   ]
 }

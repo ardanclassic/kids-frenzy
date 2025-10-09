@@ -155,6 +155,53 @@
       "minAge": 2
     }
   ],
+  "bundling_categories": [
+    {
+      "id": "bundle-1",
+      "name": "Bundling Usia 1+",
+      "emoji": "⚡",
+      "icon": "MoreHorizontal",
+      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk usia 1 tahun ke atas",
+      "color": "gray",
+      "minAge": 1
+    },
+    {
+      "id": "bundle-2",
+      "name": "Bundling Usia 2+",
+      "emoji": "⚡",
+      "icon": "MoreHorizontal",
+      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk usia 2 tahun ke atas",
+      "color": "gray",
+      "minAge": 2
+    },
+    {
+      "id": "bundle-3",
+      "name": "Bundling Usia 3+",
+      "emoji": "⚡",
+      "icon": "MoreHorizontal",
+      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk usia 3 tahun ke atas",
+      "color": "gray",
+      "minAge": 3
+    },
+    {
+      "id": "bundle-5",
+      "name": "Bundling Usia 5+",
+      "emoji": "⚡",
+      "icon": "MoreHorizontal",
+      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk usia 5 tahun ke atas",
+      "color": "gray",
+      "minAge": 5
+    },
+    {
+      "id": "bundle-all",
+      "name": "Bundling All in One",
+      "emoji": "⚡",
+      "icon": "MoreHorizontal",
+      "description": "Paket bundling komplit untuk berbagai aktivitas edukatif",
+      "color": "gray",
+      "minAge": 100
+    }
+  ],
   "language_categories": [
     {
       "id": "all-languages",
