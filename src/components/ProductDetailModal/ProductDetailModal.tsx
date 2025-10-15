@@ -19,6 +19,7 @@ interface Product {
   totalPages?: number;
   checkout_link?: string;
   bundle_checkout_link?: string;
+  bundlingCategory?: string;
 }
 
 interface ProductDetailModalProps {
@@ -138,9 +139,11 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 <h3 className="text-base md:text-lg text-slate-800">Tentang Produk</h3>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed mb-2">{product.description}</p>
-              <p className="text-xs text-slate-600 italic pl-3 border-l-2 border-indigo-300">
-                {activityCategoryInfo.description}
-              </p>
+              {!product.bundlingCategory && (
+                <p className="text-xs text-slate-600 italic pl-3 border-l-2 border-indigo-300">
+                  {activityCategoryInfo.description}
+                </p>
+              )}
             </motion.div>
 
             {/* Features - Compact Grid */}
