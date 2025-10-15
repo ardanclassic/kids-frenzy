@@ -2256,6 +2256,44 @@
         "/products/BUNDLING/AGE/BUNDLING_5+/5.jpg",
         "/products/BUNDLING/AGE/BUNDLING_5+/6.jpg"
       ]
+    },
+
+    {
+      "id": "BUNDLE-AIO-P7B0D3G5J8L1M",
+      "title": "BUNDLING - ALL IN ONE",
+      "description": "Paket Bundling ALL IN ONE terlengkap dan paling komprehensif, mencakup seluruh kategori produk worksheet anak dari usia 1+ hingga 5+ tahun (pra-sekolah). Modul ini adalah solusi lengkap untuk mengembangkan seluruh aspek kecerdasan anak, meliputi Literasi, Numerasi, Kognitif, Visual-Spasial, Motorik Halus, dan Kecerdasan Emosional, melalui puluhan aktivitas yang interaktif, edukatif, dan siap cetak di rumah.",
+      "bundlingCategory": "all-bundles",
+      "price": 59000,
+      "language": "english",
+      "slug": "all-in-one-bundles",
+      "image": "/products/BUNDLING/ALL IN ONE/cover.jpg",
+      "checkout_link": "http://lynk.id/bitlab/kz8mlm6px6lr/checkout",
+      "features": [
+        "Koleksi 7+ Kategori Aktivitas Lengkap (Flashcards, Coloring, Puzzle, Busy Books, Matching, Maze, Cut & Paste)",
+        "Mencakup Seluruh Aspek Pembelajaran Dini: Literasi (Abjad, Fonik, Sight Words) dan Numerasi (Angka, Bentuk, Warna)",
+        "Ratusan Halaman Aktivitas Edukatif yang Cocok untuk Berbagai Rentang Usia (1+ hingga Pra-Sekolah)",
+        "Latihan Motorik Halus Intensif melalui kegiatan Menggunting, Menempel, Mencocokkan, dan Mewarnai",
+        "Dirancang untuk Meningkatkan Fokus, Konsentrasi, dan Keterampilan Pemecahan Masalah Visual"
+      ],
+      "skills": [
+        "Literasi Dini (Pengenalan Abjad, Fonik, dan Kosakata)",
+        "Keterampilan Motorik Halus (Fine Motor Skills)",
+        "Pengenalan Konsep Numerasi (Angka, Bentuk, dan Warna)",
+        "Fokus, Konsentrasi, dan Ketelitian",
+        "Kognitif dan Pemecahan Masalah (Visual Problem Solving)",
+        "Kecerdasan Emosional dan Pengetahuan Umum (Hewan, Profesi, Transportasi)",
+        "Keterampilan Visual-Spasial (Geometri Dasar dan Persepsi Bentuk)"
+      ],
+      "preview": [
+        "/products/BUNDLING/ALL IN ONE/busy-books.jpg",
+        "/products/BUNDLING/ALL IN ONE/coloring.jpg",
+        "/products/BUNDLING/ALL IN ONE/do-a-dot.jpg",
+        "/products/BUNDLING/ALL IN ONE/pretend-play.jpg",
+        "/products/BUNDLING/ALL IN ONE/matching.jpg",
+        "/products/BUNDLING/ALL IN ONE/flash-cards.jpg",
+        "/products/BUNDLING/ALL IN ONE/puzzle.jpg",
+        "/products/BUNDLING/ALL IN ONE/cut-paste.jpg"
+      ]
     }
   ]
 }
