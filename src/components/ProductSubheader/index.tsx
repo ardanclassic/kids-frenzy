@@ -49,7 +49,7 @@ const ProductSubheader: React.FC<ProductSubheaderProps> = ({ currentCount, total
         <div className="flex items-center gap-2">
           {/* Mobile: Ringkas */}
           <div className="text-sm text-gray-700 md:hidden">
-            <span className="font-semibold text-teal-600">{currentCount}</span> dari{" "}
+            <span className="font-semibold text-teal-600">{currentCount}</span> /{" "}
             <span className="font-semibold text-gray-900">{totalCount}</span> produk
           </div>
 

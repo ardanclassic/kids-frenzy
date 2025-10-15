@@ -22,7 +22,6 @@ interface Product {
   description: string;
   ageCategory: string;
   activityCategory: string;
-  ageRange: string;
   minAge: number;
   price: number;
   priceCategory: number;

@@ -1,7 +1,7 @@
 // sidebar/MobileSidebarWrapper.tsx
 import React, { useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Filter, X } from "lucide-react";
+import { SlidersHorizontal, X } from "lucide-react";
 import { useFilterStore } from "@/store/filterStore";
 import { FilterContentConnector } from "./FilterContentConnector";
 
@@ -51,7 +51,7 @@ export const MobileSidebarWrapper: React.FC = () => {
           >
             {/* Mobile Header */}
             <div className="sidebar-header">
-              <Filter className="header-icon" aria-hidden="true" />
+              <SlidersHorizontal className="header-icon" aria-hidden="true" />
               <h2 className="sidebar-title" id="mobile-filter-title">
                 Filter
               </h2>

@@ -7,12 +7,11 @@ interface Product {
   id: string;
   title: string;
   description: string;
-  ageCategory: string;
-  activityCategory: string;
-  ageRange: string;
-  minAge: number;
+  ageCategory?: string;
+  activityCategory?: string;
+  minAge?: number;
   price: number;
-  priceCategory: number;
+  priceCategory?: number;
   image: string;
   features: string[];
   skills: string[];
@@ -37,7 +36,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 }) => {
   if (!product) return null;
 
-  const activityCategoryInfo = getActivityCategoryInfo(product.activityCategory);
+  const activityCategoryInfo = getActivityCategoryInfo(product.activityCategory ?? "");
 
   return (
     <AnimatePresence>
@@ -89,30 +88,36 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 {product.title}
               </h2>
               <div className="flex flex-wrap gap-2">
-                <motion.span
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.4 }}
-                  className="px-3 py-1 rounded-full text-xs bg-white/95 text-indigo-700 shadow-md"
-                >
-                  {activityCategoryInfo.emoji} {activityCategoryInfo.name}
-                </motion.span>
-                <motion.span
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.5 }}
-                  className="px-3 py-1 rounded-full text-xs bg-gradient-to-r from-rose-400 to-pink-500 text-white shadow-md"
-                >
-                  {product.ageRange}
-                </motion.span>
-                <motion.span
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.5 }}
-                  className="px-3 py-1 rounded-full text-xs bg-gradient-to-r from-amber-600 to-orange-400 text-white shadow-md"
-                >
-                  {product.totalPages ? `${product.totalPages} halaman` : ""}
-                </motion.span>
+                {product.activityCategory && (
+                  <motion.span
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.4 }}
+                    className="px-3 py-1 rounded-full text-xs bg-white/95 text-indigo-700 shadow-md"
+                  >
+                    {activityCategoryInfo.emoji} {activityCategoryInfo.name}
+                  </motion.span>
+                )}
+                {product.minAge && (
+                  <motion.span
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="px-3 py-1 rounded-full text-xs bg-gradient-to-r from-rose-400 to-pink-500 text-white shadow-md"
+                  >
+                    {product.minAge}+ tahun
+                  </motion.span>
+                )}
+                {product.totalPages && (
+                  <motion.span
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="px-3 py-1 rounded-full text-xs bg-gradient-to-r from-amber-600 to-orange-400 text-white shadow-md"
+                  >
+                    {product.totalPages} halaman
+                  </motion.span>
+                )}
               </div>
             </motion.div>
           </div>

@@ -8,7 +8,6 @@ interface Product {
   description: string;
   ageCategory: string;
   activityCategory: string;
-  ageRange: string;
   minAge: number;
   price: number;
   priceCategory: number;
@@ -110,9 +109,11 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                       <span className="px-1.5 py-0.5 rounded-br-lg text-xs bg-black/30 backdrop-blur-sm text-slate-700 flex items-center gap-1.5 shadow-sm">
                         <span className="text-sm">{activityCategoryInfo.emoji}</span>
                       </span>
-                      <span className="px-1.5 py-0.5 rounded-bl-lg text-xs bg-amber-200/70 backdrop-blur-sm text-amber-700 shadow-sm">
-                        {product.minAge}+
-                      </span>
+                      {product.minAge && (
+                        <span className="px-1.5 py-0.5 rounded-bl-lg text-xs bg-amber-200/70 backdrop-blur-sm text-amber-700 shadow-sm">
+                          {product.minAge}+
+                        </span>
+                      )}
                     </div>
 
                     {/* Bottom Info - Mobile Default */}
@@ -127,32 +128,6 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                         </div>
                       </div>
                     </div>
-
-                    {/* Hover Content - Mobile Simplified */}
-                    <div className="absolute inset-0 flex flex-col justify-between p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <span className="px-2 py-0.5 rounded-md text-xs bg-slate-100/90 backdrop-blur-sm text-slate-700">
-                            {activityCategoryInfo.emoji} {activityCategoryInfo.name}
-                          </span>
-                          <span className="px-2 py-0.5 rounded-md text-xs bg-amber-100/90 backdrop-blur-sm text-amber-700">
-                            {product.ageRange}
-                          </span>
-                        </div>
-
-                        <h3 className="text-white text-xs leading-snug line-clamp-2">{product.title}</h3>
-
-                        <p className="text-white/80 text-xs leading-relaxed line-clamp-3">{product.description}</p>
-                      </div>
-
-                      <div className="space-y-2">
-                        <div className="text-emerald-300 text-sm">{formatPrice(product.price)}</div>
-                        <div className="bg-teal-100/90 backdrop-blur-sm rounded-lg px-3 py-1.5 flex items-center justify-center gap-1.5">
-                          <Eye className="w-3.5 h-3.5 text-teal-700" />
-                          <span className="text-xs text-teal-700">Lihat</span>
-                        </div>
-                      </div>
-                    </div>
                   </div>
 
                   {/* DESKTOP VIEW - Full Details */}
@@ -162,9 +137,12 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({
                       <span className="px-1.5 py-0.5 rounded-br-lg text-xs bg-black/30 backdrop-blur-sm text-slate-700 flex items-center gap-1.5 shadow-sm">
                         <span className="text-sm">{activityCategoryInfo.emoji}</span>
                       </span>
-                      <span className="px-1.5 py-0.5 rounded-bl-lg text-xs bg-amber-200/70 backdrop-blur-sm text-amber-700 shadow-sm">
-                        {product.minAge}+
-                      </span>
+
+                      {product.minAge && (
+                        <span className="px-1.5 py-0.5 rounded-bl-lg text-xs bg-amber-200/70 backdrop-blur-sm text-amber-700 shadow-sm">
+                          {product.minAge}+
+                        </span>
+                      )}
                     </div>
 
                     {/* Bottom Info - Desktop Default */}

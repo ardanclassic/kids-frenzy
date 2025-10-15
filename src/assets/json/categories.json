@@ -162,8 +162,7 @@
       "emoji": "📦",
       "icon": "Box",
       "description": "Produk individual tanpa paket bundling",
-      "color": "gray",
-      "minAge": 0
+      "color": "gray"
     },
     {
       "id": "all-bundles",
@@ -178,15 +177,15 @@
       "name": "Usia",
       "emoji": "👶",
       "icon": "Users",
-      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk berbagai usia",
+      "description": "Paket bundling untuk berbagai aktivitas edukatif berdasarkan usia",
       "color": "blue"
     },
     {
-      "id": "bundle-category",
-      "name": "Kategori",
+      "id": "bundle-activity",
+      "name": "Aktifitas",
       "emoji": "📚",
       "icon": "BookMarked",
-      "description": "Paket bundling untuk berbagai aktivitas edukatif untuk berbagai kategori",
+      "description": "Paket bundling untuk berbagai aktivitas edukatif",
       "color": "teal"
     }
   ],
